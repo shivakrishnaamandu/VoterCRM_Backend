@@ -1,4 +1,4 @@
-from Backend.app import db
+from app import db
 
 
 class Relations(db.Model):

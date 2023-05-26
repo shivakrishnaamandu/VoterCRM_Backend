@@ -1,10 +1,10 @@
-from Backend.app import application, db
-from Backend.app.Models.Agents import Agents
-from Backend.app.Models.TokenBlacklist import TokenBlacklist
+from app import application, db
+from app.Models.Agents import Agents
+from app.Models.TokenBlacklist import TokenBlacklist
 from flask import request, Blueprint, redirect, url_for
-from Backend.app.Authentication.jwtservice import JWTService
-from Backend.app.Authentication.middleware import Middleware
-from Backend.app.Authentication.hashingservice import HashingService
+from app.Authentication.jwtservice import JWTService
+from app.Authentication.middleware import Middleware
+from app.Authentication.hashingservice import HashingService
 from werkzeug import exceptions
 import uuid
 

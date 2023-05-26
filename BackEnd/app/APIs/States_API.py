@@ -1,7 +1,7 @@
-from Backend.app.__init__ import application, db
-from Backend.app.Models.States import *
-from Backend.app.Authentication.jwtservice import JWTService
-from Backend.app.Authentication.middleware import Middleware
+from app.__init__ import application, db
+from app.Models.States import *
+from app.Authentication.jwtservice import JWTService
+from app.Authentication.middleware import Middleware
 from flask import request, Blueprint
 import uuid
 
