@@ -26,6 +26,6 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: sanbud/flask-api:latest
+          tags: sanbud/votercrm_backend:latest
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v3
