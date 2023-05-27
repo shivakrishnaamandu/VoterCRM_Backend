@@ -1,10 +1,10 @@
-from Backend.app.__init__ import application, db
-from Backend.app.Models.Voters import *
-from Backend.app.Models.PollingStations import *
-from Backend.app.Models.Relations import *
+from app.__init__ import application, db
+from app.Models.Voters import *
+from app.Models.PollingStations import *
+from app.Models.Relations import *
 
-from Backend.app.Authentication.jwtservice import JWTService
-from Backend.app.Authentication.middleware import Middleware
+from app.Authentication.jwtservice import JWTService
+from app.Authentication.middleware import Middleware
 from flask import request, Blueprint
 import csv, io
 import uuid

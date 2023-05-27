@@ -1,0 +1,33 @@
+version: "3"
+services:
+    db:
+        image: mysql:5.7
+        restart: always
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD : admin
+        volumes:
+            - './DataBase/Database Creation.sql:/docker-entrypoint-initdb.d/init.sql'
+            - 'votercrmdb:/var/lib/mysql'
+        healthcheck:
+            test: mysqladmin ping -h 127.0.0.1  --password=$$MYSQL_ROOT_PASSWORD
+            interval: 10s
+            timeout: 5s
+            retries: 3
+    app:
+        image: votercrm_backend:latest
+        depends_on:
+            db:
+                condition: service_healthy
+        links:
+            - "db"
+        environment:
+            DB_USER : "root"
+            DB_PASSWORD : "admin"
+            DB_HOST : "db"
+            DB_NAME : "voter_crm"
+        ports:
+            - "8000:8000"
+volumes:
+    votercrmdb:

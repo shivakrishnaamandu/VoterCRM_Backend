@@ -1,7 +1,7 @@
 from jwt import PyJWT
 from time import time
 from typing import Union
-from Backend.app.Models.TokenBlacklist import TokenBlacklist
+from app.Models.TokenBlacklist import TokenBlacklist
 
 
 class JWTService:
