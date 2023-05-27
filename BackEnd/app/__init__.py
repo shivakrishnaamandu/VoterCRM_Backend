@@ -9,7 +9,7 @@ api = Api(application)  # Flask restful wraps Flask app around it.
 
 # api.register_blueprint(Admin_Auth_API_blueprint)
 
-application.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:admin@db/voter_crm"
+application.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:admin@localhost/voter_crm"
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 application.config["SQLALCHEMY_ECHO"] = True
 
