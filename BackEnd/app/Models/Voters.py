@@ -4,7 +4,7 @@ from app import db
 class Voters(db.Model):
     __tablename__ = "Voters"
 
-    Voter_Row_ID = db.Column(db.Integer, primary_key=True)
+    Voter_Row_ID = db.Column(db.Integer, primary_key=True, autoincrement=True)
     Voter_UID = db.Column(db.String(10), unique=True)
     Voter_Name = db.Column(db.String(100), nullable=False)
     Relative_Name = db.Column(db.String(100), nullable=False)
@@ -18,7 +18,6 @@ class Voters(db.Model):
 
     def __init__(
         self,
-        Voter_Row_ID,
         Voter_UID,
         Voter_Name,
         Relative_Name,
@@ -28,7 +27,6 @@ class Voters(db.Model):
         Gender,
         Polling_Station_Code,
     ):
-        self.Voter_Row_ID = Voter_Row_ID
         self.Voter_UID = Voter_UID
         self.Voter_Name = Voter_Name
         self.Relative_Name = Relative_Name

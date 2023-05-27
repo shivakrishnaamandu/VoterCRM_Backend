@@ -27,8 +27,38 @@ def upload():
         csv_data = csv.reader(io.StringIO(file.read().decode('utf-8')))
         next(csv_data)  # Skip header row if needed
         for row in csv_data:
+
+            # Check if the UUID column is null in the data
+            if row[2] is None or row[2] == "" :
+                while True:
+                    # Generate a unique 10-digit UUID with integer characters
+                    generated_uuid = str(uuid.uuid4().int)[:10]
+                    # Check if the generated UUID is already present in the table
+                    if not Voters.query.filter_by(Voter_UID=generated_uuid).first():
+                        break
+                row[2] = generated_uuid
+
             # Assuming the CSV columns are in the order of column1, column2
-            data = Voters(uuid.uuid1().int>>97,row[2],row[3],row[4],row[5],row[8],row[6],row[7],row[11])
+            (
+        Voter_UID,
+        Voter_Name,
+        Relative_Name,
+        Relation_Type ,
+        House_Number,
+        Age,
+        Gender,
+        Polling_Station_Code,
+    ) = (
+        row[2],row[3],row[4],row[5],row[8],row[6],row[7],row[11],
+    )
+            data = Voters(Voter_UID,
+        Voter_Name,
+        Relative_Name,
+        Relation_Type ,
+        House_Number,
+        Age,
+        Gender,
+        Polling_Station_Code,)
             db.session.add(data)
             db.session.commit()
         return 'File uploaded and data inserted into the database table successfully.'
