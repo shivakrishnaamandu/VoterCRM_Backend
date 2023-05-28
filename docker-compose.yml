@@ -13,10 +13,10 @@ services:
         healthcheck:
             test: mysqladmin ping -h 127.0.0.1  --password=$$MYSQL_ROOT_PASSWORD
             interval: 10s
-            timeout: 5s
+            timeout: 10s
             retries: 3
     app:
-        image: votercrm_backend:latest
+        image: sanbud/votercrm_backend:latest
         depends_on:
             db:
                 condition: service_healthy
