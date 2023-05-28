@@ -1,7 +1,7 @@
 from jwt import PyJWT
 from time import time
 from typing import Union
-from app.Models.TokenBlacklist import TokenBlacklist
+from app.Models.Logins import *
 
 
 class JWTService:
@@ -46,9 +46,9 @@ class JWTService:
 
     def is_valid(self, token: str, verify_time: bool = True) -> bool:
         try:
-            blacklistedtoken = TokenBlacklist.query.filter_by(JWT_Token=token).first()
-            if blacklistedtoken:
-                print("Token blacklisted")
+            login = Logins.query.filter_by(Token=token).first()
+            if not login or login.Status == "LoggedOut":
+                print("User not logged in")
                 return False
             payload = self.get_payload(token)
             if payload is None:

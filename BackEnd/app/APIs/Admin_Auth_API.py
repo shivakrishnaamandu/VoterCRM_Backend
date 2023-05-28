@@ -1,7 +1,7 @@
 from app import application, db
-from app.Models.Agents import Agents
-from app.Models.TokenBlacklist import TokenBlacklist
-from flask import request, Blueprint, redirect, url_for
+from app.Models.Agents import *
+from app.Models.Logins import *
+from flask import request, Blueprint, redirect, url_for, jsonify
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
@@ -21,10 +21,14 @@ application.before_request(lambda: middleware.auth(request))
 Admin_Auth_API_blueprint = Blueprint("Admin_Auth_API", __name__)
 
 
-@Admin_Auth_API_blueprint.route("/admin/auth/login", methods=["POST"])
+@Admin_Auth_API_blueprint.route("/admin/auth/login", methods=["PUT"])
 def log_in():
     username, password = request.json["Username"], request.json["Password"]
-    admin = Agents.query.filter_by(Username=username).first()
+
+    if request.headers.get("signupkey") != sign_up_key:
+        return exceptions.Unauthorized(description="Incorrect Key")
+
+    admin = Agents.query.filter_by(Username=username).filter_by(IsAdmin=1).first()
     if admin is None:
         return exceptions.Unauthorized(
             description="Incorrect username/password combination"
@@ -42,6 +46,38 @@ def log_in():
 
     if token is None:
         return exceptions.InternalServerError(description="Login Failed")
+
+    login = Logins.query.filter_by(User_Id=admin.Agent_Id).first()
+
+    if not login:
+        print("no record")
+        user_id = admin.Agent_Id
+        ip_address = request.remote_addr
+        device = request.user_agent.string
+        status = "LoggedIn"
+
+        # Create a new login entry
+        login = Logins(
+            User_Id=user_id,
+            IP_Address=ip_address,
+            Device=device,
+            Token=token,
+            Status=status,
+        )
+        db.session.add(login)
+        db.session.commit()
+    else:
+        print("There is record")
+        print(token)
+        login.Token = token
+        print(login.Token)
+        login.Status = "LoggedIn"
+        db.session.commit()
+
+    # Add the login entry to the session and commit the changes
+    
+    
+
     return {"token": token}
 
 
@@ -99,10 +135,14 @@ def is_logged_in():
 
 @Admin_Auth_API_blueprint.route("/admin/auth/logout")
 def log_out():
-    token = request.headers["token"]
-    tokenblacklist = TokenBlacklist(token)
-    db.session.add(tokenblacklist)
-    db.session.commit()
+    try:
+        token = request.headers["token"]
+        login = Logins.query.filter_by(Token = token).first()
+        login.Status = "LoggedOut"
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        return jsonify("Error: " + str(e))
     return {"message": "Logged out successfully"}
 
 

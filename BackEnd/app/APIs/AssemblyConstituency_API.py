@@ -65,7 +65,6 @@ def get_all_constituencies():
 def add_constituency():
     body = request.json
     constituency = AssemblyConstituency(
-        uuid.uuid1().int >> 97,
         body["Constituency_Name"],
         body["Constituency_No"],
         body["District_Code"],

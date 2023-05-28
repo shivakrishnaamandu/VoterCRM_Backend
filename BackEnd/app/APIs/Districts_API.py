@@ -2,7 +2,7 @@ from app.__init__ import application, db
 from app.Models.Districts import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
-from flask import request, Blueprint
+from flask import request, Blueprint, jsonify
 import uuid
 
 jwt_secret = "secret"
@@ -40,7 +40,6 @@ def districts_list():
 def add_district():
     body = request.json
     district = Districts(
-        uuid.uuid1().int >> 97,
         body["District_Name"],
         body["District_No"],
         body["State_Code"],
@@ -85,6 +84,6 @@ def update_district():
             return {"message": "District Not available"}
     except Exception as e:
         db.session.rollback()
-        return {"Error: " + str(e)}
+        return jsonify("Error: " + str(e))
     finally:
         db.session.close()

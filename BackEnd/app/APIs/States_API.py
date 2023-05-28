@@ -36,7 +36,7 @@ def get_all_states():
 @States_API_blueprint.route("/admin/add_state", methods=["POST"])
 def add_state():
     body = request.json
-    state = States(uuid.uuid1().int>>97, body["State_Name"], body["State_No"])
+    state = States(body["State_Name"], body["State_No"])
     db.session.add(state)
     db.session.commit()
     return {"message": "New state added successfully"}
