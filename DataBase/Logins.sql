@@ -5,9 +5,9 @@ CREATE TABLE Logins(
       User_Id int NOT NULL,
       IP_Address varchar(25) NOT NULL,
       Device varchar(50) NOT NULL,
-      Token text,
-      Created_On datetime NOT NULL,
+      Token text NOT NULL,
+      Created_On timestamp DEFAULT CURRENT_TIMESTAMP,
       Status varchar(25),
-      Updated_On datetime NOT NULL,
+      Updated_On timestamp ON UPDATE CURRENT_TIMESTAMP,
       FOREIGN KEY (User_Id) REFERENCES Agents(Agent_Id)
 );

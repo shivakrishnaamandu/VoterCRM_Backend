@@ -1,0 +1,16 @@
+Execute the SQL files in your local MySql workbench app in the following order:
+
+1. Database Creation
+2. States
+3. Districts
+4. Assembly Constituency
+5. Polling Stations
+6. Realtions
+7. Voters
+8. Agents
+9. Logins
+10. Political Parties
+11. Candidates
+12. Subscription Plans
+13. Subscriptions
+14. Agent Polling Assignment
