@@ -16,7 +16,7 @@ services:
             timeout: 10s
             retries: 3
     app:
-        image: sanbud/votercrm_backend:latest
+        image: votercrm_backend:latest
         depends_on:
             db:
                 condition: service_healthy
@@ -29,8 +29,10 @@ services:
             DB_NAME : "voter_crm"
         ports:
             - "8000:8000"
-        volumes:
-            - './BackEnd:/app/BackEnd'
+        # comment out below code to do local development.
+        # steps: Run 'docker compose up -d', make changes -> run again 'docker compose up -d'
+        # volumes:
+        #     - './BackEnd:/app/BackEnd'
 
 volumes:
     votercrmdb:
