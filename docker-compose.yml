@@ -16,7 +16,7 @@ services:
             timeout: 10s
             retries: 3
     app:
-        image: votercrm_backend:latest
+        image: sanbud/votercrm_backend:latest
         depends_on:
             db:
                 condition: service_healthy

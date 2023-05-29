@@ -19,7 +19,7 @@ if __name__ == "__main__":
         print("Importing and adding tables")
         # TODO : Remove this try block once the DB is integrated
         try:
-            from app.Models import Agents,AssemblyConstituency,Districts,Logins,PollingStations,Relations,States,TokenBlacklist,Voters
+            from app.Models import *
             db.create_all()  # Create sql tables for our data models
         except:
             print("Excpetion while connecting to DB in application main run")
