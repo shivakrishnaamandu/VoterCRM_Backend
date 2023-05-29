@@ -1,7 +1,7 @@
-from Backend.app.__init__ import application, db
-from Backend.app.Models.PollingStation import *
-from Backend.app.Authentication.jwtservice import JWTService
-from Backend.app.Authentication.middleware import Middleware
+from app.__init__ import application, db
+from app.Models.PollingStations import *
+from app.Authentication.jwtservice import JWTService
+from app.Authentication.middleware import Middleware
 from flask import request, Blueprint
 import uuid
 
@@ -19,7 +19,7 @@ PollingStation_API_blueprint = Blueprint("PollingStation_API", __name__)
 def PollingStation_list():
     assemby_constituency_code = request.json["Assemby_Constituency_Code"]  # Fetch PollingStation by assembly constituency code
     try:
-        PollingStation_by_const = PollingStation.query.filter_by(Assemby_Constituency_Code=assemby_constituency_code).all()
+        PollingStation_by_const = PollingStations.query.filter_by(Assemby_Constituency_Code=assemby_constituency_code).all()
         if PollingStation_by_const:
             polling_station_list = []
             for polling_station in PollingStation_by_const:
@@ -40,7 +40,7 @@ def PollingStation_list():
 @PollingStation_API_blueprint.route("/admin/add_polling_station", methods=["POST"])
 def add_polling_station():
     body = request.json
-    polling_station = PollingStation(
+    polling_station = PollingStations(
         uuid.uuid1().int >> 97,
         body["Polling_Station_Name"],
         body["Polling_Station_No"],
@@ -57,7 +57,7 @@ def delete_polling_station():
     polling_station_id = request.json["Polling_Station_Id"]
     print(polling_station_id)
     try:
-        PollingStation.query.filter_by(
+        PollingStations.query.filter_by(
             Polling_Station_Id=polling_station_id
         ).delete()  # Fetching the instance
         db.session.commit()
@@ -76,7 +76,7 @@ def update_polling_station():
             request.json["To_Update_Dist_No"],
             request.json["To_Update_Dist_Location"],
         )
-        existing_polling_station = PollingStation.query.filter_by(Polling_Station_Id=polling_station_id).first()
+        existing_polling_station = PollingStations.query.filter_by(Polling_Station_Id=polling_station_id).first()
         if existing_polling_station:
             existing_polling_station.Polling_Station_Name = Updated_ps_name
             existing_polling_station.Polling_Station_No = Updated_ps_no
