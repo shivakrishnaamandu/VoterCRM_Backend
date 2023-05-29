@@ -9,7 +9,7 @@ class Logins(db.Model):
     User_Id = db.Column(db.Integer, db.ForeignKey("Agents.Agent_Id"), nullable=False)
     IP_Address = db.Column(db.String(25), nullable=False)
     Device = db.Column(db.String(50), nullable=False)
-    Token = db.Column(db.String, nullable=False)
+    Token = db.Column(db.String(256), nullable=False)
     Created_On = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     Status = db.Column(db.String(25))
     Updated_On = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
