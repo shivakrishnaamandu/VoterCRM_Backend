@@ -9,13 +9,58 @@
 			"name": "Admin Auth",
 			"item": [
 				{
+					"name": "admin_signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "signupkey",
+								"value": "signupkey",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Agent_Id\": 1,\r\n  \"First_name\": \"John\",\r\n  \"Last_name\": \"Doe\",\r\n  \"Username\": \"shiva\",\r\n  \"Password\": \"12345\",\r\n  \"Email_Id\": \"johndoe@example.com\",\r\n  \"IsAdmin\": true,\r\n  \"Gender\": \"Male\",\r\n  \"Phone_No\": \"1234567890\",\r\n  \"Address\": \"123 Street, City, Country\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/auth/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "login",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "signupkey",
+								"value": "signupkey",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \r\n    \"Username\": \"shiva\",\r\n    \"Password\": \"abcde\"\r\n}",
+							"raw": "{\r\n   \r\n    \"Username\": \"shiva\",\r\n    \"Password\": \"12345\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -53,7 +98,7 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0MjU0ODE3LCJleHAiOjE2ODY4NDY4MTd9.B2Ra5-sAv8jB-xTWvP64O2nZsDOPYuid62EWgH-cW04",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTcxMTA4LCJleHAiOjE2ODc3NjMxMDh9.ZuFohCvqOY5Ibkjh3YZQ-_ucXqfRR_BlmHXQLGeNqXU",
 								"type": "default"
 							}
 						],
@@ -139,13 +184,13 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0MjU0MTcxLCJleHAiOjE2ODY4NDYxNzF9.71FmXY_I79T2kR0_QLntGVrP4NJLeaddLgANLRxmNqY",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MDgwMjg0LCJleHAiOjE2ODc2NzIyODR9.orf9PQ23hvtk9wS_vJtTXmkQAHHxahK8ic_NEI5pJk8",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"State_Id\": 4,\r\n    \"State_Name\": \"Kerala\",\r\n    \"State_No\": 4\r\n}"
+							"raw": "{\r\n    \"State_Name\": \"Karnataka\",\r\n    \"State_No\": 5\r\n}"
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/add_state",
@@ -196,7 +241,7 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0NzUyNjU0LCJleHAiOjE2ODczNDQ2NTR9.KHkIFarXC6TpEQ6wwUCG1i0XAfuzI-ByltaekYttcBE",
+								"value": "",
 								"type": "default"
 							}
 						],
@@ -245,7 +290,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"State_Id\": 4\r\n}"
+							"raw": "{\r\n    \"State_Id\": 0\r\n}"
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/delete_state",
@@ -269,9 +314,24 @@
 					"name": "update_state",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0OTM3NDQyLCJleHAiOjE2ODc1Mjk0NDJ9.OjrF4jY33OTc9pO21RwJKQMePXBQZf923ZmMP2DuY_I",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"State_Id\": 4,\r\n    \"To_Update_State_Name\": \"Kerala_2\",\r\n    \"To_Update_State_No\": 41\r\n}"
+						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/admin/update_state",
+							"raw": "http://127.0.0.1:8000/admin/update_state?",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -283,6 +343,12 @@
 							"path": [
 								"admin",
 								"update_state"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
 							]
 						}
 					},
@@ -305,13 +371,13 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MDkzNjYyLCJleHAiOjE2ODc2ODU2NjJ9.1iXnWDEWnkJwk1wxxC80ogND3sdABkImo-vwqgrh4Fo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTg5MTQ3LCJleHAiOjE2ODc3ODExNDd9.VYRBbWkhMdaulAXhi_FVjHgJclOfxxKyFpaabsOXyJs",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n            \"State_Code\": 1\r\n }"
+							"raw": " {\r\n            \"State_Code\": 2\r\n }"
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/districts_list",
@@ -350,13 +416,13 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0NzUyNjU0LCJleHAiOjE2ODczNDQ2NTR9.KHkIFarXC6TpEQ6wwUCG1i0XAfuzI-ByltaekYttcBE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MDc5ODAzLCJleHAiOjE2ODc2NzE4MDN9.A3IdoRgSbgHBoJip7BwCJf6DmE-S2ySJNLzFPjKJL8w",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"District_Id\": 1,\r\n    \"District_Name\": \"NTR\",\r\n    \"District_No\": 1,\r\n    \"State_Code\": 1\r\n}"
+							"raw": "{\r\n    \"District_Name\": \"Kurnool\",\r\n    \"District_No\": 2,\r\n    \"State_Code\": 1\r\n}"
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/add_district",
@@ -395,13 +461,13 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0NzUyNjU0LCJleHAiOjE2ODczNDQ2NTR9.KHkIFarXC6TpEQ6wwUCG1i0XAfuzI-ByltaekYttcBE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0ODIzNDIwLCJleHAiOjE2ODc0MTU0MjB9.TVrsvry8-IYJ3ylZRelp1uh7ae4t6i_SLoyvrnSgdA0",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"District_Id\": 2,\r\n    \"District_Name\": \"Krishna\",\r\n    \"District_No\": 3\r\n}"
+							"raw": "{\r\n    \"District_Id\": 2,\r\n    \"To_Update_Dist_Name\": \"Krishna_3\",\r\n    \"To_Update_Dist_No\": 3\r\n}"
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/update_district",
@@ -433,7 +499,7 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0NzU1ODUwLCJleHAiOjE2ODczNDc4NTB9.vOLxKCIJtF9tn91lNjqEDAMWLluRXjvhIJcCPisYz5o",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0ODIzNDIwLCJleHAiOjE2ODc0MTU0MjB9.TVrsvry8-IYJ3ylZRelp1uh7ae4t6i_SLoyvrnSgdA0",
 								"type": "default"
 							}
 						],
@@ -442,7 +508,7 @@
 							"raw": "{\r\n    \"District_Id\": 2\r\n}"
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/admin/delete_district?",
+							"raw": "http://127.0.0.1:8000/admin/delete_district",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -454,12 +520,6 @@
 							"path": [
 								"admin",
 								"delete_district"
-							],
-							"query": [
-								{
-									"key": "",
-									"value": null
-								}
 							]
 						}
 					},
@@ -482,10 +542,14 @@
 							},
 							{
 								"key": "token",
-								"value": "",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MDgwMjg0LCJleHAiOjE2ODc2NzIyODR9.orf9PQ23hvtk9wS_vJtTXmkQAHHxahK8ic_NEI5pJk8",
 								"type": "default"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Constituency_Name\": \"Nizamabad\",\r\n    \"Constituency_No\": 51,\r\n    \"District_Code\": 51\r\n}"
+						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/add_constituency",
 							"protocol": "http",
@@ -516,7 +580,7 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTAyNjExLCJleHAiOjE2ODc2OTQ2MTF9.OJ0463o8ERcpISdr8o-dQWgOkocR6HBcr18NnL-u39g",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTg5MTQ3LCJleHAiOjE2ODc3ODExNDd9.VYRBbWkhMdaulAXhi_FVjHgJclOfxxKyFpaabsOXyJs",
 								"type": "default"
 							}
 						],
@@ -589,7 +653,29 @@
 					"name": "upload_voters",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MjA1NzgxLCJleHAiOjE2ODc3OTc3ODF9.bmXApKY0jc94c4b4uY2xDGeWkc6astzDRuYNQVqOdxY",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Downloads/19_137_65 - 19_137_65.csv.csv"
+								}
+							]
+						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/admin/upload_voters",
 							"protocol": "http",
