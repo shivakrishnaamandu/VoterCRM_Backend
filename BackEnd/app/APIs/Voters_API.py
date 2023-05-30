@@ -125,7 +125,7 @@ def get_all_voters():
 
 
 @Voters_API_blueprint.route("/admin/download_voters", methods=["POST"])
-def get_all_voters():
+def download_all_voters():
     print(f"url accessed")
     body = request.json
     State_Name = body["State_Name"]
