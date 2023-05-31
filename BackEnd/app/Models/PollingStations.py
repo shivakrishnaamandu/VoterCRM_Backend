@@ -8,9 +8,9 @@ class PollingStations(db.Model):
     Polling_Station_Name = db.Column(db.String(100), nullable=False)
     Polling_Station_No = db.Column(db.Integer, nullable=False)
     Polling_Station_Location = db.Column(db.String(100))
-    Assembly_Constituency_Code = db.Column(
-        db.Integer,
-        db.ForeignKey("AssemblyConstituency.Constituency_Id"),
+    Assembly_Constituency_Name = db.Column(
+        db.String(100),
+        db.ForeignKey("AssemblyConstituency.Constituency_Name"),
         nullable=False,
     )
 
@@ -19,9 +19,9 @@ class PollingStations(db.Model):
         Polling_Station_Name,
         Polling_Station_No,
         Polling_Station_Location,
-        Assembly_Constituency_Code,
+        Assembly_Constituency_Name,
     ):
         self.Polling_Station_Name = Polling_Station_Name
         self.Polling_Station_No = Polling_Station_No
         self.Polling_Station_Location = Polling_Station_Location
-        self.Assembly_Constituency_Code = Assembly_Constituency_Code
+        self.Assembly_Constituency_Name = Assembly_Constituency_Name

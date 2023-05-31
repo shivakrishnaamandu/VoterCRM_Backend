@@ -4,6 +4,7 @@ from app.APIs.States_API import States_API_blueprint
 from app.APIs.Districts_API import Districts_API_blueprint
 from app.APIs.Voters_API import Voters_API_blueprint
 from app.APIs.AssemblyConstituency_API import AssemblyConstituency_API_blueprint
+from app.APIs.PollingStation_API import PollingStation_API_blueprint
 from app.Models import *
 from flask import request
 import traceback
@@ -13,6 +14,7 @@ application.register_blueprint(States_API_blueprint)
 application.register_blueprint(Districts_API_blueprint)
 application.register_blueprint(Voters_API_blueprint)
 application.register_blueprint(AssemblyConstituency_API_blueprint)
+application.register_blueprint(PollingStation_API_blueprint)
 
 if __name__ == "__main__":
     with application.app_context():

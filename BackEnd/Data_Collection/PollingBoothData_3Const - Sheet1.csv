@@ -1,0 +1,757 @@
+Polling Station No,Polling Station Name,Polling Station Location,District Name,Assembly Constituency Name
+1,GOPA PURAM,"Gram Panchayat Office Southern room, Gopapuram.",Bapatla,Bapatla
+2,POONDLA,"Z.P. High School, Poondla, 1st room from Southernside in main building.",Bapatla,Bapatla
+3,POONDLA,"Z.P. High School, Poondla, 2nd room from Southernside in main building, Poondla",Bapatla,Bapatla
+4,MARRIPUDI H/O ETHERU,"M.P. Ele. School, Marripudi, Eastern side room in Northern Block",Bapatla,Bapatla
+5,ETHERU,"M.P.PRIMARY SCHOOL, EASTERNSIDE ROOM IN NEW BUILDING, ETHERU",Bapatla,Bapatla
+6,CHUNDURU PALLI,"M.P. ELE. SCHOOL, CHUNDURUPALLI CHUNDURUPALLI,H/o.ETHERU",Bapatla,Bapatla
+7,GUDIPUDI,"M.P. ELE. SCHOOL, NORTHERNSIDE ROOM GUDIPUDI",Bapatla,Bapatla
+8,GUDIPUDI,M.P.ELE.SCHOOL SOUTHERNSIDE room GUDIPUDI,Bapatla,Bapatla
+9,BHARTIPUDI,"M.P.ELE.SCHOOL,BHARTHIPUDI 2nd room in Northernside in Main building.",Bapatla,Bapatla
+10,APPIKATLA,"N.Z.P. High School, Appikatla, 2nd room from Northernside in main building.",Bapatla,Bapatla
+11,APPIKATLA,"N.Z.P. High School, Appikatla, 1st room from Northernside in main building.",Bapatla,Bapatla
+12,JILLELLAMUDI,"M.P.U.P. School,Jillellamudi, Northernside room Jillellamudi",Bapatla,Bapatla
+13,MULAPALEM,"Mandal Parishath Upper Primary School, Northernside room Mulapalem",Bapatla,Bapatla
+14,Mulapalem,"Mandal Parishat Upper Primary School, Southernside room Mulapalem",Bapatla,Bapatla
+15,CHERUVU JAMMULAPALEM,"Z.P. High School, Cheruvu Jammulapalem Easternside room in Eastern building.",Bapatla,Bapatla
+16,CHERUVU JAMMULAPALEM,"Z.P. High School, Cheruvu Jammulapalem, Westernside room in Eastern building.",Bapatla,Bapatla
+17,Cheruvu Jammulapalem,"Z.P.H.School, Additional Building in Northside CHERUVU JAMMULAPALEM",Bapatla,Bapatla
+18,CHERUVU JAMMULAPALEM,"Z.P. High School, Cheruvu Jammulapalem, Northernside 1st room in Main building",Bapatla,Bapatla
+19,CHERUVU JAMMULAPALEM,"Z.P. High School, Cheruvu jammulapalem Northernside 2nd room in Main builing",Bapatla,Bapatla
+20,NARASAYAPALEM,"P.Ankamma High School, Narasayapalem, 1st room from Northernside in Main Building.",Bapatla,Bapatla
+21,NARASAYA PALEM,"P.Ankamma High School, Narasayapalem, 2nd room from Northernside in Main Building.",Bapatla,Bapatla
+22,NARASAYA PALEM,"P.Ankamma High School, Narasayapalem, 1st room from Easternside in old building.",Bapatla,Bapatla
+23,NARASAYA PALEM,"Spl. M.P. Ele. School, Narasayapalem, Near Church westernside room.",Bapatla,Bapatla
+24,NARASAYAPALEM,"Spl. M.P. Ele. School, Narasayapalem, Near Church Eastern side room",Bapatla,Bapatla
+25,Kankatapalem,"Grama Chavadi, Kankatapalem",Bapatla,Bapatla
+26,KANKATAPALEM,"Gram Panchayat Office, Kankatapalem, New Building.",Bapatla,Bapatla
+27,KANKATAPALEM,"M.P. Ele. School, Kankatapalem, Southernside room.",Bapatla,Bapatla
+28,KANKATAPALEM,"M.P. Ele. School, Kankatapalem, Front room. Kankatapalem",Bapatla,Bapatla
+29,MURUKONDAPADU,"Anganwadi Centre, (ICDS Dept.), Murukondapadu. Murukondapadu",Bapatla,Bapatla
+30,STUVARTPURAM H/O MURUKONDAPADU,"S.A. Ele. School, Stuvartpuram, 1st room from Eas Stuvartupuram",Bapatla,Bapatla
+31,STUVARTPURAM H/O MURUKONDAPADU,"S.A. Ele. School, Stuvartpuram, 2nd room from Eas Stuvartupuram",Bapatla,Bapatla
+32,BETHAPUDI H/O MURUKONDAPADU,"Panchayat Grandhayalam, Bethapudi. Bethapudi",Bapatla,Bapatla
+33,"BETHAPUDI H/O MURUKONDAPDU,","S.A. Ele.School, Bethapudi, Northernside room. Bethapudi",Bapatla,Bapatla
+34,"BETHAPUDI H/O MURUKONDAPDU,","S.A. Ele.School, Bethapudi, Westernside room. Bethapudi",Bapatla,Bapatla
+35,VRUKSHANAGAR H/O MURUKONDAPADU,"M.P.Ele.School, Vruksha Nagar, Southernside building, Vrukshanagar",Bapatla,Bapatla
+36,VEDULLAPALLI H/O WEST BAPATLA,"M.P. Ele. School, Vedullapalli, Southernside room. Vedullapalli",Bapatla,Bapatla
+37,Vedullapalii,"M.P. Ele. School, Vedullapalli, Southernside room in northernwing, vedullapalli",Bapatla,Bapatla
+38,"VEDULLAPALLI KOTTAPALEM, H/O WEST BAPATLA","M.P. Ele. School, Vedullapalli Kothapalem, Southernside room.",Bapatla,Bapatla
+39,VEDULLAPALLI KOTTAPALEM H/O W BAPATLA,"39-Grama Sachivalayam, Vedullapalli Village, Bapatla Mandal",Bapatla,Bapatla
+40,"KUKKALAVARIPALEM H/O WEST BAPATLA,","M.P.U.P. School, Kukkalavaripalem, Eastern sdie room in main building.",Bapatla,Bapatla
+41,"KUKKALAVARIPALEM H/O WEST BAPATLA,","M.P.U.P. School, Kukkalavaripalem, New building. Kukkalavaripalem",Bapatla,Bapatla
+42,Kukkalavaripalem,"M.P.U.P. School, Western side 1st room in main building Kukkalavaripalem",Bapatla,Bapatla
+43,BAPATLA MUNICIPALITY,"Mpl. Ele. School, D.K. PALEM, BAPATLA Southernside room.",Bapatla,Bapatla
+44,BAPATLA MUNICIPALITY,"Mpl. Ele. School, D.K. PALEM, BAPATLA, Northernside room.",Bapatla,Bapatla
+45,BAPATLA MUNICIPALITY,"ElementarySchool, Bethonia Colony Bapatla.",Bapatla,Bapatla
+46,BAPATLAL MUNICIPALITY,"S.A. High School,1st room in new building. BAPATLA",Bapatla,Bapatla
+47,BAPTLA MUNICIPALITY,"S.A. High School,22nd room in main building BAPATLA",Bapatla,Bapatla
+48,BAPATLA MUNICIPALITY,"S.A. High School, 21st room in main building. BAPATLA",Bapatla,Bapatla
+49,BAPATLA MUNICIPALITY,"S.A. High School,2nd room in new building BAPATLA",Bapatla,Bapatla
+50,BAPATLA MUNICIPALITY,"S.A. High School, 3rd room in new building. BAPLATLA",Bapatla,Bapatla
+51,BAPATLA MUNICIPALITY,"S.A. High School, 4th room in new building. bapatla",Bapatla,Bapatla
+52,BAPATLA MUNICIPALITY,"S.A. High School,5th Room in New building. BAPATLA",Bapatla,Bapatla
+53,BAPATLA MUNICIPALITY,"Hindu Aided Primary School, Asbestas shed in East Zamedarpet, BAPATLA,",Bapatla,Bapatla
+54,BAPATLA MUNICIPALITY,"Hindu Aided Primary School, Asbestas shed in Weste Zamedapet, BAPATLA,",Bapatla,Bapatla
+55,BAPATLA MUNICIPALITY,"Mpl. Ele. School, Easternside Room. Saradapuri Colony, BAPATLA",Bapatla,Bapatla
+56,BAPATLA MUNICIPALITY,"Mpl. Ele. School, Westernside Room. Saradapuri Colony, BAPATLA,",Bapatla,Bapatla
+57,BAPATLA MUNICIPALITY,"O/o. Dy. Educational Officer, Near Rail Gate. BAPATLA",Bapatla,Bapatla
+58,BAPATLA MUNICIPALITY,"Mpl. High School, 9th room in Northern wing. BAPATLA",Bapatla,Bapatla
+59,BAPATLA MUNICIPALITY,"Mpl. High School, 8th room in Northern winhg. Bapatla",Bapatla,Bapatla
+60,BAPATLA MUNICIPALITY,"Mpl. High School, 6th room in Eastern wing. Bapatla",Bapatla,Bapatla
+61,BAPATLA MUNICIPALITY,"Mpl. High School, 2nd room in Southern wing. BAPATLA",Bapatla,Bapatla
+62,"GBC Road, BAPATLA TOWN","MPL. HIGH SCHOOL, BAPATLA 5TH ROOM EAST WING GBC Road, BAPATLA TOWN",Bapatla,Bapatla
+63,BAPATLA MUNICIPALITY,"Telugu Vignana SamacharaGandhayalam,Officer's Club Bapatla",Bapatla,Bapatla
+64,BAPATLA MUNICIPALITY,"AVV High School, Room No.5 Bapatla",Bapatla,Bapatla
+65,BAPATLA MUNICIPALITY,"S.W.S.C. Girls Hostel, near Market, Westernside 1st room from northernside, Bapatla",Bapatla,Bapatla
+66,BAPATLA MUNICIPALITY,"S.W. S.C. Girls Hostel, Near Market, Bapatla, Westernside 1st room from southernside.",Bapatla,Bapatla
+67,BAPATLA MUNICIPALITY,"S.W.S.C.Girls Hostel, Near Market, Bapatla, Easternside 1st room from Northernside.",Bapatla,Bapatla
+68,BAPATLA MUNICIPALITY,"S.W. S.C. Girls Hostel, Near market, Bapatla, Easternside 1st room from Southernside.",Bapatla,Bapatla
+69,BAPATLA MUNICIPALITY,"CSSN Mpl.Ele. School, 1st room in Easternside. Vedanthamvari Street, BAPATLA",Bapatla,Bapatla
+70,BAPATLA MUNICIPALITY,"CSSN Mpl.Ele. School, 2nd room from Easternside. Vedanthamvari Street, BAPATLA",Bapatla,Bapatla
+71,BAPATLA MUNICIPALITY,"CSSN Mpl.Ele. School, Last room in Western side. Vedanthamvari Street, BAPATLA,",Bapatla,Bapatla
+72,Bapatla Municipality,"CSSN Mpl.Ele. School, Asbestas shed in Westernsid Vedanthamvari Street, BAPATLA",Bapatla,Bapatla
+73,BAPATLA MUNICIPALITY,"Azad Mpl. Ele. School, Easternside room. Gowthami Rasayanasala Veedhi, BAPATLA,",Bapatla,Bapatla
+74,BAPATLA MUNICIPALITY,"Azad Mpl. Ele. School, Westernside room. Gowthami Rasayanasala Veedhi, BAPATLA,",Bapatla,Bapatla
+75,BAPATLA MUNICIPALITY,"Saraswathi Memorial , Govt. Jr. College for Girls, EasternsideroominNewbuilding, Bapatla",Bapatla,Bapatla
+76,BAPATLA MUNICIPALITY,"Saraswathi Memorial Govt. Jr. College for Girls, BAPATLA, 1st room from northernside inwestsidewing",Bapatla,Bapatla
+77,BAPATLA MUNICIPALITY,"Saraswathi Memorial Govt. Jr. College for Girls, BAPATLA, 2nd room from northernside inwestsidewing",Bapatla,Bapatla
+78,Bapatla,"Saraswathi Memorial Govt. High School for Girls 2nd room from Westernside in Southern block, Bapat",Bapatla,Bapatla
+79,BAPATLA MUNICIPALITY,"Anjaneya Agraharam Mpl. Ele. School,Southern room. Beside Meeseva Centre, Bapatla",Bapatla,Bapatla
+80,BAPATLA MUNICIPALITY,"Bapatla Town Hall, Westernside wing Main building. Bapatla",Bapatla,Bapatla
+81,BAPATLA MUNICIPALITY,"Bapatla Town Hall, Easternside wing Main building Bapatla",Bapatla,Bapatla
+82,BAPATLA MUNICIPALITY,"Mpl.Ele.School,Immadisettyvaripalem, Bapatla",Bapatla,Bapatla
+83,"Immadisetty varipalem, BAPATLA.","Anganwadi Centre, in the premises of Mpl.Ele.Schol Immadisetty- varipalem, BAPATLA.",Bapatla,Bapatla
+84,BAPATLA MUNICIPALITY,"Mpl. Ele. School, Munnamvaripalem Bapatla",Bapatla,Bapatla
+85,"Munnamvaripalem, BAPATLA TOWN","85-9th Ward Sachivalayam, Vivekananda Colony, Bapatla Muncipality, Bapatla Mandal",Bapatla,Bapatla
+86,BAPATLA MUNICIPALITY,"Anjaneya Agrm. Mpl. Ele. School, centre room. Beside Meeseva Centre, Bapatla",Bapatla,Bapatla
+87,BAPATLA MUNICIPALITY,"Mpl. High School Eastern side Asbestos sheet shed, 3rd Room from Northern side,Bapatla",Bapatla,Bapatla
+88,BAPATLA MUNICIPALITY,"Mpl. High School Eastern side Asbestos sheet shed, 2nd Room from Northern side, Bapatla",Bapatla,Bapatla
+89,BAPATLA MUNICIPALITY,"Mpl. High School Eastern side Asbestos sheet shed, 1st Room from Northern side, Bapatla",Bapatla,Bapatla
+90,BAPATLA MUNICIPALITY,"Mpl. Ele. School, Patel Nagar, Westernside room. Bapatla",Bapatla,Bapatla
+91,BAPATLA MUNICIPALITY,"Mpl. Ele. School, Patel Nagar, Easternside room. Bapatla",Bapatla,Bapatla
+92,BAPATLA MUNICIPALITY,"Arts&ScienceCollege,Westernside8throominMainbuildi Bapatla",Bapatla,Bapatla
+93,"Karlapalem Road, Bapatla Town","Arts & Science College, Bapatla, Western Block, Room No. 93 Karlapalem Road, Bapatla Town",Bapatla,Bapatla
+94,BAPATLA MUNICIPALITY,"Arts&ScienceCollege,Westernside5throominMain build Bapatla",Bapatla,Bapatla
+95,"Karlapalem Road, BAPATLA TOWN","Arts&Science College,Westside 9th room in mainbuil Karlapalem Road, BAPATLA TOWN",Bapatla,Bapatla
+96,BAPATLA MUNICIPALITY,"Arts&ScienceCollege,Westernside4throominmainbuildi Bapatla",Bapatla,Bapatla
+97,BAPATLA MUNICIPALITY,"Mpl. Upper Primary School, New building Eastern side room,Chillara Gollapalem",Bapatla,Bapatla
+98,BAPATLA MUNICIPALITY,"S.A. Aided Ele.School, M.R. Nagar Northern side room, Bapatla",Bapatla,Bapatla
+99,MUTHAYAPALEM H/O MARUPROLUVARIPALEM,"M.P. Primary School, Easternside room. Muthayapalem",Bapatla,Bapatla
+100,MUTHYAPALEM H/O MARUPROLUVARIPALEM,"M.P. Primary School,Westernside room Muthayapalem",Bapatla,Bapatla
+101,MUTHYAPALEM H/O MARUPROLUVARIPALEM,"101-Grama Sachivalayam, Muthayapalem Village, Bapatla Mandal",Bapatla,Bapatla
+102,MARUPROLUVARIPALEM,"M.P.U.P. School, Northernside room Maruproluvaripalem",Bapatla,Bapatla
+103,Maruproluvaripalem,"M.P.U.P. School, Southern side room. Maruproluvaripalem",Bapatla,Bapatla
+104,POTHURAJUKOTHAPALEM H/O MARUPROLUVARIPALM,"Mandal Parishath Primary School, Northernside Building Pothuraju Kothapalem",Bapatla,Bapatla
+105,Basivireddypalem H/o. Maruproluvaripalem,"Mandal Parishad Primary School, Basivireddypalem Basivireddypalem H/o.Maruproluvaripalem",Bapatla,Bapatla
+106,ASODIVARIPALEM H/O MARUPROLUVARIPALEM,"M.P. Ele.School, Northern wing. Asodivaripalem",Bapatla,Bapatla
+107,PANDURANGAPURAM H/O ADIVI,"Z.P.High school, Easternside 1st room & Room No.7 Pandurangapuram",Bapatla,Bapatla
+108,"Pandurangapuram, H/o Adivi","108-Grama Sachivalayam, Adivi-1, Pandurangapuram Village, Bapatla Mandal",Bapatla,Bapatla
+109,ADARSANAGAR H/O ADIVI,"Guild of Service Aided Primary School,Western side room, Adarsha Nagar.",Bapatla,Bapatla
+110,ADARSANAGAR H/O ADIVI,"Guild of Service Aided Primary School, Eastern side room, Adarsha Nagar.",Bapatla,Bapatla
+111,ADAVIPALLE PALEM H/O ADIVI,"Ichthus English Medium High school, Room No.1 Adavipallipalem",Bapatla,Bapatla
+112,Adavi Pallepalem,"Ichthus English Medium High School, Room No.2 Adavi Pallepalem",Bapatla,Bapatla
+113,KAPPALAVARIPALEM,"M.P.Ele. school, Northernside wing. Kappalavaripalem",Bapatla,Bapatla
+114,NANDIRAJUTHOTA H/O EAST BAPATLA,"Z.P. High School,1stroomfromEastsideinNew building Nandirajuthota",Bapatla,Bapatla
+115,NANDIRAJUTHOTA H/O EAST BAPATLA,"Z.P. High School,2ndroomfromEastside inNewbuilding Nandirajuthota",Bapatla,Bapatla
+116,NANDIRAJUTHOTA H/O EAST BAPATLA,"Z.P. High School, Northside room in Main Building. NANDIRAJUTHOTA",Bapatla,Bapatla
+117,PINNUBOYINAVARIPALAM H/O EAST BAPATLA,"Mandal Parishad UpperPrimarySchool,westernsideroom Pinniboyinavaripalem",Bapatla,Bapatla
+118,PINNIBOYINAVARIPALEM H/O EAST BAPATLA,"Mandal Parishath Upper Primary School, Easternside 1st Room West Pinniboinavaripalem",Bapatla,Bapatla
+119,West Pinniboyinavaripalem,"Mandal Parishad Upper Primary School, Easternside Additional building West Pinniboinavaripalem",Bapatla,Bapatla
+120,KONDUBOTLAPALEM H/O EAST BAPATLA,"M.P. Ele. School, Southern wing Kondubhotlapalem",Bapatla,Bapatla
+121,KONDUBOTLAPALEM H/O EAST BAPATLA,"M.P. Ele. School, Northside 2nd room. Kondubhotlapalem",Bapatla,Bapatla
+122,NALLAMOTU VARI PALEM H/O KARLAPALEM,"Anganwadi Centre, (ICDS), Yanadi Colony, Nallamothuvaripalem.",Bapatla,Bapatla
+123,NALLAMOTUVARIPALEM H/O KARLAPALEM,"Mandal Parishad Primary School, new building, sourthern side room.Nallamothuvaripalem",Bapatla,Bapatla
+124,KOTTANANDAYAPALEM H/O KARLAPALEM,"Grama Panchayath Building, Meeting Hall Kothanandayapalem",Bapatla,Bapatla
+125,PATHANANDAYAPALEM H/O KARLAPALEM,"Mandal Parishad Primary School, Additional Classroom Building.Pathanandayapalem",Bapatla,Bapatla
+126,MANTENAVENKATARAJUPALEM H/O KARLAPALEM,"Z.P.HighSchool,Westernbuilding,firstroomfromnorth M.V.Rajupalem",Bapatla,Bapatla
+127,MANTENEVENKATARAJUPALEM H/O KARLAPALEM,"Z.P.HighSchool,Westernbuildingsecondroomfrom north M.V.Rajupalem",Bapatla,Bapatla
+128,MANTENAVENKATARAJUPALEM H/O KARLAPALEM,"M.P. Urdu Primary School,Southern side room. M.V.Rajupalem",Bapatla,Bapatla
+129,MANTENAVENKATA RAJUPALEM H/O KARLAPALEM,"M.P. Urdu Primary School, Northern side room. M.V.Rajupalem",Bapatla,Bapatla
+130,KARLAPALEM,"MandalParishadPrimarySchool,IndiraNagar, Old building, Karlapalem",Bapatla,Bapatla
+131,KARLAPALEM,"MandalParishadPrimarySchool,IndiraNagar,Karlapalem Northernsidenewbuilding,(Additionalclassroombuildi",Bapatla,Bapatla
+132,KARLAPALEM,"Mandal Parishad Primary School, Karlapalem",Bapatla,Bapatla
+133,KARLAPLEM,"Zilla Parishad High School, Southern side room Karlapalem",Bapatla,Bapatla
+134,KOThARAJULAPALEM H/O KARLAPALEM,"Mandal Parishad Primary School,main Building westernside room.Kotharajulapalem",Bapatla,Bapatla
+135,KOTTARAJULAPALEM H/O KARLAPALEM,"Mandal Parishad Primary School,main Building Easternside room,Kotharajulapalem,",Bapatla,Bapatla
+136,KARLAPALEM,"Z.P. High School, Northern room. Karlapalem",Bapatla,Bapatla
+137,CHINTAYAPALEM H/O KARLAPALEM,"Zilla Parishad High School,main building, 1st room from Easternside.Chinthayapalem",Bapatla,Bapatla
+138,CHINTAYAPALEM H/O KARLAPALEM,"Zilla Parishad High School,main building, 6th room from easternside.Chinthayapalem",Bapatla,Bapatla
+139,SAMMETAVARIPALEM H/O PERALI,"MandalParishadPrimarySchool,1stroomfromsouternside Sammetavaripalem",Bapatla,Bapatla
+140,Sammetavaripalem,"Mandal Parishad Primary School, Sourthern side 2nd room Sammetavaripalem",Bapatla,Bapatla
+141,PERALI,"Zilla Parshad High School,Eastern side new buildin 1st room from southernside.Perali",Bapatla,Bapatla
+142,PERALI,"ZillaParshadHighSchool,Additionalclassroombuilding 1st room from Westernside , Perali",Bapatla,Bapatla
+143,Perali,"Z.P.HighSchool,Additionalroombuilding,Westside2roo Perali",Bapatla,Bapatla
+144,PERALI,"Zilla ParshadHighSchool,Additionalclassroombuildin 1st room from Easternside, Perali",Bapatla,Bapatla
+145,NARRAVARIPALEM H/O PERALI,M.P.Primary School Narravaripalem,Bapatla,Bapatla
+146,TUMMALA PALLI H/O PERALI,"Mandal Parishad Upper Primary School,New buiding 2nd room from northernside.Tummalapalli",Bapatla,Bapatla
+147,Thummalapalli H/o Perali,"MPUPSchool,RajivVidhyaMission Building, north1room Thummalapalli H/o Perali",Bapatla,Bapatla
+148,PERALIPADU H/O PERALI,"Salvation Army Elementary School, Peralipadu.",Bapatla,Bapatla
+149,PEDAGOLLAPALEM H/O GANAPAVARAM,"Z.P.High School, New building,third room fromnorth Pedagollapalem",Bapatla,Bapatla
+150,Pedagollapalem H/o Ganapavaram,"ZPHigh School,New building Northside2rom pedagolla Pedagollapalem H/o Ganapavaram",Bapatla,Bapatla
+151,MARAKAVARIPALEM H/O GANAPAVARAM,"Mandal Parishad Primay School, Marakavaripalem",Bapatla,Bapatla
+152,NAKKALAVARIPALEM H/O GANAPAVARAM,"Mandal Parishad Primay School, Bonthagorlavaripalem",Bapatla,Bapatla
+153,GANAPAVARAM,"MandalParishadPrimaySchool,NewbuildingNorthernroom Ganapavaram",Bapatla,Bapatla
+154,GANAPAVARAM,"MandalParishadPrimaySchool,NewbuildingSouthernroom Ganapavaram",Bapatla,Bapatla
+155,GANAPAVARAM,"Zilla Parishad High School, Newbuildinggroundfloor Northern Room.Ganapavaram,",Bapatla,Bapatla
+156,PEDAPULUGU VARI PALEM H/O GANAPAVARAM,"Mandal Parishad Upper Primary School,Northern Room old building, Pedapuluguvaripalem",Bapatla,Bapatla
+157,PEDAPULUGU VARI PALEM H/O GANAPAVARAM,"Mandal Parishad Upper Primary School,SourthernRoom in Old Building, Pedapuluguvaripalem",Bapatla,Bapatla
+158,BUDDAM,"Mandal Parishad Primary School,Easternside 1stRoom Buddam",Bapatla,Bapatla
+159,Buddam,"Mandal Parishad Primay School, Easternside 2ndRoom Buddam",Bapatla,Bapatla
+160,YAZALI,Government Village Veterinary Hospital Yazali,Bapatla,Bapatla
+161,YAJALI,"Mandal Parishad Primary School,Additionalclassroom Yazali",Bapatla,Bapatla
+162,YAZALI,"Z.P.High School,2nd room from Easternside in main Building.Yazali",Bapatla,Bapatla
+163,YAZALI,"Zilla Parishad High School,Main Building, Westernside 1st room,Yazali",Bapatla,Bapatla
+164,YAZALI,"Salvation Army Elementary School, Yazali",Bapatla,Bapatla
+165,Mamidalavaripalem,"Mandal Parishad Primary School, Mamidalavaripalem Mamidalavaripalem",Bapatla,Bapatla
+166,BOLAYAPALEM H/O YAZALI,"Mandal Parishad Primary School,(old Building) Bolayapalem",Bapatla,Bapatla
+167,Bolayapalem,"Mandal Parishad Primary School, New Building Bolayapalem",Bapatla,Bapatla
+168,NAGARAJUPALEM H/O YAZALI,"Mandal Parishad Primary School, (Old Building) Nagarajupalem",Bapatla,Bapatla
+169,KOMALI,"M.P.P School,Western side Komali",Bapatla,Bapatla
+170,"BHAVANAMVARIPALEM H/O CHANDOLE,","M.P.U.P.School, West Side New Building Bhavanamvaripalem",Bapatla,Bapatla
+171,BHAVANAMVARIPALEM H/O CHANDOLE,"M.P.U.P.School, Northern side room Bhavanamvaripalem",Bapatla,Bapatla
+172,NADIMULLAYA PALEM H/O CHANDOLE,"M.P.(Urdu) Ele.School, Nadimullayapalem",Bapatla,Bapatla
+173,CHANDOLE,"Z.P.H.School, Tiled roof Western side 3rd room Chandole",Bapatla,Bapatla
+174,CHANDOLE,"Z.P.H.School, Tiled roof Western side 4th room Chandole",Bapatla,Bapatla
+175,Chandole,Z.P.H.S.Chandole Sri Krishna Devaraya Block Western side room Chandole,Bapatla,Bapatla
+176,CHANDOLE,"M.P.P.S, East Northern side room Rasool Pet",Bapatla,Bapatla
+177,CHANDOLE,"M.P.(Urdu) Ele.School, New Building, Rasool pet",Bapatla,Bapatla
+178,CHANDOLU,"M.P.P.School (SC Colony), Westren Side 2nd Room Chandole",Bapatla,Bapatla
+179,KURRAPPALEM H/O SANGUPALEM KODURU,"M.P.U.P.School,Northern side room. Kurappalem",Bapatla,Bapatla
+180,"Kurappalem, H/o Sangupalemkoduru","M.P.U.P.School,Eastren side room. Kurappalem",Bapatla,Bapatla
+181,SANGUPALEM KODURU,"M.P.Ele.School, Western side room Koduru",Bapatla,Bapatla
+182,KOTHAPALAM H/O PITTALAVANIPALEM,Gram Panchayat Office Kothapalem,Bapatla,Bapatla
+183,MANTHENAVARIPALEM H/O PITTALAVANIPALEM,"M.P.Ele.School, building Central room Manthenavaripalem",Bapatla,Bapatla
+184,MANTHENAVARIPALEM H/O PITTALAVANIPALEM,"Z.P.H.School,Main building Northern side 2nd room Manthenavaripalem",Bapatla,Bapatla
+185,PITTALAVANIPALEM,"Sri.K.A.Ele.School, North-Eastern side room Pittalavanipalem",Bapatla,Bapatla
+186,PITTALAVANIPALEM,"Sri.K.A.Ele.School, North-Western side room Pittalavanipalem",Bapatla,Bapatla
+187,PITTALAVANIPALEM,"Govt.Jr.College, Main Building R.C.C. Building Eastren side 1st room, Pittalavanipalem",Bapatla,Bapatla
+188,PITTALAVANIPALEM,Govt. High School Old Tailed House Easternside 2nd room Pittalavanipalem,Bapatla,Bapatla
+189,GOKARAJUNALLIBOINAVARIPALEM H/O PITTALAVANIPALEM,"M.P.U.P.School, Southern side 1st room. Gokarajunalliboinavaripalem",Bapatla,Bapatla
+190,GOKARAJUNALLIBOINAVARIPALEM H/O PITTALAVANI,"M.P.U.P.School, Southern side 2nd room Gokarajunalliboinavaripalem",Bapatla,Bapatla
+191,PITTUVARI PALEM H/O PITTALAVANIPALEM,"M.P.U.P.School, (New building),Southern side Pittuvaripalem",Bapatla,Bapatla
+192,Pittuvaripalem,"MPUP School, Noirthern Side 1st Room Pittuvaripalem",Bapatla,Bapatla
+193,"MANDEVARIPALEM H/O KHAJIPALEM, MPES, EAST","M.P.Ele.School, Eastren side room Mandevaripalem",Bapatla,Bapatla
+194,KHAJIPALEM,"Abhyudaya M.P.Ele.School, Western side room, Khajipalem",Bapatla,Bapatla
+195,KHAJI PALEM,"195-Grama Sachivalayam, Khajipalem, Pittalavanipalem Mandal",Bapatla,Bapatla
+196,KAPPALAVARI PALEM H/O KHAJI PALEM,"M.P.Ele.School, Kappalavaripalem",Bapatla,Bapatla
+197,POTANA KATTAVARI PALEM H/O KHAJIPALEM,"M.P.Ele.School, Easternside room, Pothanakattavaripalem",Bapatla,Bapatla
+198,Alakapuram,"M.P.Ele.School, Alakapuram",Bapatla,Bapatla
+199,Alakapuram,Mandal Parishad Primary School Southern Side 2nd Room Alakapuram,Bapatla,Bapatla
+200,ALLURU,"Z.P. High School Asbestos sheets Shed, 2nd room from Southernside Alluru",Bapatla,Bapatla
+201,ALLURU,"Z.P. High School Asbestos Shed, 1st room from Southernside 1st room, alluru",Bapatla,Bapatla
+202,REDLAPALEM H/O ALLURU,"M.P.Ele.School, Redlapalem h/o.Alluru",Bapatla,Bapatla
+1,MAHADAPURAM,M.P.P.S. Mahamada Puram MAHAMMADAPURAM,Prakasam,Kanigiri
+2,VEMULAPADU,M.P.P.S Vemulapadu Vemulapadu,Prakasam,Kanigiri
+3,VEMULAPADU,M.P.P.S Vemulapadu Vemulapadu,Prakasam,Kanigiri
+4,LINGAMGUNTLA,M.P.U.P.S Linganguntla LINGANGUNTLA,Prakasam,Kanigiri
+5,UMMANAPALLI,"M.P.U.P.S, Umanpalli Umanpalli",Prakasam,Kanigiri
+6,HANUMANTHAPURAM,M.P.P.S Hanamanthapuram Hanamanthapuram,Prakasam,Kanigiri
+7,VALICHERLA,"M.P.P.S, Vallicharla Vallicharla",Prakasam,Kanigiri
+8,VALICHERLA,"M.P.P.S,New Building Vallicharla Vallicharla",Prakasam,Kanigiri
+9,NANDANAVNAM,M.P.P.S Nandanavanam Nandanavanam,Prakasam,Kanigiri
+10,PAPIREDDYPALLI,"Aided P.S, Pappireddy palli Pappireddy palli",Prakasam,Kanigiri
+11,VEERA RAAMAAPURAM,"M.P.P.S, Veeraramapuram Veeraramapuram",Prakasam,Kanigiri
+12,RAMAYAPALLI,"M.P.U.P.S, Ramayapalli Ramayapalli",Prakasam,Kanigiri
+13,CHINNA MUPPALLAPADU,"Z.P.H.S, Chinna Muppalapadu Chinna Muppalapadu",Prakasam,Kanigiri
+14,PEDADASALLAPALLI,"M.P.P.S, Pedda Dasala palli Pedda Dasala palli",Prakasam,Kanigiri
+15,KOOTAGUNDLA,"M.P.U.P.S, Kutagundla Kutagundla",Prakasam,Kanigiri
+16,NALLAGANDLA,"M.P.P.S, Nalagandla Nalagandla",Prakasam,Kanigiri
+17,PEDAGOLLAPALLI,"Z.P.H.S, Pedda Gollapalli Pedda Gollapalli",Prakasam,Kanigiri
+18,PEDDA GOLLAPALLI,"Z.P.H.S, Pedda Gollapalli PEDAGOLLAPALLI",Prakasam,Kanigiri
+19,TIMMAREDDYPALLI,"M.P.U.P.S, Thimareddy palli Thimareddy palli",Prakasam,Kanigiri
+20,TIMMAREDDYPALLI,"M.P.U.P.S, New Building Thimareddy palli Thimareddy palli",Prakasam,Kanigiri
+21,DASARIPALLI,M.P.U.P.S Dasaripalli Dasaripalli,Prakasam,Kanigiri
+22,KOTATIPPALA,M.P.U.P.S Kotathippala Kotathippala,Prakasam,Kanigiri
+23,KONDAREDDYPALLI,"M.P.P.S, Kondareddy palli Kondareddy palli",Prakasam,Kanigiri
+24,HANUMANTHUNIPADU,Z.P.P.S Hanumanthunipadu Hanumanthunipadu,Prakasam,Kanigiri
+25,HAJIPURAM,M.P.U.P.S Hajipuram Hajipuram,Prakasam,Kanigiri
+26,MITTAPALEM,M.P.U.P.S Mittapallem Mittapallem,Prakasam,Kanigiri
+27,KISTAMPALLI,"M.P.P.S, Kistam palli Kistam palli",Prakasam,Kanigiri
+28,DODDICHINTALA,VILLAGE COMMITTEE AIDED PRIMARY SCHOOL D.CHINTHALA DODDICHINTHALA,Prakasam,Kanigiri
+29,SITARAMPURAM,"Z.P.P.S, Seetharamapuram Seetharamapuram",Prakasam,Kanigiri
+30,PULIKUNTLA H/O RALLAPALLI,M.P.P School Pulikuntla Pulikuntla,Prakasam,Kanigiri
+31,JALLAPALEM,"M.P.U.P School, Jallapalem Jallapalem",Prakasam,Kanigiri
+32,GUDIPATI PALLI,"K A M High School, Gudipaatipalli Gudipaatipalli",Prakasam,Kanigiri
+33,GUDIPATI PALLI,"K A M High School, Gudipaatipalli Gudipatipalli",Prakasam,Kanigiri
+34,PANDUVANAGULAVARAM,"M.P.P.School, Panduva Nagulavaram Panduva Nagulavaram",Prakasam,Kanigiri
+35,IMMADI CHERUVU,"M.P.P.School, Immadicheruvu Immadicheruvu",Prakasam,Kanigiri
+36,PANDUVA,"M.P.P.School, Panduva Panduva",Prakasam,Kanigiri
+37,PANDUVA,M.P.P.S Jangam narasayapalli Jangam narasayapalli,Prakasam,Kanigiri
+38,VEDULLACHERUVU,"G.P OFFICE, Vedullacheruvu Vedulla Cheruvu",Prakasam,Kanigiri
+39,RALLAPALLI,M.P.U.P.S Rallapalli Rallapalli,Prakasam,Kanigiri
+40,MOTUPALLI H/O IMMADI CHERUVU,M.P.P.S Motupalli Motupalli,Prakasam,Kanigiri
+41,RAMALINGAPURAM,M.P.U.P.S Ramallingapuram Ramallingapura,Prakasam,Kanigiri
+42,RAMAGOPALAPURAM,"M.P.P.S New Building Near Saibaba temple ,Rama Gopalapuram Rama Gopalapuram",Prakasam,Kanigiri
+43,GANNAVARAM,"M.P.P.S, Gannavaram Gannavaram",Prakasam,Kanigiri
+44,GANDLOPALLI H/O GANNAVARAM,M.P.P.S Gandlopalli Gandlopalli,Prakasam,Kanigiri
+45,KANKANAMPADU,M.P.P.S. Kankanampadu Kankanampadu,Prakasam,Kanigiri
+46,PAPIREDDYPALLI,M.P.U.P.S Papireddypalli Papireddy palli,Prakasam,Kanigiri
+47,PAPIREDDYPALLI,M.P.U.P.S Papireddypalli Papireddypalli,Prakasam,Kanigiri
+48,JILLELAPADU H/O VELIGANDLA,M.P.P.S Jillellapadu Jillellapadu,Prakasam,Kanigiri
+49,VELIGANDLA,"Z.P.H.S, Veligandla Veligandla",Prakasam,Kanigiri
+50,VELIGANDLA,Z.P.H.S Veligandla Eastern side Room Veligandla,Prakasam,Kanigiri
+51,MALLAMRAJUPALLI H/O VELIGANDLA,M.P.P.S Gokulam Gokulam,Prakasam,Kanigiri
+52,BALLAVARAM,M.P.P.S Ballavaram Ballavaram,Prakasam,Kanigiri
+53,TAMMINENIPALLI H/O HUSSAINPURAM,M.P.P.S Tammineni palli Tammineni palli,Prakasam,Kanigiri
+54,NARSAMAMBAPURAM H/O HUSSAINPURAM,M.P.P.S Ballavaram Ballavaram,Prakasam,Kanigiri
+55,PADMAPURAM H/O HUSSAINPURAM,M.P.P.S Padmapuram Padmapuram,Prakasam,Kanigiri
+56,MOGALLUR,K.V.Ramanujaiah & Brothers Z.P.H.S Mogalluru Mogullur,Prakasam,Kanigiri
+57,MOGALLUR,K.V.Ramanujaiah & Brothers Z.P.H.S Mogalluru Mogullur,Prakasam,Kanigiri
+58,KOTHA NARASIMHAPURAM H/O NAGIREDDYPALLI,M.P.U.P.S Kotha Narasimha Puram Kotha Narasimha puram,Prakasam,Kanigiri
+59,MARAPAGUNTLA,M.P.P.S Marapaguntla Marapaguntla,Prakasam,Kanigiri
+60,KOTALA PALLI,"M.P.U.P.S, Kotalapalli Kotalapalli",Prakasam,Kanigiri
+61,NAGIREDDY PALLI,M.P.P.S Nagireddy palli Nagireddypalli,Prakasam,Kanigiri
+62,CHODAVARAM,M.P.P.S Chodavaram Chodavaram,Prakasam,Kanigiri
+63,VENGANAGUNTA H/O PEDAGOGULAPALLI,M.P.P.S. Venganagunta Venganagunta,Prakasam,Kanigiri
+64,PEDAGOGULA PALLI,"M.P.U.P.S., Peda Gogulapalli Peda Gogulapalli",Prakasam,Kanigiri
+65,PEDAGOGULAPALLI,"M.P.U.P.S., Pedda Gogulapalli PEDAGOLLAPALLI",Prakasam,Kanigiri
+66,KANDULAGUNTA AGRAHARAM H/O MUSUNUR,"M.P.P.S., K. Agraharam K Agraharam",Prakasam,Kanigiri
+67,REDDY GARI KOTHAPALLI H/O MUSUNURU,"M.P.U.P.S., R.K. Palli R.K Palli",Prakasam,Kanigiri
+68,MUNDLAPADU,"M.P.P.S., Mundlapadu Mundlapadu",Prakasam,Kanigiri
+69,ARIVEMULA,"M.P.P.S., Arivemula Arivemulla",Prakasam,Kanigiri
+70,JANGAM VAARI PALLI,"M.P.P.S., Jangamvaripalli Jangamvaripalli",Prakasam,Kanigiri
+71,EKUNAM PURAM,"M.P.P.S., Ekunampuram Ekunampuram",Prakasam,Kanigiri
+72,EKUNAMPURAM,M.P.P.S Ekunampuram New Building Ekunampuram,Prakasam,Kanigiri
+73,VENKATAYA CHERUVU,M.P.U.P.S. Venkatayacheruvu Venkatayacheruvu,Prakasam,Kanigiri
+74,BOYAMADUGULA,M.P.P.S.Boyamadugula Boyamadugula,Prakasam,Kanigiri
+75,DARSI GUNTAPETA,Z.P.H.S. D.G.Peta D.G.Peta,Prakasam,Kanigiri
+76,DARSI GUNTAPETA,"Z.P.H.S.Western side room D.G.Peta,D.G.Peta D.G.Peta",Prakasam,Kanigiri
+77,DARSI GUNTAPETA,Z.P.H.S. D.G.Peta D.G.Peta,Prakasam,Kanigiri
+78,KONDA BOYINA PALLI,M.P.P.S. Kondaboinapalli Kondaboinapalli,Prakasam,Kanigiri
+79,CHANDRA SEKHARA PURAM,Z.P.H.S. C.S.Puram C.S.Puram,Prakasam,Kanigiri
+80,CHANDRA SEKHARA PURAM,Z.P.H.S. C.S.Puram C.S.Puram,Prakasam,Kanigiri
+81,CHANDRA SEKHARA PURAM,Z.P.H.S. C.S.Puram C.S.Puram,Prakasam,Kanigiri
+82,CHANDRA SEKHARA PURAM,Z.P.H.School C.S. Puram,Prakasam,Kanigiri
+83,CHANDRA SEKHARA PURAM,Z.P.H.S. C.S.Puram C.S.Puram,Prakasam,Kanigiri
+84,CHANDRA SEKHARA PURAM,"Z.P.H.S. Room No-2 C.S.Puram,C.S.Puram C.S.Puram",Prakasam,Kanigiri
+85,KOVILAM PAADU,"M.P.U.P.S., Kovilampadu Kovilampadu",Prakasam,Kanigiri
+86,KOVILAM PAADU,"M.P.U.P.S., Kovilampadu,Room No-2 Kovilampadu",Prakasam,Kanigiri
+87,CHINTHAPUDI,M.P.P.S.Chintapudi Chintapudi,Prakasam,Kanigiri
+88,NAGULAVARAM,M.P.P.S. C.Nagulavaram Nagulavaram,Prakasam,Kanigiri
+89,KAMBHAMPADU,M.P.P.S.Kambhampadu Khambampadu,Prakasam,Kanigiri
+90,SEELAMVARI PALLI,M.P.P.S. Seelamvaripalli Seelamvaripalli,Prakasam,Kanigiri
+91,UPPALA PADU,M.P.U.P.S. Uppalapadu Uppalapadu,Prakasam,Kanigiri
+92,PULLAKURAPALLI,M.P.P.S. Pullagurapalli Pullagurapalli,Prakasam,Kanigiri
+93,AYYALURIVARI PALLI,M.P.P.S. Ayyalurivaripalli Ayyalurivaripalli,Prakasam,Kanigiri
+94,REGULACHILAKA,"R.C.M. Primary School, Regulachilaka Regulachilaka",Prakasam,Kanigiri
+95,CHENNAPANAYUNI PALLI,M.P.U.P.S. Chennapanayunipalli Chennapanayunipalli,Prakasam,Kanigiri
+96,VATLABAYALU,M.P.P.S. Pullagurapalli Pullagurapalli,Prakasam,Kanigiri
+97,VATLABAYALU,M.P.P.S Vatlabayalu Southern Side 1st Room Vatlabayalu,Prakasam,Kanigiri
+98,AMBAVARAM KOTHAPALLI,M.P.P.S. Ambavaram Kothapalli Ambavaram Kothapalli,Prakasam,Kanigiri
+99,AMBAVARAM,Z.P.H.S.Ambavaram Ambavaram,Prakasam,Kanigiri
+100,GUNTHA CHENNAM PALLI,M.P.U.P.S.Gunthachennamapalli Guntachennamapalli,Prakasam,Kanigiri
+101,NALLAMADUGULA,Z.P.H.S. Nallamadugula Nallamadugula,Prakasam,Kanigiri
+102,NALLAMADUGULA,Z.P.H.S.Nallamadugula Northern side Nallamadugula,Prakasam,Kanigiri
+103,ANIIKALA PALLI,M.P.P.S. Anikalapalli Anikalapalli,Prakasam,Kanigiri
+104,PEDARAJUPALEM,M.P.P.S.Pedarajupalem Pedarajupalem,Prakasam,Kanigiri
+105,PEDDA RAJUPALEM,M.P.P.S. Pedarajupalem Pedarajupalem,Prakasam,Kanigiri
+106,GANUGAPENTA,M.P.P.S.Ganugapenta Ganugapenta,Prakasam,Kanigiri
+107,BADUGULERU,M.P.U.P.S. Baduguleru Baduguleru,Prakasam,Kanigiri
+108,BADUGULERU,M.P.U.P.S. Baduguleru Northern side Room Baduguleru,Prakasam,Kanigiri
+109,YADAVALLI,"M.P.U.P.S, Yadavalli Yadavalli",Prakasam,Kanigiri
+110,YADAVALLI,"M.P.P.S, Yarraobana palli Yarraobana palli",Prakasam,Kanigiri
+111,CH.KOTHAPALLI,M.P.P.S.Ch. Kothapalli ch.Kothapalli,Prakasam,Kanigiri
+112,DIRISAVANCHA,M.P.P.S. Dirisavancha Dirisavancha,Prakasam,Kanigiri
+113,CHALLAGIRIGALA,M.P.U.P.S. Challagirigala Challagirigala,Prakasam,Kanigiri
+114,NANDANAMRELLA,M.P.P.S. Nandanamarella Nandanamarella,Prakasam,Kanigiri
+115,THUMMAGUNTA,M.U.P.P.S Thummagunta Thummagunta,Prakasam,Kanigiri
+116,THUMMAGUNTA,M.P.U.P.S Thummagunta Northern side 1st Room Thmmagunta,Prakasam,Kanigiri
+117,KASEEPURAM,M.P.P.S. Kasipuram Kasipuram,Prakasam,Kanigiri
+118,DEVANGA NAGAR,M.P.P.S. Devanganagar Devanganagar,Prakasam,Kanigiri
+119,DEVANGA NAGAR,M.P.P.S. Devanganagar Eastern side New Building Devanganagar,Prakasam,Kanigiri
+120,KANIGIRI NAGARAPANCHAYAT,M.P.P.S. Kanigiri O.V.Road Near Check post KANIGIRI,Prakasam,Kanigiri
+121,KANIGIRI NAGARAPANCHAYAT,M.P.P.S Kanigiri O.V.Road Near Check post KANIGIRI,Prakasam,Kanigiri
+122,KANIGIRI NAGARAPANCHAYAT,"M.P.P.S New Building ,Pathuru sc colony,Kanigiri KANIGIRI",Prakasam,Kanigiri
+123,KANIGIRI NAGARAPANCHAYAT,M.P.P.S Pathuru Kanigiri,Prakasam,Kanigiri
+124,KANIGIRI NAGARAPANCHAYAT,"M.P.P.S Pathuru,Kanigiri KANIGIRI",Prakasam,Kanigiri
+125,KANIGIRI NAGARAPANCHAYAT,M.P.P.S. Urdu School Muggubavi Street Kanigiri KANIGIRI,Prakasam,Kanigiri
+126,KANIGIRI NAGARAPANCHAYAT,Grandalayam badulavari street Kanigiri,Prakasam,Kanigiri
+127,KANIGIRI NAGARAPANCHAYAT,M.P.P.S. Kanigiri (Adjancent to NGO home) KANIGIRI,Prakasam,Kanigiri
+128,KANIGIRI NAGARAPANCHAYAT,M.P.P.Urdu School Kanigiri (Adjancent to NGO home) KANIGIRI,Prakasam,Kanigiri
+129,KANIGIRI NAGARAPANCHAYAT,Z.P.G.H.S Kanigiri KANIGIRI,Prakasam,Kanigiri
+130,KANIGIRI NAGARAPANCHAYAT,Z.P.G.H.S Kanigiri KANIGIRI,Prakasam,Kanigiri
+131,KANIGIRI NAGARAPANCHAYAT,"Govt. Junior College, Kanigiri KANIGIRI",Prakasam,Kanigiri
+132,KANIGIRI NAGARAPANCHAYAT,"Govt. Junior College, Kanigiri KANIGIRI",Prakasam,Kanigiri
+133,KANIGIRI NAGARAPANCHAYAT,"Govt. Junior College, Kanigiri KANIGIRI",Prakasam,Kanigiri
+134,KANIGIRI NAGARAPANCHAYAT,Govt.High Scool Kanigiri Eastern side New Building KANIGIRI,Prakasam,Kanigiri
+135,KANIGIRI NAGARAPANCHAYAT,"Govt.High Scool, Kanigiri KANIGIRI",Prakasam,Kanigiri
+136,KANIGIRI NAGARAPANCHAYAT,"Govt.High Scool, Kanigiri KANIGIRI",Prakasam,Kanigiri
+137,KANIGIRI NAGARAPANCHAYAT,"M.P.P.S Rajiv coloney, kanigiri KANIGIRI",Prakasam,Kanigiri
+138,KANIGIRI NAGARAPANCHAYAT,"Govt primary School, Rajiv colony Kanigiri",Prakasam,Kanigiri
+139,KANIGIRI NAGARAPANCHAYAT,"Govt S.C Boys Hostal Garlapeta Road, Kanigiei kanigiri",Prakasam,Kanigiri
+140,KANIGIRI NAGARAPANCHAYAT,"Govt S.C Boys Hostal Eastern Side Room Garlapeta Road ,kanigiri",Prakasam,Kanigiri
+141,KANIGIRI NAGARAPANCHAYAT,"Anandanilayam Boys Hostel,garlapeta Road, Kanigiri kanigiri",Prakasam,Kanigiri
+142,KANIGIRI NAGARAPANCHAYAT,Anandanilayam Boys Hostal Garlapeta Rood Kanigiri kanigiri,Prakasam,Kanigiri
+143,KANIGIRI NAGARAPANCHAYAT,"Govt.ST Boys Hostel, Sivanagar Coloney kanigiri",Prakasam,Kanigiri
+144,KANIGIRI NAGARAPANCHAYAT,"Govt B.C Girls Hostal, Kanigiri KANIGIRI",Prakasam,Kanigiri
+145,KANIGIRI NAGARAPANCHAYAT,Govt BC Girls Hostel Kanigiri,Prakasam,Kanigiri
+146,PUNUGODU,M.P.U.P.S Ponugodu Ponugodu,Prakasam,Kanigiri
+147,PONUGODU,M.P.U.P.School Punugodu,Prakasam,Kanigiri
+148,CHINTALAPALEM H/O SANKHAVARAM,M.P.P.S Chinthalapalem Chinthalapalem,Prakasam,Kanigiri
+149,CHINTALAPALEM H/O SANKHAVARAM,M.P.P.S Chinthalapalem Chinthalapalem,Prakasam,Kanigiri
+150,SANKHAVARAM,M.P.P.S. Sankavaram Sankhavaram,Prakasam,Kanigiri
+151,SANKHAVARAM H/O HARIJANAPALEM,"M.P.P.S. S.C. Palem. Sankhavaram SANKAVARAM, SC. PALEM",Prakasam,Kanigiri
+152,PERAMGUDIPALLI,M.P.P.S. Peramgdipalli Peramgdipalli,Prakasam,Kanigiri
+153,BOMMIREDDY PALLI,M.P.P.S. Bommireddy palli Bommireddy palli,Prakasam,Kanigiri
+154,RAGIMANI PALLI H/O BOMMIREDDY PALLI,M.P.P.S. Ragimanu palli Ragimanu palli,Prakasam,Kanigiri
+155,GUDIPADU,M.P.U.P.S. Gudipadu Gudipadu,Prakasam,Kanigiri
+156,"KOTHAPLEM ,GOVINDAVARI PALLI",M.P.P.S. Kothapalem. Kothapalem,Prakasam,Kanigiri
+157,VENKATESWARAPURAM,M.P.P.S Venkateswarapuram Venkateswarapuram,Prakasam,Kanigiri
+158,ENIMIREDDY PALLI,Govt Anganavadi Building Enimireddypalli Enimireddypalli,Prakasam,Kanigiri
+159,TAALUR,M.P.P.S. Talluru Talluru,Prakasam,Kanigiri
+160,PALURIVARI PALLI H/O THALLUR,"M.P.U.P.S., Palurivaripalli Palurivaripalli",Prakasam,Kanigiri
+161,ERUVARI PALLI H/O HAZEESPURAM,Z.P.H.S Yeruvaripalli Yeruvaripalli,Prakasam,Kanigiri
+162,ERUVARI PALLI H/O HAZEESPURAM,"Z.P.H.S., Yeruvaripalli Yeruvaripalli",Prakasam,Kanigiri
+163,VAGUPALLI H/O GOSULAVEEDU,"M.P.U.P.S., Vagupalli Vagupalli",Prakasam,Kanigiri
+164,CHINA IRLAPADU,M.P.U.P.S Cinna Irlapadu Cinna Irlapadu,Prakasam,Kanigiri
+165,KANTAMVARIPALLI,"M.P.P.S., Kantamvaripalli Kantamvaripalli",Prakasam,Kanigiri
+166,BHUTAMVARIPALLI H/O CHAKIRALA,"M.P.P.S., Boothamvaripalli Boothamvaripalli",Prakasam,Kanigiri
+167,MACHAVARAM H/O SANKHAVARAM,"M.P.U.P.S., Machavaram Machavaram",Prakasam,Kanigiri
+168,CHAKIRALA,"M.P.P.S, SC. Palem, Chakirala SC. Palem, Chakirala",Prakasam,Kanigiri
+169,CHAKIRALA,M.P.U.P.S Chakirala Chakirala,Prakasam,Kanigiri
+170,NELATURIGOLLAPALLI,"M.P.U.P.S., N.Gollapalli N.Gollapalli",Prakasam,Kanigiri
+171,SULTANPURAM,"M.P.P.S., Sulthanpuram Sultanpuram",Prakasam,Kanigiri
+172,POLAVARAM,M.P.P.S Polavaram Polavaram,Prakasam,Kanigiri
+173,KALAGATLA,"M.P.U.P.S., Kalagatla Kalagatla",Prakasam,Kanigiri
+174,LINGAREDDYPALLI H/O CHINA ALAVALAPADU,"M.P.U.P.S, Lingareddy palli Kothapalli ,Lingareddipalli",Prakasam,Kanigiri
+175,LINGAREDDYPALLI,M.P.U.P.S Lingareddy palli Northern side Room Lingareddy palli,Prakasam,Kanigiri
+176,CHINA LAVALAPADU,"M.P.P.S., China Alavalapadu China Alavalapadu",Prakasam,Kanigiri
+177,KANCHERLAVARIPALLI,"M.P.P.S., Kancharlavari palli Kancharlavari palli",Prakasam,Kanigiri
+178,CHEERLADINNE,"M.P.U.P.S., Chirladinne Chirladinne",Prakasam,Kanigiri
+179,CHEERLADINNE,"M.P.U.P.S., Chirladinne Chirladinne",Prakasam,Kanigiri
+180,BALAVENKATAPURAM,"M.P.P.S., Balavenkatapuram Balavenkatapuram",Prakasam,Kanigiri
+181,BALLIPALLI,"M.P.U.P.S, Ballipalli Ballipalli",Prakasam,Kanigiri
+182,BALLIPALLI,M.P.U.P.S Ballipalli Northern side NewBuilding Ballipalli,Prakasam,Kanigiri
+183,JAMMALAMADAKA,"M.P.P.S., Jammalamadaka Jammalamadaka",Prakasam,Kanigiri
+184,EGUVA PALLI H/O VANGAPADU,"M.P.P.S., Yeguvapalli Yeguvapalli",Prakasam,Kanigiri
+185,VANGAPADU,"M.P.U.P.S., Vangapadu Vangapadu",Prakasam,Kanigiri
+186,BUDDAYAPALLI H/O GURAVAJIPETA,M.P.P.S Botikarla padu Botikarla padu,Prakasam,Kanigiri
+187,GURAVAJIPETA,"Z.P.H.S., Guravajipeta Guravajipeta",Prakasam,Kanigiri
+188,GURAVAJIPETA,Z.P.H.S.Room No-2 Guravajipeta Guravajipeta,Prakasam,Kanigiri
+189,KRISHNAPURAM,"M.P.P.S., Krishnapuram Krishnapuram",Prakasam,Kanigiri
+190,GUDEVARIPALEM H/O PEDA ALAVALAPADU,"M.P.U.P.S., Gudhevaripallem Gudhevaripalem",Prakasam,Kanigiri
+191,GUDEVARI PALEM,"M.P.U.P.S., Gudhevaripalem Gudhevaripalem",Prakasam,Kanigiri
+192,CHOWTAGOGULA PALLI,"M.P.P.S., Chowtagogulapalli Chowtagogulapalli",Prakasam,Kanigiri
+193,PEDA ALAVALAPADU,"M.P.P.S., Peda Alavalapadu Peda Alavalapadu",Prakasam,Kanigiri
+194,PEDA ALAVALAPADU,M.P.P.School Peda Alavalapadu,Prakasam,Kanigiri
+195,VENGALAPURAM,"M.P.U.P.S., Vengalapuram Vengalapuram",Prakasam,Kanigiri
+196,VENGALA PURAM,"M.P.U.P.S., Vengalapuram Vengalapuram",Prakasam,Kanigiri
+197,POTHAVARAM,"M.P.P.S., Pothavaram Pothavaram",Prakasam,Kanigiri
+198,NEREDUPALLI,"Z.P.H.S., Neredupalli Neredupalli",Prakasam,Kanigiri
+199,NEREDUPALLI,"M.P.U.P.S, Ballipalli Ballipalli",Prakasam,Kanigiri
+200,MARELLA,"M.P.P.S., Marella Marella",Prakasam,Kanigiri
+201,MARELLA,M.P.P.S Eastern side Marella Marella,Prakasam,Kanigiri
+202,BATTUPALLI,"M.P.P.S., Battupalli Battupalli",Prakasam,Kanigiri
+203,MUDDAPADU,"M.P.P.S., Kotha Muddapadu Kotha Muddapadu",Prakasam,Kanigiri
+204,MARRIKUNTA PALLI H/O MUDDAPADU,"M.P.U.P.S., Marrikuntapalli Marrikuntapalli",Prakasam,Kanigiri
+205,PALETI PALLI,"M.P.P.S., Paletipalli Paletipalli",Prakasam,Kanigiri
+206,TALAKONDAPADU,"M.P.U.P.S., Talakondapadu Talakondapadu",Prakasam,Kanigiri
+207,CHIRUKURI VARI PALLI,"M.P.U.P.S., Talakondapadu Talakondapadu",Prakasam,Kanigiri
+208,PEDACHERLOPALLI,Z.P.H.S. Peda Cherlopalli Peda Cherlopalli,Prakasam,Kanigiri
+209,PEDACHERLOPALLI,M.P.P.S Peda Cherlopalli Peda Cherlopalli,Prakasam,Kanigiri
+210,PEDACHERLOPALLI,Z.P.H.S. Peda Cherlopalli Peda Cherlopalli,Prakasam,Kanigiri
+211,PADAMATI PALLI H/O PEDACHERLOPALLI,"M.P.P.S., Padamati palli Padamati palli",Prakasam,Kanigiri
+212,PEDACHERLOPALLI,M.P.P.S Kammavari palli Kammavari palli,Prakasam,Kanigiri
+213,PEDA VARIMADUGU,M.P.P.S. Peda Varimadugu Peda Varimadugu,Prakasam,Kanigiri
+214,JANGALA PALLI H/O MURUGUMMI,"M.P.P.S., Jangalapalli Jangalapalli",Prakasam,Kanigiri
+215,MURUGUMMI,"M.P.U.P.S., Murugummi Murugummi",Prakasam,Kanigiri
+216,VEPAGUM PALLI,M.P.P.S. Vepagumpalli Vepagumpalli,Prakasam,Kanigiri
+217,CHINTAGUMPALLI,M.P.P.S. Chinthagumpalli Chinthagumpalli,Prakasam,Kanigiri
+218,VELUTHURLAVARIPALEM,"M.P.P.SCHOOL,VELTURLAVARIPALEM",Prakasam,Kanigiri
+219,VENGALAYA PALLI H/O PEDA IRLAPADU,M.P.U.P.S. Vengalayapalli Vengalayapalli,Prakasam,Kanigiri
+220,PEDA IRLAPADU,Z.P.H.S. Peda Irlapadu Peda Irlapdu,Prakasam,Kanigiri
+221,PEDA IRLAPADU,Z.P.H.S. Peda Irlapadu Pedda Irlapdu,Prakasam,Kanigiri
+222,PEDA IRLAPADU,Z.P.H.S. Peda Irlapadu Peda Irlapadu,Prakasam,Kanigiri
+223,PEDA IRLAPADU,M.P.P.S Peda Irlapadu Peda Irlapadu,Prakasam,Kanigiri
+224,TURAKA PALLI H/O GUNTUPALLI,M.P.U.P.S Turakapalli Turakapalli,Prakasam,Kanigiri
+225,GUNTUPALLI,Z.P.H.S Guntupalli Guntupalli,Prakasam,Kanigiri
+226,SANKARAPURAM,M.P.P.S Sankarapuram Sankarapuram,Prakasam,Kanigiri
+227,KODANDA RAMAPURAM H/O PEDA IRLAPADU,"M.P.U.P.S., Kodandaramapuram Kodandaramapuram",Prakasam,Kanigiri
+228,LAKSHMAKKA PALLI,"M.P.P.S., Lakshmakkapalli Lakshmakkapalli",Prakasam,Kanigiri
+229,RAVIGUNTA PALLI,M.P.P.S Raaviguntapalli Raviguntapalli,Prakasam,Kanigiri
+230,RAVIGUNTA PALLI,M.P.P.S Raaviguntapalli Raviguntapalli,Prakasam,Kanigiri
+231,MARKONDAPURAM H/O RAVIGUNTAPALLI,M.P.P.S Markondapuram Markondapuram,Prakasam,Kanigiri
+232,BHUMIREDDY PALLI H/O VAGGAMPALLI,M.P.P.S Bhoomireddy palli Bhoomireddy palli,Prakasam,Kanigiri
+233,CHILAMKUR,Z.P.H.S Chilamkuru Chilamkuru,Prakasam,Kanigiri
+234,DODDAVENKATAYA PALLI H/O KATTAKINDAPALLI,M.P.P.S Dodda Venkataayapalli Dodda Venkatayapalli,Prakasam,Kanigiri
+235,VEERABHADRAPURAM,M.P.P.S Veerabadhrapuram Veerabadhrapuram,Prakasam,Kanigiri
+236,PADAMATI KATTA KINDA PALLI,M.P.U.P.S Padamata kattakindapalli Padamata kattakindapalli,Prakasam,Kanigiri
+237,PADAMATI KATTAKINDA PALLI,M.P.U.P.S Padamata kattakindapalli Padamata kattakindapalli,Prakasam,Kanigiri
+238,DADIREDDY PALLI,M.P.P.S Dadireddypalli Dadireddypalli,Prakasam,Kanigiri
+239,GUMMALAMPADU,M.P.U.P.S. Vengalayapalli Vengalayapalli,Prakasam,Kanigiri
+240,VAGGAM PALLI,M.P.P.S Vaggampalli Vaggampalli,Prakasam,Kanigiri
+241,VAGGAM PALLI,M.P.P.S Vaggampalli Vaggampalli,Prakasam,Kanigiri
+242,NARRAMARELLA H/O INIMERLA,M.P.U.P.S Narramarella Narramarella,Prakasam,Kanigiri
+243,NARRAMARELLA H/O INIMERLA,M.P.U.P.S Narramarella Northern side Room Narramarella,Prakasam,Kanigiri
+244,BALIJAPALEM,M.P.U.P.S Balijapalem Balijapalem,Prakasam,Kanigiri
+245,KONDAREDDY PALLI H/O MOPADU,M.P.P.S Kondareddypalli Kondareddypalli,Prakasam,Kanigiri
+246,MOPADU,"M.P.U.P.S, Mopadu Mopadu",Prakasam,Kanigiri
+247,TUMATIVARIPALLI,M.P.P.S Tumaativaripalem Tumaativaripalem,Prakasam,Kanigiri
+248,KODIGUMPALA H/O AYYAVARI PALLI,M.P.P.S Kodigumpala Kodigumpala,Prakasam,Kanigiri
+249,AYYAVARI PALLI,M.P.U.P.S Ayyavaripalli Ayyavaripalli,Prakasam,Kanigiri
+250,PAMURU,M.P.P. School Ayyanakota,Prakasam,Kanigiri
+251,MOPADU,M.P.P.S Ganga Nagar Mopadu Ganganagar Mopadu,Prakasam,Kanigiri
+252,INIMERLA,M.P.U.P.S Inimerla Inimerla,Prakasam,Kanigiri
+253,INIMERLA,M.P.U.P.S Inimerla Inimerla,Prakasam,Kanigiri
+254,NUTCHU PODA,M.P.P.S Nuchupoda Nuchupoda,Prakasam,Kanigiri
+255,CHINTALAPALEM,M.P.U.P.S Chinthalapalem Chinthalapalem,Prakasam,Kanigiri
+256,MOTRAVULAPADU,M.P.P.S Motravulapadu Motravulapadu,Prakasam,Kanigiri
+257,VENKATAPURAM,M.P.P.S Venkatapuram Venkatapuram,Prakasam,Kanigiri
+258,BUKKA PURAM,M.P.P.S Bukkapuram Bukkapuram,Prakasam,Kanigiri
+259,TATAYAPALLI H/O BUKKAPURAM,M.P.P.S Tatayapalli Tatayapalli,Prakasam,Kanigiri
+260,PADAMATI PALLI H/O DUBAGUNTA,M.P.P.S Padamatipalli Padamatipalli,Prakasam,Kanigiri
+261,EAST KODIGUDLAPADU,M.P.U.P.S Toorpu Kodigudlapadu Toorpu Kodigudlapadu,Prakasam,Kanigiri
+262,EAST KODIGUDLAPADU,M.P.U.P.S Toorpu Kodigudlapadu Narth side Room Toorpu Kodigudlapadu,Prakasam,Kanigiri
+263,PAMUR,Govt Junior college Pamuru Pamuru,Prakasam,Kanigiri
+264,PAMUR,Govt Junior college Pamuru Southern Side 1st Room PAMUR,Prakasam,Kanigiri
+265,PAMUR,Govt. High School PAMUR,Prakasam,Kanigiri
+266,PAMUR,Govt. High School Room No 1 PAMUR,Prakasam,Kanigiri
+267,PAMUR,Govt Junior college Pamuru Pamuru,Prakasam,Kanigiri
+268,PAMUR,M.P.P.S Yarrachelu near Prathibha school Pamur,Prakasam,Kanigiri
+269,PAMUR,M.P.P.S Vadepalem near substation Pamuru,Prakasam,Kanigiri
+270,PAMUR,M.P.P.S (Urdu) Eruvuru Road Pamur,Prakasam,Kanigiri
+271,PAMUR,M.P.P.S CS Puram Road sc colony Pamuru,Prakasam,Kanigiri
+272,PAMUR,M.P.P.S Gopalapuram Gopalapuram,Prakasam,Kanigiri
+273,PAMUR,"M.P.P.S Toorpu veedhi,Pamur Pamuru",Prakasam,Kanigiri
+274,PAMUR,"Govt H.S, New Building, Pamuru Pamuru",Prakasam,Kanigiri
+275,PAMUR,"M.P.P.S, Toorpu Veedhi, Pamuru Pamuru",Prakasam,Kanigiri
+276,PAMUR,"Govt H.S, New Building, Pamuru Pamuru",Prakasam,Kanigiri
+277,PAMUR,"Govt H.S, New Building, Pamuru Pamuru",Prakasam,Kanigiri
+278,PAMUR,"Prabhutva Junior Kalaasala, Old building, North si Pamur",Prakasam,Kanigiri
+279,PAMUR,"Govt H.S, New Building, Pamuru Pamuru",Prakasam,Kanigiri
+280,PAMUR,Govt. High School Room No,Prakasam,Kanigiri
+281,TIRAGALA DINNE,M.P.P.S Tiragandladinne Tiragandladinne,Prakasam,Kanigiri
+282,PUTTAMNAYUNI PALLI,M.P.P.S Puttamanayunipalli Puttamanayunipalli,Prakasam,Kanigiri
+283,LAKSHMINARASAPURAM H/O MOPADU,M.P.P.S Lakshmi Narasaapuram Lakshmi Narasapuram,Prakasam,Kanigiri
+284,LAKSHMINARASAPURAM H/O MOPADU,"M.P.P.S Western side Lakshmi Narasaapuram, Lakshmi Narasaapuram",Prakasam,Kanigiri
+285,KATTAKINDA PALLI H/O BOTLAGUDURU,"M.P.U.P.S, Toorpu Kattakindapalli Toorpu Kattakindapalli",Prakasam,Kanigiri
+286,KAROLLAPADU,M.P.P.S Karollapadu Karollapadu,Prakasam,Kanigiri
+287,KAMBALADINNE,Z.P.H.S Kambhaladinne Kambhaladinne,Prakasam,Kanigiri
+288,KAMBALADINNE,Z.P.H.S Kambhaladinne Kambhaladinne,Prakasam,Kanigiri
+289,KAMBALADINNE,Z.P.H.S Kambhaladinne Kambhaladinne,Prakasam,Kanigiri
+290,APPAMAMBAPURAM H/O BOTLAGUDURU,M.P.P.S Appamambapuram Appamambapuram,Prakasam,Kanigiri
+291,BOTLAGUDURU,M.P.P.S Bukkapuram Bukkapuram,Prakasam,Kanigiri
+292,BOTLAGUDURU,Z.P.H.S Botlaguduru Botlaguduru,Prakasam,Kanigiri
+293,BOTLAGUDURU,Z.P.H.S Botlaguduru Botlaguduru,Prakasam,Kanigiri
+294,RAJA SAHEB PETA,M.P.P.S Rajasahebpeta Rajasahebpeta,Prakasam,Kanigiri
+295,BODAWADA,M.P.P.S Bodawada Bodawada,Prakasam,Kanigiri
+296,RENIMADUGU,M.P.P.S Renimadugu Renimadugu,Prakasam,Kanigiri
+1,"44 ROJA PRAKASH NAGAR, KURNOOL","M P L Corp urdu prmary school , North Wing, 44Roja, Prakash Nagar, Kurnool 44 ROJA,PRAKASH NAGAR ,kurnool",Kurnool,Kurnool
+2,"Mpl Corp, Urdu Primary School (South wing), Roja","M P L Corp urdu prmary school , South Wing, 44Roja, Prakash Nagar, Kurnool 44,ROJA PRAKASH NAGAR,KNL.",Kurnool,Kurnool
+3,"ROJA PRAKASH NAGAR,KURNOOL","S.T.P.P.M.M.C.HIGH SCHOOL (NORTH WING)4th CLASS 44,ROJA,PRAKASH NAGAR, KURNOOL",Kurnool,Kurnool
+4,"44 ROJA PRAKASH NAGAR,KURNOOL","S.T.P.P.M.M.C.HIGH SCHOOL, North East Wing, 44 Roja, Prakash Nangar, Kurnool 44,ROJA PRAKASH NAGAR,KNL.",Kurnool,Kurnool
+5,"S.T.P.P.M.M.C., High Schl,2nd cls(North East)","S.T.P.P.M.M.C.HIGH SCHOOL, North East Wing, 44 Roja, Prakash Nangar, Kurnool 44,ROJA PRAKASH NAGAR,KNL.",Kurnool,Kurnool
+6,"44 ROJA PRAKASH NAGAR,KURNOOL","S.T.P.P.M.M.C.HIGH SCHOOL(south,east wing), 7th Cl 44 ROJA PRAKASH NAGAR,KURNOOL",Kurnool,Kurnool
+7,"44 ROJA PRAKASH NAGAR,KURNOOL","S.T.P.P.M.M.C.HIGH SCHOOL.(north wing ), Room No10 44,ROJA ,PRAKASH NAGAR",Kurnool,Kurnool
+8,44 ROJA PRAKASH NAGAR KURNOOL,"S.T.P.P.M.M.C HIGH SCHOOL , 7th B,south,west room 44 ROJAPRAKASH NAGAR KURNOOL",Kurnool,Kurnool
+9,"44,ROJA,PRAKASH NAGAR,KURNOOL.",GOVERNMENT PRAIMARY SCHOOL (URDU) NORTH WING 44 ROJA STREET KURNOOL,Kurnool,Kurnool
+10,"40,RISALDAR STREET,KURNOOL","MUNCIPAL CORPORATION PRIMARY SCHOOL, North Wing, Dhamapeta, 40 Risildar Street, Kurnool. KMC,40-RISEDAR STREET,DHARMAPETA",Kurnool,Kurnool
+11,40 RISHALDAR STREET KURNOOL,"Municipal Corporation Primary School, South Wing, Dharma Peta, Kurnool 40 RISALDAR STREET",Kurnool,Kurnool
+12,"Govt. PRIMARY URDU SCHOOL,North,Kappal Nagar",Govt. PRIMARY URDU SCHOOL North wing Labour Colon LABOUR COLONY KURNOOL,Kurnool,Kurnool
+13,Mpl Corp UPS 7th class room in K.V.B.R Memorial,"Municipal Corporation Upper Primary School, 7th Class Room, Labor Colony, VR COLONY, Kurnool. LABOUR COLONY",Kurnool,Kurnool
+14,GOVT. PRIMARY URDUSCHOOL SOUTH WING(KAPPALA NAGAR),"GOVT. PRIMARY URDUSCHOOL SOUTH WING(KAPPALA NAGAR) LABOUR COLONY,KURNOOL",Kurnool,Kurnool
+15,"Mpl primary School, 8th Class , KVBVR Schl",SRILAKSHMI HIGH SCHL ROOM .6 45 VENKATARAMANA COLONY,Kurnool,Kurnool
+16,45 NARASIMHA REDDY NAGAR KURNOOL,MUNICIPAL CORP. U. P. SCHOOL 3RD CL LABOUR COLONY KURNOOL,Kurnool,Kurnool
+17,"45 Narsimhareddy nagar,KURNOOL",K.V.R. GOVT. DEGREE COLLEGE ROOM NO.14(EAST WING) 45 NARASIMHA REDDY NAGAR KURNOOL,Kurnool,Kurnool
+18,45 NARASIMHA REDDY NAGAR KURNOOL,"Municipal Corporation Upper Primary School, Room No.6, Labor Colony, VR COLONY, Kurnool. LABOUR COLONY, KURNOOL",Kurnool,Kurnool
+19,KMC 45 NARASIMHA REDDY NAGAR,MPP. SCHOOL 2 nd CLASS ROOM VR. COLONY KURNOOL,Kurnool,Kurnool
+20,45 NARASIMHA REDDY NAGAR KURNOOL,"MPUP SCHOOL7thCLASS, VR. COLONY, KURNOOL LABOUR COLONY KURNOOL",Kurnool,Kurnool
+21,45 NARASIMHA REDDY KURNOOL,"MPP SCHOOL, 1ST CLASS ROOM, VR COLONY, KURNOOL LABOUR COLONY KURNOOL",Kurnool,Kurnool
+22,45 VENKATARAMANA COLONY KURNOOL,".SRILAKSHMI HIGH SCHOOL,ROOM NO.1 45 VENKATARAMANA COLONY KURNOOL",Kurnool,Kurnool
+23,SRI LAKSHMI HIGH SCHOOL,"Sree Lakshmi High School, Room No.,1, Opp.Venkates 45-Venkataramana Colony, Kurnool",Kurnool,Kurnool
+24,45 V R COLONY KURNOOL,"SREE LAKISHMI HIGH SCHOOL ROOM NO 2, V R Colony, Kurnool 45-V R COLONY",Kurnool,Kurnool
+25,KMC 45 V R COLONY,"SREE LAKISHMI HIGH SCHOOL ROOM NO 2, V R Colony, Kurnool 45-V R COLONY",Kurnool,Kurnool
+26,45 V R COLONY KURNOOL,"SRILAKSHMI HIGH SCHOOL ROOM NO.6 45 VENKATARAMANA COLONY,KURNOOL",Kurnool,Kurnool
+27,45 NARASIMHA REDDY NAGAR KURNOOL,"MPP TELUGU SCHOOL,Narasimha Reddy Nagar, Kurnool 45 NARASIMHA REDDY NAGAR KURNOOL",Kurnool,Kurnool
+28,"45 NARASIMHA REDDY NAGAR,KURNOOL","MPP SCHOOL , NR NAGAR 45 NARASIMH REDDY NAGAR,KURNOOL",Kurnool,Kurnool
+29,45 NARASIMHA REDDY NAGAR KURNOOL,"K.V.R GOVT DEGREE COLLEGE FOR WOMEN HOME SCIENCE BUILDING ,KURNOOL",Kurnool,Kurnool
+30,"KVR Govt Degree college for Women, Science block","K.V.R GOVT DEGREE COLLEGE FOR WOMEN HOME SCIENCE BUILDING ,KURNOOL",Kurnool,Kurnool
+31,45 NARASIMHA REDDY NAGAR KURNOOL,".K.V.R. COLLEGE .NR NAGAR, KURNOOL 45 NARASIMHA REDDY NAGAR,KURNOOL",Kurnool,Kurnool
+32,KVR Govt Degree college for Women NSS Room nO.22,".K.V.R. COLLEGE .NR NAGAR, KURNOOL 45 NARASIMHA REDDY NAGAR,KURNOOL",Kurnool,Kurnool
+33,45 Narsimhareddy NAGAR KURNOOL,K.V.R. COLLEGE..ROOM NO 14 (WEST WING) 45 NARASIMHA REDDY NAGAR KURNOOL,Kurnool,Kurnool
+34,45 Narsimhareddy NAGAR KURNOOL,"K.V.R. COLLEGE..ROOM NO 17 45 NARASIMHA REDDY NAGAR,Kurnool",Kurnool,Kurnool
+35,"KMC,40 RISALDAR STREET, KURNOOL",S.T.B.C.COLLEGE VICE PRINICIPAL ROOM 40 rishaldar street KURNOOL,Kurnool,Kurnool
+36,K.M.C 40 RISHALDAR STREET KURNOOL,S.T.B.C.COLLEGE STAFF ROOM (MEN) .KURNOOL,Kurnool,Kurnool
+37,"KMC,40 RISHALDAR STREET KURNOOL","S.T.B.C.COLLEGE, KURNOOL 40-RISALDAR STREET,KURNOOL",Kurnool,Kurnool
+38,"S.T.B.C.College, Staff Room Hall No.17, Kurnool","S.T.B.C.COLLEGE, KURNOOL 40-RISALDAR STREET,KURNOOL",Kurnool,Kurnool
+39,KMC 40 RISALDAR VEEDI KURNOOL,"S.T.B.C.COLLEGE, KURNOOL KMC,40 RISHALDAR VEEDI KURNOOL",Kurnool,Kurnool
+40,"S.T.B.C. College, Room No.2, Kurnool","S.T.B.C.COLLEGE, KURNOOL KMC,40 RISHALDAR VEEDI KURNOOL",Kurnool,Kurnool
+41,"KMC,40 RISHALDAR STREET KURNOOL","ROCK WOOD MEMORIAL HIGH SCHOOL 40-RISALDAR STREET,KURNOOL",Kurnool,Kurnool
+42,"Rockwood memorial High School,Teachers Room. KnL","ROCK WOOD MEMORIAL HIGH SCHOOL 40-RISALDAR STREET,KURNOOL",Kurnool,Kurnool
+43,"kmc,40 resaaldar veedhi KURNOOL",ROCK WOOD MEMORIAL HIGH SCHOOL 9 th CLASS B SEC 40 RISHALDAR STREET KURNOOL,Kurnool,Kurnool
+44,KMC 40 RISALDAR STREET,"ROCK WOOD EMORIAL HIGH SCHOOL, MAIN HALL, KURNOOL MAIN HALL KURNOOL",Kurnool,Kurnool
+45,K. M .C 51 S.A.P.CAMP KURNOOL,"C.R.R.M.M.C.HIGH SCHOOL,ROOMNO.26, SAP CAMP, KNL 51 S.A.P.CAMP.KURNOOL",Kurnool,Kurnool
+46,"C.R.R.M.Mpl corp High School, Room No 10, SAP Camp","C.R.R.M.M.C.HIGH SCHOOL,ROOMNO.26, SAP CAMP, KNL 51 S.A.P.CAMP.KURNOOL",Kurnool,Kurnool
+47,K.M.C 51 S.A.P.CAMP KURNOOL,"C.R.R.M.M.HIGH SCHOOL,ROOMNO.25, SAP CMAP, KURNOOL 51 S.A.P. CAMP,KURNOOL",Kurnool,Kurnool
+48,"C.R.R.M.Mpl corp High School, Room No.11, SAP Camp","C.R.R.M.M.HIGH SCHOOL,ROOMNO.25, SAP CMAP, KURNOOL 51 S.A.P. CAMP,KURNOOL",Kurnool,Kurnool
+49,K.M.C 51 S.A.P.CAMP KURNOOL,"C.R.R.M.M.HIGH SCHOOL,ROOM NO.25, SAP CAMP,KURNOOL 51 S.A.P.CAMP,KURNOOL",Kurnool,Kurnool
+50,K M C 51 S.A.P.CAMP KURNOOL,"MPL.CORP. PRIMARY SCHOOL(2ndCLASS)SOUTH 51 S.A.P.CAMP,KURNOOL",Kurnool,Kurnool
+51,"K M C 51 S.A.P.CAMP,KURNOOL","MPL CORP PRAIMARY SCHOOL, SAP CAMP, 3RD CLASS ROOM S A P CAMP 3RD CLASS ROOM KURNOOL",Kurnool,Kurnool
+52,K M C 51 S.A.P CAMP KURNOOL,"MPPS SCHOOL(NORTHWING)ROOM.1, SAP CAMP, KURNOOL 51 S.A.P.CAMP,KURNOOL",Kurnool,Kurnool
+53,K M C 51 S.A.P.CAMP KURNOOL,"MPP SCHOOL (NORTH WING)ROOM NO.2, SAP CAMP,KURNOOL 51 S.A.P.CAMP,KURNOOL",Kurnool,Kurnool
+54,K M C 51 S A P CAMP KURNOOL,"MPP SCHOOL,SAPCAMP,KURNOOL 51 S.A.P.CAMP,KURNOOL",Kurnool,Kurnool
+55,K M C 51 S.A.P.CAMP KURNOOL,"AGRICULTURE MARKET COMMITTEE,GODOWN -1,BACKSIDE KURNOOL AGRICULTURE MARKET,KURNOOL",Kurnool,Kurnool
+56,"Agrl Market Committee , Direct sale office 1","AGRICULTURE MARKET COMMITTEE,GODOWN -1,BACKSIDE KURNOOL AGRICULTURE MARKET,KURNOOL",Kurnool,Kurnool
+57,"Agrlture Market Committee , Direct sale office 2","AGRICULTURE MARKET COMMITTEE,GODOWN-2,FRONT SIDE SIDE,KURNOOL AGRICULTURE MARKET,KURNOOL",Kurnool,Kurnool
+58,"Agriculture Market Committe Yard,Godown No.1,Knl","Godown No.1, Agriculture Market Committee Yard,Knl 51-SAP Camp, Kurnool",Kurnool,Kurnool
+59,K M C 51 S.A.P CAMP KURNOOL,"K M C PRIMARY SCHOOL, 5thCLASS, SEETARAM NAGAR,KNL SEETARAMANAGAR KURNOOL",Kurnool,Kurnool
+60,K M C 51 S A P CAMP,K M C PRIMARY SCHOOL S R NAGAR KURNOOL,Kurnool,Kurnool
+61,"K.M.C P51,S.A.P.CAMPKURNOOL","K.M.C. PRIMARY SCHOOL 2nd ROOM, SEETARAM NAGAR,KNL SEETHARAMA NAGAR,KURNOOL",Kurnool,Kurnool
+62,K M C 51 S.A.P.CAMP KURNOOL,"K.M.C.PRIMARY SCHOOL 1 VA TARAGATI ROOM, SEETARAM .SEETARAMA NAGAR,KURNOOL",Kurnool,Kurnool
+63,K M C 51 S.A.P.CAMP KURNOOL,"K.M.C.PRIMARY SCHOOL,SARVASIKSHA ABHIYAN, SEETARAM .SEETARAMA NAGAR,KURNOOL",Kurnool,Kurnool
+64,K M C 50 B.CAMP KURNOOL,"INST OF ADV STUDY IN EDUC,SILVERJUBLI COLEGEROOM.2 50 B.CAMP KURNOOL",Kurnool,Kurnool
+65,Silver Jubli College Building Kurnool,"Institute of Advance studies in Edn. Room No.4 50-B.Camp, Kurnool",Kurnool,Kurnool
+66,K M C 50 B.CAMP KURNOOL MUNICIPALITY,"INST OF ADVA STUD IN EDUC,SILVERJUBLI COLEGEHALL.2 K M C B.CAMP KURNOOL",Kurnool,Kurnool
+67,"Silver Jubli College,Building,Kurnool","Institute of Advance studies in Edn. Hall No.2 KMC, B.Camp, Kurnool",Kurnool,Kurnool
+68,K M C 50 B CAMP KURNOOL,"INST OF ADV STU,SILVER JUBLI COLLEGE ROOM NO 3,Knl K M C B.CAMP KURNOOL",Kurnool,Kurnool
+69,"Silver Jubli College,Building,Kurnool","Institute of Advance studies, Hall No.2, Kurnool KMC, B.Camp, Kurnool",Kurnool,Kurnool
+70,K M C 50 B CAMP KURNOOL,"GOVT HIGH SCHL,SILVER JUBLI COLLEGE 50 B CAMP KURNOOL",Kurnool,Kurnool
+71,"Govt High Schl,SilverJublie Clge, Room 3,10","GOVT HIGH SCHL,SILVER JUBLI COLLEGE 50 B CAMP KURNOOL",Kurnool,Kurnool
+72,50 B CAMP KURNOOL,"GOVT HIGH SCHOOL,NEW BUILDING ROOM NO 4,Staffroom K M C 50 B CAMP KURNOOL",Kurnool,Kurnool
+73,K M C 50 B.CAMP KURNOOL MUNICIPAL,"GOVT HIGH SCHOOL,NEW BUILDING ROOM NO 13, B.Camp, K M C B CAMP ,KURNOOL",Kurnool,Kurnool
+74,K M C B CAMP KURNOOL,"GOVT HIGH SCHOOL, Exten.BulJUBLI COLLEGE ROOM.14 , K M C 50 B.CAMP,KURNOOL",Kurnool,Kurnool
+75,K M C 50B CAMP KURNOOL,"GOVT HIGH SCHL, Exten.Bul.S.J.COLLEGE K M C B CAMP KURNOOL",Kurnool,Kurnool
+76,"Govt High Schl,Extension Building SJ Room .16","GOVT HIGH SCHL, Exten.Bul.S.J.COLLEGE K M C B CAMP KURNOOL",Kurnool,Kurnool
+77,K M C B CAMP KURNOOL,"govt.high school,extention building, room no.16,kn K M C B.CAMP,KURNOOL",Kurnool,Kurnool
+78,"K M C 50 B.CAM,P KURNOOL","GOVT(G)HIGHSCHOOL,EXTENSION BUILDING ,9thCLASS K M C 50 B.CAMP,KURNOOL",Kurnool,Kurnool
+79,K M C 50 B CAMP KURNOOL,"GOVT ( G )HIGH SCHOOL,10thClass,A.section K M C 50 ,B.CAMP, KURNOOL",Kurnool,Kurnool
+80,"KURNOOL MUNICIPALITY 50 B.CAMP,KURNOOL","GOVT. GIRLS HIGH SCHOOL,9 th class A.Section K M C 50 B.CAMP,KURNOOL",Kurnool,Kurnool
+81,K M C 49 C.CAMP KURNOOL,"EXE.ENGINEER OFFICER(R,B) Staff Room APRDC, B.Camp K M C 49 C.CAMP KURNOOL",Kurnool,Kurnool
+82,K M C 49 C.CAMP KURNOOL,"Assistant Executive Engineer Office (R&B Quarters abc), C-Camp, Kurnoool. K M C 49 C.CAMP KURNOOL",Kurnool,Kurnool
+83,"Executive Engineering Office,R&B B.camp,Kurnool","Executive Eng. Office (R and B) DAO room, APRDC, KMC-49, C-Camp, Kurnool",Kurnool,Kurnool
+84,K M C 49 C.CAMP KURNOOL,Supdent ENGNR OFFICE CIRCLE K M C C.CAMP KURNOOL,Kurnool,Kurnool
+85,K M C 49 C.CAMP KURNOOL,"ASSISTANT EXECUTIVE ENGINEER(R,B)OFFICE,B.CAMP K M C 49 C.CAMP KURNOOL",Kurnool,Kurnool
+86,"K M C,49 C.CAMP KURNOOL","MPUP SCHOOL, C.CAMP, KNL K M C 49 C.CAMP KURNOOL",Kurnool,Kurnool
+87,K M C 49 C.CAMP KURNOOL,"MPUP SCHOOL , C.CAMP, KNL K M C,49 C.CAMP,KURNOOL",Kurnool,Kurnool
+88,"Mpl Corp, Upper Primary School, 4th Class Room,","MPUP SCHOOL , C.CAMP, KNL K M C,49 C.CAMP,KURNOOL",Kurnool,Kurnool
+89,"K M C,49 C.CAMP KURNOOL","SPL. DEPUTY COLLECTOR L.A (H.N.S.S) UNIT-3,CCAMP K M C 49 .C.CAMP,KURNOOL",Kurnool,Kurnool
+90,"O/o SPL Dy Collector(LA) HNSS UNIT4,CCAMP,KNL","SPL. DEPUTY COLLECTOR L.A (H.N.S.S) UNIT-4,CCAMP KMC-49, C.CAMP, KURNOOL",Kurnool,Kurnool
+91,K M C 49 C.CAMP KURNOOL,"MPUP SCHOOL, C.CAMP, KNL K M C,49 C.CAMP KURNOOL",Kurnool,Kurnool
+92,"K M C,49 C.CAMP KURNOOL","Mpl,Corp(UP)School,4th Class, C.Camp, KNL K M C,49 C.CAMP KURNOOL",Kurnool,Kurnool
+93,"K M C,49 C.CAMP KURNOOL","Mandal Agricultural Office, C-Camp, Kurnool 49-50A-246 to 49-50A-340",Kurnool,Kurnool
+94,"K M C,49 C.CAMP KURNOOL","T.G.V MUNCIPALL CORPRATION PRIMARY SCHOOL,3 RD CLASS ROOM ,SRI RAM NAGAR,KURNOOL 49-50A-341 to 49-50A-439",Kurnool,Kurnool
+95,"K.M.C,49 C.CAMP KURNOOL","T.G.V MUNCIPALL CORPRATION PRIMARY SCHOOL,4 TH CLASS ROOM ,SRI RAM NAGAR,KURNOOL K M C,49 C.CAMP 49-50A-441 to 49-50A-530 KURNOOL",Kurnool,Kurnool
+96,K M C 49 C.CAMP KURNOOL,"MEESEVA CENTER NEAR RAYTHU BAZAR,C. CAMP,KURNOOL 49-50A-531 to 49-50A-630",Kurnool,Kurnool
+97,K M C 46 Budhavaara Peta KURNOOL,"O/o EXECUTIVE ENGINEER PROTECTION WORK, (SSP)N.Win K.M.C,46,BUDHAWARA PETA KURNOOL",Kurnool,Kurnool
+98,"KMC,46 BUDHAWARA PETA kurnool","O/o Exe.Eng.Protection work(SSP)Officesection 1,2 K M C 46 BUDHAVARAPETA KURNOOL",Kurnool,Kurnool
+99,"O/oExecutive Eng Division office(SSP),Eng room Knl","O/o Exe.Eng.Division office(SSP)EEsection 3,4 KMC-46, Budhawarapeta, Kurnool",Kurnool,Kurnool
+100,"I.G.M Mpl Corp High Sch,Room No.5, A.Camp,KNL","I.G.M Mpl Corp High Sch, A.Camp,KNL K M C 46 BUDAWARA PETA KURNOOL",Kurnool,Kurnool
+101,"I M M Corp High School, New Building, room no.6","I.G.M Mpl Corp High Sch, A.Camp,KNL K M C 46 BUDAWARA PETA KURNOOL",Kurnool,Kurnool
+102,K M C 46 Budhwarpeta KURNOOL,"I.G.M Mpl Corp High Sch, A.Camp,KNL K M C 46 BUDAWARA PETA KURNOOL",Kurnool,Kurnool
+103,"I M M Corp High Schl, New Building Room No.20","I.G.M Mpl Corp High Sch, A.Camp,KNL K M C 46 BUDAWARA PETA KURNOOL",Kurnool,Kurnool
+104,K M C 46 BUDHAVARA PETA KURNOOL MUNCIPALITY,"IGMM CORP HIGH SCHOOL,A CAMP,ROOM.23 K M C 46 BUDAWARA PETA KURNOOL",Kurnool,Kurnool
+105,"K M C,47 Harijanawada KURNOOL","Anganwadi Pre Model School ,UKG Class Room Budhawaara peta Kurnool K M C 46 Harijanawada KURNOOL",Kurnool,Kurnool
+106,K M C.47 Harijanawada KURNOOL,"Anganwadi Pre Model School ,LKG Class Room Budhawarapeta, Kurnool K M C,47 HARIJANAWADAKURNOOL",Kurnool,Kurnool
+107,K M C 47 Harijanawada KURNOOL,"Anganwadi Pre Model School ,Nursery Class Room Budhawarapeta, Kurnool K M C 47 HARIJANA WADA KURNOOL",Kurnool,Kurnool
+108,K M C 47 Harijanawada KURNOOL,"Municipal Corporation Upper primary school Urdu medium 7th Class, Budhawarapeta Kurnool-2 K M C,47 HARIJANAWADA KURNOOL",Kurnool,Kurnool
+109,"K M C ,48 HARIJANAWADA KURNOOL","Municipal Corporation Upper primary (Urdu) school 6th Class, Budhawarapeta Kurnool-2 K M C 48 HARIJANA WADA KURNOOL",Kurnool,Kurnool
+110,K M C.46 BUDAWARA PETA KURNOOL,"JAMPALA GATAIAH MEM UP SCH (EAST WING)SOUTH K M C 46 BUDHAWARA PETA,KURNOOL",Kurnool,Kurnool
+111,K M C 46 BUDAWARA PETA KURNOOL,JAMPALA GATTAIAH MEM UP SCHL BUDHAWARA PETA,Kurnool,Kurnool
+112,"J G M U P School, (East Wing) North, Room.4",JAMPALA GATTAIAH MEM UP SCHL BUDHAWARA PETA,Kurnool,Kurnool
+113,"Swamy Vivekananda nilayam, Kesava Memorial School","Kesava Memorial School, Budhwarpeta KMC 46, Budhawarpeta, 46-153-D8 to 46-166-16",Kurnool,Kurnool
+114,"Ranaprathapa nilayam, Kesava Memorial School","Kesava Memorial School, Budhwarpeta KMC 46, Budhawarpeta, 46-153-D8 to 46-166-16",Kurnool,Kurnool
+115,"k m c,46 budawara peta,kurnool","Kesava Memorial School, Budhwarpeta KMC 46, Budhawarpeta, 46-153-D8 to 46-166-16",Kurnool,Kurnool
+116,"Hall 2/2, Kesava Memorial School, Budhwarpeta,","Kesava Memorial School, Budhwarpeta KMC 46, Budhawarpeta, 46-153-D8 to 46-166-16",Kurnool,Kurnool
+117,"K M C 46 BUDAWARA PETA,KURNOOL","Montessori(Eng.Med) High School Room NO.9, PREP 1(Orange), KMC 46 Harijanwada, Kurnool K M C 46 BUDHAWAR PETA,KURNOOL",Kurnool,Kurnool
+118,"Anganwadi centre28, Budhwarpeta, Kurnool","Montessori English Medium High School Room No.7, PREP.1 (Pink) KMC 47, Harijanawada, Kurnool KMC 46, Budhwarpeta, 46-1 to 46-1-KL-2-25",Kurnool,Kurnool
+119,"K M C 46,BUDHAWAR PETA,KURNOOL","Montessori English Medium High School Room No.8, PREP.1 (blue) KMC 47, Harijanawada, Kurnool KMC-46, Budhawarapeta, Kurnool",Kurnool,Kurnool
+120,"K M C,46 BUDAWARA PETA KURNOOL","Montessori English Medium High School Room No.10, PREP.1 (Yellow) KMC 47, Harijanawada, Kurnool K M C 46 BUDHAWARAPETA,KURNOOL",Kurnool,Kurnool
+121,K M C 46 BUDHAVARAPETA,"George Avenue B.Ed College Class Room.No.1, Chanikayapuri Colony, Kurnool K M C 46 BUDHAVARAPETA",Kurnool,Kurnool
+122,"K M C,46 BUDAWARA PETA KURNOOL","Mpl Corp (urdu)Up Primary Sch,1st class ROOM K M C,46 BUDAWARA PETA,KURNOOL",Kurnool,Kurnool
+123,"K M C 46 BUDAWARA PETA,KURNOOL","Mpl Corp(Urdu),u.p School, Class no7 k m c 46 BUDHAWARA PETA,KURNOOL",Kurnool,Kurnool
+124,"k m c 46 budawara peta,kurnool","Mpl Corp(Urdu),u.p, School, Class no 6 k m c 46 BUDHAWARA PETA,KURNOOL",Kurnool,Kurnool
+125,"k m c 2nd ward yelkuru venkata subbayya street,kur","UMAR ARABIC HIGH SCHOOL ,KNL K M C 2ND WARD YELUKURU VENKATA SUBBAYYA STKURNOOL",Kurnool,Kurnool
+126,"Umar Arabic High School, Teachers room, Kurnool","UMAR ARABIC HIGH SCHOOL ,KNL K M C 2ND WARD YELUKURU VENKATA SUBBAYYA STKURNOOL",Kurnool,Kurnool
+127,"KMC,2 WARD Y.VENKATASUBBAYYA STREET,KNL.","SPL.MPL CORP PRA.SCHOOL (Motia) 2ND PETA, KNL 2/141 TO 2/150",Kurnool,Kurnool
+128,"KMC,2WARD Y.VENKATASUBBAYYA STREET,KURNOOL.",SPL M C PRAIMARY SCHOOL NEW BUILDING MOTIA 2NDPET 2/1 TO 2/339 COMPLETE.,Kurnool,Kurnool
+129,"K M C 4 BANGI ABDUL REHAMAN STREET,KURNOOL","UMAR ARABIC HIGH SCHOOL ,KNL K M C 4 BANGI ABDUL REHAMAN STREET KURNOOLU",Kurnool,Kurnool
+130,"Umar Arabic High School, Room No.1, Kurnool.","UMAR ARABIC HIGH SCHOOL ,KNL K M C 4 BANGI ABDUL REHAMAN STREET KURNOOLU",Kurnool,Kurnool
+131,"K M C,5 RANGA RAJU STREET KURNOOL",UMAR ARABIC HIGH SCHOOL ROOM NO 3 KURNOOL,Kurnool,Kurnool
+132,K M C 9 ADONI DARWAJA KURNOOL,"UMAR ARABIC SCHOOL,KURNOOL 9/181 TO 9/342 COMPLETE",Kurnool,Kurnool
+133,"Umar Arabic High School, Hall 2/2, Kurnool","UMAR ARABIC SCHOOL,KURNOOL 9/181 TO 9/342 COMPLETE",Kurnool,Kurnool
+134,"K M C 3 KALLUR DARWAJA,KURNOOL",ISLAMIA ARABIC DEGREE COLLEGE ROOM NO 7 K M C 3 Kalluru Darvaja KURNOOL,Kurnool,Kurnool
+135,K M C 3 Kalluru Darvaja KURNOOL,ISLAMIA ARABIC DEGREE COLLEGE ROOM NO 9 K M C 3 Kalluru Darvaja KURNOOL,Kurnool,Kurnool
+136,"K M C 6 SALAMA KHAN STREET,KURNOOL","OSMANIA COLLEGE ROOM NO 21,main building,kurnool k m c 6 salam khan street KURNOOL",Kurnool,Kurnool
+137,k m c 7 and 8 ward kaleelstreet 7/1 to 7/60KURNOOL,OSMANIA COLLEGE CHEMISTRY BLOCK ROOM k m c 7 and 8 ward kaleelstreet 7/1 to 7/60KURNOOL,Kurnool,Kurnool
+138,"k m c 8 ward krushnam botla street,KURNOOL","OSMANIA COLLEGE ROOM NO 36 k m c 8 ward krushnam botla street 7/1 to 7/60,8/1",Kurnool,Kurnool
+139,"k m c 10 peta,rishaldar street,","OSMANIA COLLEGE ROOM.NO.37,LIBRARY BLOCK, k m c 10 and 11 petas rishaldar street KURNOOL",Kurnool,Kurnool
+140,k m c 11 peta rishaldar street(osmania )knl,"OSMANIA COLLEGE,B.Ed. Block, KURNOOL k m c 10 and 11 peta rishaldar street KURNOOL",Kurnool,Kurnool
+141,"Osmani College B.Ed. Block, Room No.64, Kurnool.","OSMANIA COLLEGE,B.Ed. Block, KURNOOL k m c 10 and 11 peta rishaldar street KURNOOL",Kurnool,Kurnool
+142,k m c 40 rishaldar street KURNOOL,DAMODARAM SANJEEVAIAH MPL CORP HIGH SCH(STAFF ROOM k m c 40 rishaldar street KURNOOL,Kurnool,Kurnool
+143,K M C 16 CHOTIYALANABI SAB STREETKURNOOL,"DAMODARAM SANJEEVAIAH MPL CARP SCHOOL, ROOM.7 E.WI K M C 16 CHOTIYALANABI SAB STREET KURNOOL",Kurnool,Kurnool
+144,K M C 16 CHOTIYALANABI SAB STREET,"DAMODARAM SANJEEVAIAH MPL CORP H.S.PET ROOM, KNL SCHOOL PET ROOM, ROOM NO 29 KURNOOL",Kurnool,Kurnool
+145,"K M C 37 jummamaseed street,38 patel road street,","MPL CORP URD HIGH SCHOl KADAKPURA 6thand 7th class K M C 16 CHOTIYALANABI SAB STREET,KURNOOL",Kurnool,Kurnool
+146,K M C 15 KHADAKPURA KURNOOL,"Mpl. Ele.School, 39 peta, Vaddegeri, Knl K M C 15 KHADAK POORA KURNOOL",Kurnool,Kurnool
+147,K M C 15 KHADAK PURA STREET KURNOOL,MPL CORP URD HIGH SCHOl KADAKPURA 3rdand 4th class K M C 15 KHADAK PURA STREET KURNOOL,Kurnool,Kurnool
+148,K M C 17 RADHA KRISHNA TALKIES STREET KURNOOL,"COLES MEMORIAL JUNIOR COLLEGE,ROJERS BLOCK ROOM1 K M C 17 RADHAKRSHNA TALKIES STREET KURNOOL",Kurnool,Kurnool
+149,K M C 17 RADHA KRISHNA TALIKES STREET KURNOOL,COLESMEMORIAL HIGH SCHOOL centenary Block k m c 17 radha krishna talkies street KURNOOL,Kurnool,Kurnool
+150,Coles Memorial High School CentenaryBlock Room No1,COLESMEMORIAL HIGH SCHOOL centenary Block k m c 17 radha krishna talkies street KURNOOL,Kurnool,Kurnool
+151,k m c 39 vaddegeri KURNOOL,"GOVT. JUNIOR COLLEGE ROOM NO 06, KNL K M C 39 VADDEGERI KURNOOL",Kurnool,Kurnool
+152,k m c 39 vaddegeri KURNOOL,"Govt.Junior College, Room No.5, Vadde Geri, Kurnool. KMC 39 VADDE GERI, KURNOOL",Kurnool,Kurnool
+153,K M C 39 VADDAGERI,"GOVT JUNIOR COLLEGE ROOM NO 9 ZOOLOGY lab, KNL LABORATARY KURNOOL",Kurnool,Kurnool
+154,K M C 39 VADDEGERI KURNOOL,"GOVT JUNIOR COLLEGE ROOM NO 01, KNL K M C 39 VADDEGERI KURNOOL",Kurnool,Kurnool
+155,K M C 39 VADDEGERI KURNOOL,"GOVT JUNIOR COLLEGE, KNL K M C 39 VADDEGERI KURNOOL",Kurnool,Kurnool
+156,"Govt Junior College, Room No.5 (2/2),Kurnool","GOVT JUNIOR COLLEGE, KNL K M C 39 VADDEGERI KURNOOL",Kurnool,Kurnool
+157,K M C 18 NEHRU ROAD KURNOOL,"GOVT GIRLS URDU HIGH SCHOOL ROOM NO .3, KNL K M C 18 NEHRUI ROAD KURNOOL",Kurnool,Kurnool
+158,K M C 40 RISHALDAR STREET KURNOOL,"GOVT GIRLS URDU HIGH SCHOOL,ROOM NO.4, KNL K M C 40 RISHALDAR STREET KURNOOL",Kurnool,Kurnool
+159,K M C 40 RISHALDAR STREET KURNOOL,"GOVT GIRLS URDU HIGH SCHOOL,ROOM NO.5, KNL K M C 40 RISHALDAR STREET KURNOOL",Kurnool,Kurnool
+160,K M C 41 KOTHAPETA KURNOOL,"SAINT JOSEPh Vidyalayam SCHOOL,N.R.PETAH.NO43-31D, K M C 41 KOTHAPETA KURNOOL",Kurnool,Kurnool
+161,"St. Joseph Vidyalayam, 43/31D, Room No.2, NRPeta","SAINT JOSEPh Vidyalayam SCHOOL,N.R.PETAH.NO43-31D, K M C 41 KOTHAPETA KURNOOL",Kurnool,Kurnool
+162,K M C 41 KOTHAPETA KURNOOL,"StJOSEPHs ENG SCHL,LNBROOMSWAMYKANUBLOCK K M C 41 KOTHAPETA",Kurnool,Kurnool
+163,"St. Josephs eng Schl, (New L.N.B.R) Room 5","StJOSEPHs ENG SCHL,LNBROOMSWAMYKANUBLOCK K M C 41 KOTHAPETA",Kurnool,Kurnool
+164,K M C 41 KOTHAPETA KURNOOL,"SAINTJOSEPh(ENG,MED)SCHOOL ROOM NO-6,N.R.PETA,(NEW BUILDING) K M C 41 KOTHAPETA KURNOOL",Kurnool,Kurnool
+165,K M C 41 KOTHAPETA KURNOOL,"St.Joshps E.M school,N.R.Peta, (Dr.Thivi block)LNC K M C 43-N.R.PETA ,KURNOOL",Kurnool,Kurnool
+166,"St.Joseph EM Schl,Dr.Thivi Block room6,NR peta,Knl","SaintJosephsEng.med.school, (Dr.Thivi block)LNE KMC, 43-NR Peta, Kurnool.",Kurnool,Kurnool
+167,K M C 43 N.R.PETA KURNOOL,"SRILAKSHMI E.M SCHOOL,OFFICE STAFF ROOM ,KNL K M C 43 N.R.PETA,KURNOOL",Kurnool,Kurnool
+168,"Sri.Lakshmi E M School, Primary Block,Library room","SRILAKSHMI E.M SCHOOL,OFFICE STAFF ROOM ,KNL K M C 43 N.R.PETA,KURNOOL",Kurnool,Kurnool
+169,K M C 43 N.R PETA STREET KURNOOL,"SRI LAKSHMIENG.MED.SCHOOL,L.K.G.ROOM K M C43 N.R.PETA STREET KURNOOL",Kurnool,Kurnool
+170,K M C 43 N.R.PETA STREET KURNOOL,"SRI LAKHMIENG.MED.SCHOOL,U.K.G ROOM K M C 43 N.R.PETA STREET KURNOOL",Kurnool,Kurnool
+171,K M C41 KOTHAPETA KURNOOL,MPL CORP URDU GIRLS PRA. SCHOOL (WEST ROOM) K M C 41 KOTHAPETA KURNOOL,Kurnool,Kurnool
+172,K M C41 KOTHAPETA KURNOOL,"MPL.CORP.URDU GIRLS ELE.SCHOOL,KOTHAPETA,KNL K M C 41 KOTHA PETA KURNOOL",Kurnool,Kurnool
+173,K M C 41 KOTHAPETA KURNOOL,"MPL CORP, PRIMARY URDU GIRLS SCHOOL,(NORT PART-II) K M C 41 KOTHAPETA KURNOOL",Kurnool,Kurnool
+174,"K M C 42,GOULI STREET ,KURNOOL","MPL CORP UP PRIM SCHOOL. KURNOOL K M C 42,GOULI STREET ,KURNOOL",Kurnool,Kurnool
+175,"Mpl Corp, U P School, 41 peta(SouthWest Wing)","MPL CORP UP PRIM SCHOOL. KURNOOL K M C 42,GOULI STREET ,KURNOOL",Kurnool,Kurnool
+176,K M C 43 N.R PETA KURNOOL,"St.Joseph HighSchool,ROOM NUMBER-11, KOTHA Peta, KNL K M C 43 KOTHA Peta, KURNOOL",Kurnool,Kurnool
+177,K M C 43 N.R PETA KURNOOL,"St. Joseph High School, Room No.7,new bulding kotha peta, KNL K M C 43 N R PETA ,KURNOOL",Kurnool,Kurnool
+178,k m c 41 kothapeta KURNOOL,"N.G.O.HOME COMPOUND,WEST BLOCK ROOM, SAI BABA SANJEEVAIAH NAGAR,KURNOOL k m c 41 kothapeta KURNOOL",Kurnool,Kurnool
+179,"K M C,41 kothapeta Kurnool","N.G.O.HOME COMPOUND,WEST BLOCK LIBRARY ROOM,SAIBABA SANJEEVIAH NAGAR,KURNOOL KMC,KOTTAPETA KURNOOL",Kurnool,Kurnool
+180,"K M C,41 kothapeta Kurnool","N.G.O.HOME COMPOUND,N GO HALL ,SAIBABA SANJEEVIAH NAGAR,KURNOOL 41-200 TO 250 KOTTA PETA KURNOOL",Kurnool,Kurnool
+181,k m c 64 kota street KURNOOL,"VIVEKANANDA BALA VIDHYAMANDIR HIGH SCHOOL,ROOM NO3 K M C 64 KOTA STREET KURNOOL",Kurnool,Kurnool
+182,K M C 64 KOTA STREET KURNOOL,"VIVEKANANDA BALA VIDHYAMANDIR HIGH SCHOOL,KURNOOL K M C 64 KOTA STREET KURNOOL",Kurnool,Kurnool
+183,Vivekananda Bala Vidyamandir High School,"VIVEKANANDA BALA VIDHYAMANDIR HIGH SCHOOL,KURNOOL K M C 64 KOTA STREET KURNOOL",Kurnool,Kurnool
+184,K M C 64 KOTA STREET KURNOOL,"VIVEKANANDA BALA VIDHYAMANDIR HIGH SCHOOL,ROOM NO6 K M C 64 KOTA STREET KURNOOL",Kurnool,Kurnool
+185,K M C 57 SHANKARA MATAM STREET KURNOOL,"NEHRU MEMORIAL MPL CORP HIGH SCHOOL,KURNOOL K M C 57 SHANKAR MATAM STREET,KURNOOL",Kurnool,Kurnool
+186,"Nehru Memorial Mpl Corp High School, Room No.1","NEHRU MEMORIAL MPL CORP HIGH SCHOOL,KURNOOL K M C 57 SHANKAR MATAM STREET,KURNOOL",Kurnool,Kurnool
+187,"K M C 58 PANDIT KRISHANA RAO VEEDHI,","NEHRU MEMORIAL MPL CORP HIGH SCHOOL,KURNOOL K M C 58 PANDIT KRISHANA RAO VEEDHI,KURNOOL",Kurnool,Kurnool
+188,"Nehru Memorial Mpl Corp High School, Room No.4","NEHRU MEMORIAL MPL CORP HIGH SCHOOL,KURNOOL K M C 58 PANDIT KRISHANA RAO VEEDHI,KURNOOL",Kurnool,Kurnool
+189,"K M C 58 PANDIT KRISHANA RAO VEEDHI,KURNOOL","NEHRU MEMORIAL MPL CORP HIGH SCHOOL(ROOM NO 6) K M C 58 PANDIT KRISHANA RAO VEEDHI,KURNOOL",Kurnool,Kurnool
+190,"K M C ,KURNOOL","SEARACK ENGLISH.HIGH SCHOOL ROOM NO 3,4,5 K M C ,OPP-K.D.C.C. BANK,KURNOOL",Kurnool,Kurnool
+191,"K M C ,56 ROSHANGHAT VEEDHI,KURNOOL","sirak english high school,room no-23 OPP K.D.C.C BANK,KURNOOL",Kurnool,Kurnool
+192,"K M C ,56 ROSHANGHAT VEEDHI,KURNOOL","SEARACK HIGH SCHOOL,ROOM NO 21 K M C ,56 ROSHANGHAT VEEDHI,KURNOOL",Kurnool,Kurnool
+193,"K.M.C 53 JummaMasidSTREET,54 POTTISRIRAMULU STREET","MPL.CORPORATION PRIMARY SCHOOL, SOUTH WING K.M.C NEAR KING MARKET",Kurnool,Kurnool
+194,"55 PAKALA STREET,66 LAKSHMI NARAYANA STREET","Mpl CorpELE SCH,8th Kota, NORTH WING NEAR KING MARKET",Kurnool,Kurnool
+195,k m c 52 nethaji road KURNOOL,"Mpl Corp PrimarySchool 8th kota, Kingmarket K M C 52 NETHAJI ROAD KURNOOL",Kurnool,Kurnool
+196,"Mpl Corp Primary Schl, Room No.20, 8th Kotar","Mpl Corp PrimarySchool 8th kota, Kingmarket K M C 52 NETHAJI ROAD KURNOOL",Kurnool,Kurnool
+197,K M C 54 POTTI SRIRAMULU STREET KURNOOL,"GOVT.GIRLS HIGH SCHOOL,NORTH WING,OPP.KING MARKET K M C 54 POTTI SRIRAMULU STREET KURNOOL",Kurnool,Kurnool
+198,Govt Girls High School (North Wing) 2/2 Opp:King,"GOVT.GIRLS HIGH SCHOOL,NORTH WING,OPP.KING MARKET K M C 54 POTTI SRIRAMULU STREET KURNOOL",Kurnool,Kurnool
+199,KMC 65 SUBEDAR STREET,"GOVT GIRLS HIGH SCHOOL MAIN BUILDING HALL, south K M C 67,68 URBAN BANK STREET,KURNOOL",Kurnool,Kurnool
+200,K M C 67 URBAN BANK STREET,"GOVERNMENT GIRLS HIGH SCHOOL 7th B.Sec, KNL 8 TH B SECTION",Kurnool,Kurnool
+201,"K M C 68 URBAN BANK STREET,KURNOOL","GOVT GIRLS HIGH SCHOOL,10th CLASS B.sec, KNL K M C 67,68 URBAN BANK STREET,KURNOOL",Kurnool,Kurnool
+202,K M C 12 GOULI KUMAR SWAMY STREET KURNOOL,"mpl cor urdu primary school,southeast room, Westpe 12GOWLI KUMARA SWAMY,13 BANADR MISKIN,14,BOGAMSING",Kurnool,Kurnool
+203,"Mpl Corp Urdu primary Schl,2nd Class,westwing,knl","Mpl. Corp. Urdu PrimarySchool, Soutwest room, West 12 Gouli Kumaraswamy street, 13 Bandarmaskin stre",Kurnool,Kurnool
+204,K M C 19 BANDIMETTA STREET KURNOOL,"POTTI SRIRAMULU Memorial MPL CORP GIRLS HIGH SCH , K M C 19 BANDIMETTA STREET KURNOOL",Kurnool,Kurnool
+205,K M C 19 BANDIMETTA STREET KURNOOL,"Sree Potti Sreeramulu Memorial Municipal Corporatio High School, 8th Class, Bandimetta, Kurnool KMC 19, BANDIMETTA, KURNOOL",Kurnool,Kurnool
+206,K M C 19 BANDIMETTA STREET KURNOOL,POTTI SRIRAMULU Memorial MPL CORPHIGH SCH ROOM 6 K M C 19 BANDIMETTA STREET KURNOOL,Kurnool,Kurnool
+207,K M C 19 BANDI METTA STREET KURNOOL,"POTTISRIRAMULU Memorial MPL COR Girls HIGH SCHOOL, K M C 19 BANDI METTA STREET KURNOOL",Kurnool,Kurnool
+208,K M C 19 BANDI METTA STREET KURNOOL,POTTI SRIRAMULU MEMORIAL MPL CORP GIRLS HIGHSchool K M C 19 BANDI METTA STREET KURNOOL,Kurnool,Kurnool
+209,"K M C 20,21 GANDLA STREET,22 SAGMANDI STREET","Narayana High school, 7th class room, Bandimetta K M C 20,21 GANDLA STREET KURNOOL",Kurnool,Kurnool
+210,KURNOOL,"Mpl.Corp.Primary School,3rd Class Room,28 peta, Kurnool.",Kurnool,Kurnool
+211,k m c 23 katika street KURNOOL,"MPL CORP Primary SCHOOL, GANIGALI(S,E WING) K M C 23 KATIKA STREET KURNOOL",Kurnool,Kurnool
+212,KURNOOL,"Mpl.Corp.Urdu School, East Peta 3rd Class Room, 11th Ward, Ganigali, Kurnool.",Kurnool,Kurnool
+213,K M C 24 GANIGALLI STREET KURNOOL,MPL CORP PRIMARY SCHOOL (S. E. Wing) CLASS 3 K M C 23 GANIGALLI STREET KURNOOL,Kurnool,Kurnool
+214,K M C 34 MANGALI STREET KURNOOL,"SPL MPL CORP Jr BASIC SCH ,35th PETA(NORTH,WEST) K M C 34 MANGALI STREET KURNOOL",Kurnool,Kurnool
+215,KURNOOL,"Spl Mpl Corp Urdu Primary School ,35th Street [East,North], Store Room, Kmc 34 Mangali Street Kurnool.",Kurnool,Kurnool
+216,K M C 34 MANGALI STREET KURNOOL,"SPL MPL CORP Jr BASIC SCH ,35th PETA(SOUTH,WEST) K M C 34 MANGALI STREET KURNOOL",Kurnool,Kurnool
+217,K M C 34 MANGALI STREET KURNOOL,"SPL MPL CORP URDU PRI SCH ,35th STREET(EAST,NORTH) K M C 34 MANGALI STREET KURNOOL",Kurnool,Kurnool
+218,K M C 35 VENKOBA RAO STREET KURNOOL,"kesava reddy talent school, Room.3, D.No.26-69 K M C 35 VENKOBA RAO STREET,KURNOOL",Kurnool,Kurnool
+219,"K R T Schl, Nursery ""B"" Room, Chittari Street","kesava reddy talent school, Room.3, D.No.26-69 K M C 35 VENKOBA RAO STREET,KURNOOL",Kurnool,Kurnool
+220,K M C 26 MAIN ROAD KURNOOL,VIMALAHIGHSCHOOL(ANANTHASAMBAIAHGATE)HNO27-12 K M C 26PEDDA RANGARAJU STREET KURNOOL,Kurnool,Kurnool
+221,KMC 26 MAIN STREET,"EVEREST English SCHOOL,H.NO28/58,ROOM.NOA8. 1 TOWN POLICE STATION,KURNOOL",Kurnool,Kurnool
+222,"K M C 27 SETTI BASAPPA STREET,28 KASANNA STREET",EVERESTENG .SCH HNO28-581TOWNPOLICESTATION ROOM A2 K M C 27 SETTI BASAPPA STREET KURNOOL,Kurnool,Kurnool
+223,"KMC,.30MATAM STREET","EVEREST English SCHOOL,H.NO28-58,ROOM.NO.A7 KMC MATAM STREET, KURNOOL",Kurnool,Kurnool
+224,"KMC 29 CHUNNAVALA STREET,30MATAM STREET","EVEREST English SCHOOL,H.NO-28/58 ROOM-A3 NEAR ONE TOWN POLICE STATION",Kurnool,Kurnool
+225,"Everest E/M Schl,H.No.2858 near Itown policestan","Everest Engilsh school, H.NO.28-58, 1Town PS, Dini Near I Town Police Station",Kurnool,Kurnool
+226,"KMC 25 GANIGALLI,KURNOOL.","EVEREST EnglishSCHOOL H.NO28/58 2nd Class B.Sec.KN 1 TOWN POLICE STATION,KURNOOL",Kurnool,Kurnool
+227,"KMC1 MAIN STREET,KURNOOL.","Municipal Corporation Primary School, 5 th Class Room, Pedda Padakana, Kurnool KMC MAIN STREET, KURNOOL.",Kurnool,Kurnool
+228,"Mpl Primary Schl,peta1,pedhapakahana","Mpl. Corp.Primary School, Peta-1, Westwing KMC Main Street, Kurnool",Kurnool,Kurnool
+229,"KMC 1MAIN STREET,KURNOOL","VARMA ENGLISH MEDIUM SCHOOL, UKG CLASS ROOM KMC 31 ,CHITTARI STREET",Kurnool,Kurnool
+230,"KMC 31 ,CHITTARI STREET,kurnool","VARMA ENGLISH MEDIUM SCHOOL, UKG CLASS ROOM KMC 31 ,CHITTARI STREET",Kurnool,Kurnool
+231,"KMC,36 KUMMARI STREET,KURNOOL","MPL CORP PRI SCL,OLD BUILD 8thPETA,CHITTARI ST,KNL KMC 31 CHITTARI STREET,36 KUMMARI STREET,KURNOOL",Kurnool,Kurnool
+232,"KMC 36 KUMMARI STREET,31CHITTARI STREET","MPL.CORP.PRI SCHOOL,OLD BUILD,8TH PETA,ROOM-1 KMC 31 CHITTARI AND 36 KUMMARI STREET,KURNOOL.",Kurnool,Kurnool
+233,KMC 31 chittari and 36 Kummari street,"VARMA ENGLISH MEDIUM SCHOOL, LKG CLASS ROOM KMC 31 chittari and 36 Kummari street",Kurnool,Kurnool
+234,"KMC 33 PAKALA STREET AND 36 KUMMARI STREET,KURNOOL","TG VENKATESH MPLCORPRATION PRIMARY URDU SCHOOL ROOM-1 29 PETA,GADDA STREET",Kurnool,Kurnool
+235,"KMC 36kummari street,kurnool","TG VENKATESH MPLCORPRATION PRIMARY URDU SCHOOL R2 29 PETA,GADDA STREET",Kurnool,Kurnool
+236,"KMC 36,GADDA STREET","UNIVERSAL (EM)HIGH SCHOOL ,ROOM NO-1 32-361,GADDA STREET",Kurnool,Kurnool
+237,"KMC 36,GADDA STREET","UNIVERSAL (EM)HIGH SCHOOL ROOM NO-2 32-361,GADDA STREET",Kurnool,Kurnool
+238,UNIVERSAL (EM)HIGH SCHOOL ROOM NO3,"UNIVERSAL (EM)HIGH SCHOOL ROOM NO-3 32-361,GADDA STREET",Kurnool,Kurnool
+239,KMC 32 SANTHA KASIM SAB,"Univarsel English Medium School, Room No.4, Gadda Street, Kurnool. KMC 32 SANTHA KASIM SAHEB STREET, KURNOOL",Kurnool,Kurnool
+240,"KMC 32 SANTHA KASIM SAB STREET,KURNOOL","Anganwadi Pre School Garib Nagar, Kurnool 32 PETA ,KURNOOL",Kurnool,Kurnool
+241,"Madarsha (Shamsia) Arabic School, (South Wing) 2/2",GOVT.URDU ELEMENTRY. SCHOOL BESIDE 32 PETA 32 PETA,Kurnool,Kurnool
+242,"KMC 32 SANTHA KASIM SAB STREET,KURNOOL.","MPL CORP SPL URDU UP SCHL(SHAMSIA BOYS) KMC 32 SANTHA KASIM SAB STREET,KURNOOL.",Kurnool,Kurnool
+243,Mpl Corp Spl Urdu U P Schl (Shamsia Boys) Nort,"MPL CORP SPL URDU UP SCHL(SHAMSIA BOYS) KMC 32 SANTHA KASIM SAB STREET,KURNOOL.",Kurnool,Kurnool
+244,"KMC 32 SANTHA KASIM SAB STREET,KURNOOL.","MPL.CORP URDU PRIM SCH(GHOUSIA)4/5ROOMS,EASTWING KMC 32 SANTHA KASIM SAB STREET,KURNOOL.",Kurnool,Kurnool
+245,KURNOOL,"Mpl.Corp.Urdu Primary School , 3rd Class Room,32 peta,Kurnool.",Kurnool,Kurnool
+246,KMC36KUMMARI STREET,MPL CORP GIRLS (SHAMSIA PRIM SCHL) KURNOOL,Kurnool,Kurnool
+247,"Mpl Corp, Girls (Shamsiya Primary Schl, East",MPL CORP GIRLS (SHAMSIA PRIM SCHL) KURNOOL,Kurnool,Kurnool
+248,"69/JOHARAPURAM,KURNOOL.","Dr.B.R.AMBEDKAR Mem. Mpl. H.S 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+249,Dr.B.R.Ambedkar Memo. Mpl Corp High Schl ROOM1,"Dr.B.R.AMBEDKAR Mem. Mpl. H.S 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+250,"69/JOHARAPURAM,KURNOOL.","Dr.B.R.AMBEDKAR Memo.Mpl Corp H.S 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+251,Dr.B.R.Ambedkar MemO. Mpl Corp High Schl (Room 2,"Dr.B.R.AMBEDKAR Memo.Mpl Corp H.S 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+252,"69/JOHARAPURAM,KURNOOL.","Dr.B.R.AMBEDKAR Memo.Mpl.Corp H.S, 9 th CLASS, KNL 69-JOHARAPURAM",Kurnool,Kurnool
+253,"69/JOHARAPURAM,KURNOOL.","Dr B.R.AMBEDKAR MEMORIYA MUNICIPAL CORPORATION HIGH SCHOOL, ROOM NO. 6, JOHARAPURAM, KURNOOL. KMC 69, JOHARAPURAM, KURNOOL",Kurnool,Kurnool
+254,"69/JOHARAPURAM,KURNOOL.","Dr.B.R.AMBEDKAR Memo.Mpl.Corp. HS(10TH CLASS),KNL 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+255,"69/JOHARAPURAM,KURNOOL.","MPL CORP PRIMARY SCHOOL NEW BUILD(EAST WING)KNL. 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+256,"69/JOHARAPURAM,KURNOOL.","MPL CORP PRIMAY SCHOOL NEW BUILD, KNL. 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+257,Mpl Corp Primary Schl New Building(1stClass Room,"MPL CORP PRIMAY SCHOOL NEW BUILD, KNL. 69/JOHARAPURAM,KURNOOL.",Kurnool,Kurnool
+258,KURNOOL,"Municipal Corporation Urdu Primary School , Room No-2, Joharapuram Village, 69/Joharapuram, Kurnool.",Kurnool,Kurnool
