@@ -62,43 +62,30 @@ def get_all_pollingstations():
 
     pollingstations = (
         db.session.query(PollingStations)
-        .join(AssemblyConstituency,AssemblyConstituency.Constituency_Name== PollingStations.Assembly_Constituency_Name)
+        .join(
+            AssemblyConstituency,
+            AssemblyConstituency.Constituency_Name
+            == PollingStations.Assembly_Constituency_Name,
+        )
         .join(Districts, Districts.District_Id == AssemblyConstituency.District_Code)
         .join(States, States.State_Id == Districts.State_Code)
         .filter(
             States.State_Name == State_Name,
             Districts.District_Name == District_Name,
-            PollingStations.Assembly_Constituency_Name == Constituency_Name
+            PollingStations.Assembly_Constituency_Name == Constituency_Name,
         )
         .all()
     )
-    print(State_Name,District_Name,Constituency_Name)
-    print(pollingstations)
     if pollingstations:
         pollingstations_list = []
         for pollingstation in pollingstations:
             print(f"Polling Station Name: {pollingstation.Polling_Station_Name}")
             polling_station_dict = {}
-            polling_station_dict[
-                "Polling_Station_Id"
-            ] = pollingstation.Polling_Station_Id
-            polling_station_dict[
-                "Polling_Station_Name"
-            ] = pollingstation.Polling_Station_Name
-            polling_station_dict[
-                "Polling_Station_No"
-            ] = pollingstation.Polling_Station_No
-            polling_station_dict[
-                "Polling_Station_Location"
-            ] = pollingstation.Polling_Station_Location
-            polling_station_dict[
-                "Assembly_Constituency_Name"
-            ] = pollingstation.Assembly_Constituency_Name
-            #  polling_station_dict["District_Name"] = PollingStations.Districts.District_Name
-            #  polling_station_dict["Assembly_Constituency_Name"] = PollingStations.AssemblyConstituency.Constituency_Name
-            # polling_station_dict["District_Name"] = pollingstation.district.District_Name
-            # polling_station_dict["Assembly_Constituency_Name"] = pollingstation.assembly_constituency.Constituency_Name
-            # polling_station_dict = {k: v for k, v in polling_station_dict.items() if not isinstance(v, class_mapper(InstrumentedAttribute))}
+            polling_station_dict["Polling_Station_Id"] = pollingstation.Polling_Station_Id
+            polling_station_dict["Polling_Station_Name"] = pollingstation.Polling_Station_Name
+            polling_station_dict["Polling_Station_No"] = pollingstation.Polling_Station_No
+            polling_station_dict["Polling_Station_Location"] = pollingstation.Polling_Station_Location
+            polling_station_dict["Assembly_Constituency_Name"] = pollingstation.Assembly_Constituency_Name
 
             pollingstations_list.append(polling_station_dict)
 
@@ -117,13 +104,17 @@ def download_all_pollingstations():
 
     pollingstations = (
         db.session.query(PollingStations)
-        .join(AssemblyConstituency,AssemblyConstituency.Constituency_Name== PollingStations.Assembly_Constituency_Name)
+        .join(
+            AssemblyConstituency,
+            AssemblyConstituency.Constituency_Name
+            == PollingStations.Assembly_Constituency_Name,
+        )
         .join(Districts, Districts.District_Id == AssemblyConstituency.District_Code)
         .join(States, States.State_Id == Districts.State_Code)
         .filter(
             States.State_Name == State_Name,
             Districts.District_Name == District_Name,
-            PollingStations.Assembly_Constituency_Name == Constituency_Name
+            PollingStations.Assembly_Constituency_Name == Constituency_Name,
         )
         .all()
     )
@@ -145,7 +136,7 @@ def download_all_pollingstations():
                 pollingstation.Polling_Station_Name,
                 pollingstation.Polling_Station_No,
                 pollingstation.Polling_Station_Location,
-                pollingstation.Assembly_Constituency_Name
+                pollingstation.Assembly_Constituency_Name,
             ]
             csv_writer.writerow(row)
 

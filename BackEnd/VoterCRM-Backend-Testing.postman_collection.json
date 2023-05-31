@@ -647,6 +647,127 @@
 			]
 		},
 		{
+			"name": "PollingStation",
+			"item": [
+				{
+					"name": "UploadPollingStations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1NTI2NjI4LCJleHAiOjE2ODgxMTg2Mjh9.fw2-ullBqGWSUYymW91h-NYRo4BAb6GBHVIbXyzzMK0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Downloads/PollingBoothData_3Const - Sheet1.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/upload_pollingstations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"upload_pollingstations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list_Pollingstations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1NTI2NjI4LCJleHAiOjE2ODgxMTg2Mjh9.fw2-ullBqGWSUYymW91h-NYRo4BAb6GBHVIbXyzzMK0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"State_Name\": \"Andhra Pradesh\",\r\n    \"District_Name\": \"Kurnool\",\r\n    \"Constituency_Name\": \"Kurnool\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/list_pollingstations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"list_pollingstations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "download_pollingstation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1NTI4MTE5LCJleHAiOjE2ODgxMjAxMTl9.0p1iE5rRvaKNFSIYms8pgP8C-VW5IuGYQ0riKzgbkaw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/download_pollingstations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"download_pollingstations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "VoterList",
 			"item": [
 				{
@@ -662,7 +783,7 @@
 							},
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MjA1NzgxLCJleHAiOjE2ODc3OTc3ODF9.bmXApKY0jc94c4b4uY2xDGeWkc6astzDRuYNQVqOdxY",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MjkxNzA0LCJleHAiOjE2ODc4ODM3MDR9.uyyO0bBQV8KJTYaWEJCyHC5Jl9Cmz12InwHrcTFffwY",
 								"type": "default"
 							}
 						],
@@ -672,7 +793,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/D:/Downloads/19_137_65 - 19_137_65.csv.csv"
+									"src": "/D:/Downloads/Merged_CSV_noDups_1.csv"
 								}
 							]
 						},
@@ -689,6 +810,13 @@
 							"path": [
 								"admin",
 								"upload_voters"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
 							]
 						}
 					},
