@@ -1,8 +1,13 @@
-# VoterCRM
+# VoterCRM - BackEnd
+This is the backend part of the VoterCRM project.
 
-IIIT-Hyd VoterCRM Project
-
-Project in Progress ...
+## Technologies Used
+- **Flask (v2.3.2)**: A lightweight web framework used for building the backend.
+- **Python (v3.11.0**: The programming language used for developing the backend logic.
+- **SQLAlchemy (v2.0.13)**: An ORM (Object-Relational Mapping) library used for interacting with the database.
+- **MYSQL (v5.7 image)**: The chosen relational database management system.
+- **PyJWT (JSON Web Tokens) (v2.7.0)**: A secure method for authentication and authorization.
+- **Git (v2.39.1.windows.1)** : Version control system for tracking changes and collaboration.
 
 ## How to build locally
 
