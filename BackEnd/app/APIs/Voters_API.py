@@ -5,7 +5,7 @@ from app.Models.Relations import *
 from app.Models.AssemblyConstituency import *
 from app.Models.Districts import *
 from app.Models.States import *
-from sqlalchemy import inspect
+from sqlalchemy import inspect, and_
 
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
@@ -32,14 +32,14 @@ def upload():
         next(csv_data)  # Skip header row if needed
         for row in csv_data:
             # Check if the UUID column is null in the data
-            if row[2] is None or row[2] == "":
+            if row[1] is None or row[1] == "":
                 while True:
                     # Generate a unique 10-digit UUID with integer characters
                     generated_uuid = str(uuid.uuid4().int)[:10]
                     # Check if the generated UUID is already present in the table
                     if not Voters.query.filter_by(Voter_UID=generated_uuid).first():
                         break
-                row[2] = generated_uuid
+                row[1] = generated_uuid
 
             # Assuming the CSV columns are in the order of column1, column2
             (
@@ -50,7 +50,8 @@ def upload():
                 House_Number,
                 Age,
                 Gender,
-                Polling_Station_Code,
+                Assembly_Constituency_Name,
+                Polling_Station_No
             ) = (
                 row[1],
                 row[2],
@@ -59,7 +60,8 @@ def upload():
                 row[7],
                 row[5],
                 row[6],
-                row[10],
+                row[11],
+                row[10]
             )
             data = Voters(
                 Voter_UID,
@@ -69,7 +71,8 @@ def upload():
                 House_Number,
                 Age,
                 Gender,
-                Polling_Station_Code,
+                Assembly_Constituency_Name,
+                Polling_Station_No
             )
             db.session.add(data)
             db.session.commit()
@@ -88,7 +91,7 @@ def get_all_voters():
         db.session.query(Voters)
         .join(
             PollingStations,
-            PollingStations.Polling_Station_Id == Voters.Polling_Station_Code,
+            and_(PollingStations.Polling_Station_No == Voters.Polling_Station_No,PollingStations.Assembly_Constituency_Name == Voters.Assembly_Constituency_Name)
         )
         .join(
             AssemblyConstituency,
