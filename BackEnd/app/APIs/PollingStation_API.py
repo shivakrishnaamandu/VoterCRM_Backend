@@ -49,7 +49,7 @@ def upload():
             )
             db.session.add(data)
             db.session.commit()
-        return "File uploaded and data inserted into the database table successfully."
+        return {"message": "File uploaded and data inserted into the database table successfully."}
 
 
 @PollingStation_API_blueprint.route("/admin/list_pollingstations", methods=["POST"])

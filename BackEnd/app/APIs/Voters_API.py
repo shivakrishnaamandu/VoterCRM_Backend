@@ -6,6 +6,7 @@ from app.Models.AssemblyConstituency import *
 from app.Models.Districts import *
 from app.Models.States import *
 from sqlalchemy import inspect, and_
+from io import StringIO
 
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
@@ -51,7 +52,7 @@ def upload():
                 Age,
                 Gender,
                 Assembly_Constituency_Name,
-                Polling_Station_No
+                Polling_Station_No,
             ) = (
                 row[1],
                 row[2],
@@ -61,7 +62,7 @@ def upload():
                 row[5],
                 row[6],
                 row[11],
-                row[10]
+                row[10],
             )
             data = Voters(
                 Voter_UID,
@@ -72,11 +73,13 @@ def upload():
                 Age,
                 Gender,
                 Assembly_Constituency_Name,
-                Polling_Station_No
+                Polling_Station_No,
             )
             db.session.add(data)
             db.session.commit()
-        return "File uploaded and data inserted into the database table successfully."
+        return {
+            "message": "File uploaded and data inserted into the database table successfully."
+        }
 
 
 @Voters_API_blueprint.route("/admin/list_voters", methods=["POST"])
@@ -91,15 +94,19 @@ def get_all_voters():
         db.session.query(Voters)
         .join(
             PollingStations,
-            and_(PollingStations.Polling_Station_No == Voters.Polling_Station_No,PollingStations.Assembly_Constituency_Name == Voters.Assembly_Constituency_Name)
+            and_(
+                PollingStations.Polling_Station_No == Voters.Polling_Station_No,
+                PollingStations.Assembly_Constituency_Name
+                == Voters.Assembly_Constituency_Name,
+            ),
         )
         .join(
             AssemblyConstituency,
-            AssemblyConstituency.Constituency_Id
-            == PollingStations.Assembly_Constituency_Code,
+            AssemblyConstituency.Constituency_Name
+            == PollingStations.Assembly_Constituency_Name,
         )
         .join(Districts, Districts.District_Id == AssemblyConstituency.District_Code)
-        .join(States, States.States_Id == Districts.State_Code)
+        .join(States, States.State_Id == Districts.State_Code)
         .filter(
             States.State_Name == State_Name,
             Districts.District_Name == District_Name,
@@ -110,17 +117,18 @@ def get_all_voters():
     if voters:
         voter_list = []
         for voter in voters:
-            print(f"Voter Name: {voter.Voters_Name}")
+            print(f"Voter Name: {voter.Voter_Name}")
             voter_dict = {}
             voter_dict["Voter_Row_ID"] = voter.Voter_Row_ID
             voter_dict["Voter_UID"] = voter.Voter_UID
-            voter_dict["VoterName"] = voter.Voters_Name
+            voter_dict["VoterName"] = voter.Voter_Name
             voter_dict["Relative_Name"] = voter.Relative_Name
             voter_dict["Relation_Type"] = voter.Relation_Type
             voter_dict["House_Number"] = voter.House_Number
             voter_dict["Age"] = voter.Age
             voter_dict["Gender"] = voter.Gender
-            voter_dict["Polling_Station_Code"] = voter.Polling_Station_Code
+            voter_dict["Assembly_Constituency_Name"] = voter.Assembly_Constituency_Name
+            voter_dict["Polling_Station_No"] = voter.Polling_Station_No
             voter_list.append(voter_dict)
         return {"voters": voter_list}
     else:
@@ -139,15 +147,19 @@ def download_all_voters():
         db.session.query(Voters)
         .join(
             PollingStations,
-            PollingStations.Polling_Station_Id == Voters.Polling_Station_Code,
+            and_(
+                PollingStations.Polling_Station_No == Voters.Polling_Station_No,
+                PollingStations.Assembly_Constituency_Name
+                == Voters.Assembly_Constituency_Name,
+            ),
         )
         .join(
             AssemblyConstituency,
-            AssemblyConstituency.Constituency_Id
-            == PollingStations.Assembly_Constituency_Code,
+            AssemblyConstituency.Constituency_Name
+            == PollingStations.Assembly_Constituency_Name,
         )
         .join(Districts, Districts.District_Id == AssemblyConstituency.District_Code)
-        .join(States, States.States_Id == Districts.State_Code)
+        .join(States, States.State_Id == Districts.State_Code)
         .filter(
             States.State_Name == State_Name,
             Districts.District_Name == District_Name,
@@ -156,20 +168,38 @@ def download_all_voters():
         .all()
     )
     if voters:
-        # Create a CSV string using the voter data
-        csv_data = []
+        # Create a StringIO object to write the CSV data
+        csv_data = StringIO()
+
+        # Create a CSV writer
+        csv_writer = csv.writer(csv_data)
+
+        # Write the header row
+        csv_writer.writerow(inspect(Voters).columns.keys())
+
+        # Write the polling station data
         for voter in voters:
-            csv_data.append([voter])
+            # Extract the desired attributes from the voter object
+            row = [
+                voter.Voter_Row_ID,
+                voter.Voter_UID,
+                voter.Voter_Name,
+                voter.Relative_Name,
+                voter.Relation_Type,
+                voter.House_Number,
+                voter.Age,
+                voter.Gender,
+                voter.Assembly_Constituency_Name,
+                voter.Polling_Station_No,
+            ]
+            csv_writer.writerow(row)
 
         # Create a response with the CSV file
-        response = Response(content_type="text/csv")
-        response.headers.set("Content-Disposition", "attachment", filename="voters.csv")
-
-        # Write the CSV data to the response
-        csv_writer = csv.writer(response)
-        csv_writer.writerow(inspect(Voters).columns.keys())  # Write header row
-        csv_writer.writerows(csv_data)
+        response = Response(csv_data.getvalue(), mimetype="text/csv")
+        response.headers.set(
+            "Content-Disposition", "attachment", filename="voterlist.csv"
+        )
 
         return response
     else:
-        return {"message": "No voter data available"}
+        return {"message": "No pollingstation data available"}

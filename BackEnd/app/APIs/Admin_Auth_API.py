@@ -118,7 +118,7 @@ def sign_up():
         Username,
         password_hash,
         Email_Id,
-        IsAdmin,
+        1,
         Gender,
         Phone_No,
         Address,
