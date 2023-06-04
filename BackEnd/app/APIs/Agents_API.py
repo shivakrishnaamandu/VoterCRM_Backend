@@ -173,3 +173,27 @@ def log_out():
     return {"message": "Logged out successfully"}
 
 
+@Agents_API_blueprint.route("/agent/upload_voterdetails", methods=["POST"])
+def upload_data():
+    file = request.files["file"]
+    if file.filename == '':
+        return  {"message": "File not selected"}
+    if file:
+        try:
+            # Read the CSV file using csv.DictReader and io.StringIO
+            csv_data = csv.DictReader(io.StringIO(file.read().decode("utf-8")))
+
+            # Prepare a list of dictionaries representing each row in the CSV
+            records = []
+            for row in csv_data:
+                record = dict(row)  # Each row is already a dictionary
+                records.append(record)
+
+            # Use bulk insert to insert all records at once
+            db.session.bulk_insert_mappings(VoterDetails_new, records)
+            db.session.commit()
+
+            return {"message": "File uploaded successfully"}
+        except Exception as e:
+            db.session.rollback()
+            return jsonify("Error: " + str(e))
