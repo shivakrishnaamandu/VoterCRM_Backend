@@ -12,7 +12,7 @@ api = Api(application)  # Flask restful wraps Flask app around it.
 
 application.config["SQLALCHEMY_DATABASE_URI"] ='mysql://{}:{}@{}/{}'.format(
     os.getenv('DB_USER', 'root'),
-    os.getenv('DB_PASSWORD', 'admin'),
+    os.getenv('DB_PASSWORD', 'password-123'),
     os.getenv('DB_HOST', 'localhost'),
     os.getenv('DB_NAME', 'voter_crm')
 )

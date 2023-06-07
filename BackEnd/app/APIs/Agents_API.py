@@ -1,14 +1,17 @@
 from app import application, db
 from app.Models.Agents import *
 from app.Models.Logins import *
+from app.Models.VoterDetails import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
 from flask import request, Blueprint, redirect, url_for,jsonify
+from flask import request, Blueprint, redirect, url_for,jsonify
 from werkzeug import exceptions
 import csv, io
+from openpyxl import load_workbook
 from io import StringIO
-
+import pandas as pd
 sign_up_key = "signupkey"
 jwt_secret = "secret"
 
@@ -171,6 +174,7 @@ def log_out():
         return jsonify("Error: " + str(e))
     return {"message": "Logged out successfully"}
 
+
 @Agents_API_blueprint.route("/agent/upload_voterdetails", methods=["POST"])
 def upload_data():
     file = request.files["file"]
@@ -190,6 +194,7 @@ def upload_data():
                 record.pop('Voter_Details_Id', None)
                 records.append(record)
 
+            
             print("No of records",len(records))
             for record in records:
                 data = VoterDetails(**record)
@@ -201,5 +206,4 @@ def upload_data():
             
         except Exception as e:
             db.session.rollback()
-            return jsonify("Error: " + str(e))    
-
+            return jsonify("Error: " + str(e))            

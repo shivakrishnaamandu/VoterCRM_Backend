@@ -10,8 +10,7 @@ class PoliticalParties(db.Model):
     Party_State =  db.Column(db.Integer, db.ForeignKey("States.State_Id"))
     Party_President = db.Column(db.String(100))
 
-    def __init__(self, Party_Id, Party_Name, Party_Symbol, Party_Status, Party_State, Party_President):
-        self.Party_Id = Party_Id
+    def __init__(self, Party_Name, Party_Symbol, Party_Status, Party_State, Party_President):
         self.Party_Name = Party_Name
         self.Party_Symbol = Party_Symbol
         self.Party_State = Party_State
