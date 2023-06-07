@@ -9,9 +9,11 @@ CREATE TABLE Voters(
     House_Number text NOT NULL,
     Age int NOT NULL,
     Gender varchar(10) NOT NULL,
-    Polling_Station_Code int NOT NULL,
+    Assembly_Constituency_Name varchar(100) NOT NULL,
+    Polling_Station_No int NOT NULL,
     FOREIGN KEY (Relation_Type) REFERENCES Relations(Relation_Id),
-    FOREIGN KEY (Polling_Station_Code) REFERENCES PollingStations(Polling_Station_Id)
+    CONSTRAINT FK_Polling FOREIGN KEY (Assembly_Constituency_Name, Polling_Station_No)
+    REFERENCES PollingStations(Assembly_Constituency_Name, Polling_Station_No)
 );
 
 
