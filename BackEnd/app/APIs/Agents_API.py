@@ -1,14 +1,17 @@
 from app import application, db
 from app.Models.Agents import *
 from app.Models.Logins import *
+from app.Models.VoterDetails import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
 from flask import request, Blueprint, redirect, url_for,jsonify
+from flask import request, Blueprint, redirect, url_for,jsonify
 from werkzeug import exceptions
 import csv, io
+from openpyxl import load_workbook
 from io import StringIO
-
+import pandas as pd
 sign_up_key = "signupkey"
 jwt_secret = "secret"
 
@@ -172,3 +175,35 @@ def log_out():
     return {"message": "Logged out successfully"}
 
 
+@Agents_API_blueprint.route("/agent/upload_voterdetails", methods=["POST"])
+def upload_data():
+    file = request.files["file"]
+    if file.filename == '':
+        return  {"message": "File not selected"}
+    if file:
+        try:         
+            workbook = load_workbook(file, data_only=True)
+            sheet = workbook.active
+            #sheet = workbook["Sheet1"] # to access sheet1 or replace with name of sheet
+
+            headers = [cell.value for cell in sheet[1]]  # Assuming the headers are in the first row
+
+            records = []
+            for row in sheet.iter_rows(values_only=True, min_row=2):
+                record = dict(zip(headers, row))
+                record.pop('Voter_Details_Id', None)
+                records.append(record)
+
+            
+            print("No of records",len(records))
+            for record in records:
+                data = VoterDetails(**record)
+                db.session.add(data)
+
+            #db.session.add(bulk_data)
+            db.session.commit()
+            return {"message": "File uploaded successfully"}
+            
+        except Exception as e:
+            db.session.rollback()
+            return jsonify("Error: " + str(e))            

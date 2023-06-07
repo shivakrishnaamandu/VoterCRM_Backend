@@ -1,0 +1,891 @@
+{
+	"info": {
+		"_postman_id": "6e0c9462-dc19-462f-93e7-5ce42c916487",
+		"name": "VoterCRM-Backend-Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21883314"
+	},
+	"item": [
+		{
+			"name": "Admin Auth",
+			"item": [
+				{
+					"name": "admin_signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "signupkey",
+								"value": "signupkey",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Agent_Id\": 1,\r\n  \"First_name\": \"John\",\r\n  \"Last_name\": \"Doe\",\r\n  \"Username\": \"shiva\",\r\n  \"Password\": \"12345\",\r\n  \"Email_Id\": \"johndoe@example.com\",\r\n  \"IsAdmin\": true,\r\n  \"Gender\": \"Male\",\r\n  \"Phone_No\": \"1234567890\",\r\n  \"Address\": \"123 Street, City, Country\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/auth/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "signupkey",
+								"value": "signupkey",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"Username\": \"shiva\",\r\n    \"Password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTcxMTA4LCJleHAiOjE2ODc3NjMxMDh9.ZuFohCvqOY5Ibkjh3YZQ-_ucXqfRR_BlmHXQLGeNqXU",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/auth/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changepassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0MTYxODAxLCJleHAiOjE2ODY3NTM4MDF9.vrIDixp76At0cFRgdjIvETbHK4f17cWmRjmlxtm-SOU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"shiva\",\r\n    \"Old_Password\": \"12345\",\r\n    \"New_Password\": \"abcde\",\r\n    \"Retype_New_Password\": \"abcde\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/auth/changepassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"auth",
+								"changepassword"
+							],
+							"query": [
+								{
+									"key": "content",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "State",
+			"item": [
+				{
+					"name": "Add_State",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MDgwMjg0LCJleHAiOjE2ODc2NzIyODR9.orf9PQ23hvtk9wS_vJtTXmkQAHHxahK8ic_NEI5pJk8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"State_Name\": \"Karnataka\",\r\n    \"State_No\": 5\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/add_state",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"add_state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "states",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjgzOTk2MTU5LCJleHAiOjE2ODY1ODgxNTl9.hlAAk2nrSW3nOK9D9FnumnWCoTmycJPea3-nQ7RT2WY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "signupkey",
+								"value": "signupkey",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/states",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_state",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0OTM3NDQyLCJleHAiOjE2ODc1Mjk0NDJ9.OjrF4jY33OTc9pO21RwJKQMePXBQZf923ZmMP2DuY_I",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"State_Id\": 0\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/delete_state",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"delete_state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_state",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0OTM3NDQyLCJleHAiOjE2ODc1Mjk0NDJ9.OjrF4jY33OTc9pO21RwJKQMePXBQZf923ZmMP2DuY_I",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"State_Id\": 4,\r\n    \"To_Update_State_Name\": \"Kerala_2\",\r\n    \"To_Update_State_No\": 41\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/update_state?",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"update_state"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "District",
+			"item": [
+				{
+					"name": "districts_list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTg5MTQ3LCJleHAiOjE2ODc3ODExNDd9.VYRBbWkhMdaulAXhi_FVjHgJclOfxxKyFpaabsOXyJs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n            \"State_Code\": 2\r\n }"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/districts_list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"districts_list"
+							],
+							"query": [
+								{
+									"key": "content",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_district",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MDc5ODAzLCJleHAiOjE2ODc2NzE4MDN9.A3IdoRgSbgHBoJip7BwCJf6DmE-S2ySJNLzFPjKJL8w",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"District_Name\": \"Kurnool\",\r\n    \"District_No\": 2,\r\n    \"State_Code\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/add_district",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"add_district"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_district",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0ODIzNDIwLCJleHAiOjE2ODc0MTU0MjB9.TVrsvry8-IYJ3ylZRelp1uh7ae4t6i_SLoyvrnSgdA0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"District_Id\": 2,\r\n    \"To_Update_Dist_Name\": \"Krishna_3\",\r\n    \"To_Update_Dist_No\": 3\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/update_district",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"update_district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_district",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg0ODIzNDIwLCJleHAiOjE2ODc0MTU0MjB9.TVrsvry8-IYJ3ylZRelp1uh7ae4t6i_SLoyvrnSgdA0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"District_Id\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/delete_district",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"delete_district"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Constituency",
+			"item": [
+				{
+					"name": "add_constituency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Constituency_Name\": \"Nizamabad\",\r\n    \"Constituency_No\": 51,\r\n    \"District_Code\": 51\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/add_constituency",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"add_constituency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list_constituency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTg5MTQ3LCJleHAiOjE2ODc3ODExNDd9.VYRBbWkhMdaulAXhi_FVjHgJclOfxxKyFpaabsOXyJs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"District_Name\": \"Kurnool\",\r\n    \"State_Name\":\"Andhra Pradesh\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/assemblyconstituency",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"assemblyconstituency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_constituency",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MTAyNjExLCJleHAiOjE2ODc2OTQ2MTF9.OJ0463o8ERcpISdr8o-dQWgOkocR6HBcr18NnL-u39g",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Constituency_Id\": 1727543150,\r\n    \"Constituency_Name\": \"Nizamabad Urban\",\r\n    \"Constituency_No\": 51\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/update_constituency",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"update_constituency"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VoterList",
+			"item": [
+				{
+					"name": "upload_voters",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg1MjA1NzgxLCJleHAiOjE2ODc3OTc3ODF9.bmXApKY0jc94c4b4uY2xDGeWkc6astzDRuYNQVqOdxY",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Downloads/19_137_65 - 19_137_65.csv.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/admin/upload_voters",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"upload_voters"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agent",
+			"item": [
+				{
+					"name": "/agent/login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"john\",\r\n    \"Password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agent/logout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2ODU2MDQ5ODEsImV4cCI6MTY4ODE5Njk4MX0.bMF85qgxlSQ2GvFI190XbW39mJQcX0xhrIR5IuUAoq8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agent/change_password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2ODU2MDY0NzYsImV4cCI6MTY4ODE5ODQ3Nn0.tQsg8zsAdNAjmtoUnmFNvbtocOUTTyfZ47rIyC0_Kfs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"john\",\r\n    \"Old_Password\": \"password\",\r\n    \"New_Password\": \"1234\",\r\n    \"Retype_New_Password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/change_password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"change_password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/agent/signup",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "signupkey",
+						"value": "signupkey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Agent_Id\": 12,\r\n  \"First_name\": \"John\",\r\n  \"Last_name\": \"Doe\",\r\n  \"Username\": \"johnd\",\r\n  \"Password\": \"12345\",\r\n  \"Email_Id\": \"swapna.karri@gmail.com\",\r\n  \"IsAdmin\": 0,\r\n  \"Gender\": \"female\",\r\n  \"Phone_No\": \"1234567890\",\r\n  \"Address\": \"123 Street, Hyd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/agent/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agent",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/agent/upload_voterdetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2ODU3OTI5NDQsImV4cCI6MTY4ODM4NDk0NH0.n8eZ6emr7tZKckyExW9x1RqxYX-6wJ9UM0OAfBaHcww",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Swapna/GreatLearning/Capstone/VoterCRM/VoterCRM_Backend/voterdetails.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/agent/upload_voterdetails",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agent",
+						"upload_voterdetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
