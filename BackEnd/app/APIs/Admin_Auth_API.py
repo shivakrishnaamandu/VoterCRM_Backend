@@ -133,10 +133,11 @@ def is_logged_in():
     return {"message": "token is valid"}
 
 
-@Admin_Auth_API_blueprint.route("/admin/auth/logout")
+@Admin_Auth_API_blueprint.route("/admin/auth/logout/", methods=["POST"])
 def log_out():
     try:
-        token = request.headers["token"]
+        token = request.args.get('token')
+        # token = request.headers["token"]
         login = Logins.query.filter_by(Token = token).first()
         login.Status = "LoggedOut"
         db.session.commit()
@@ -148,6 +149,7 @@ def log_out():
 
 @Admin_Auth_API_blueprint.route("/admin/auth/changepassword", methods=["POST"])
 def change_password():
+    token = request.headers["token"]
     username, old_password, new_password, retype_new_password = (
         request.json["Username"],
         request.json["Old_Password"],
@@ -159,19 +161,19 @@ def change_password():
         return exceptions.Unauthorized(description="Inconsistent New Password")
     admin = Agents.query.filter_by(Username=username).first()
     if admin is None:
-        redirect(url_for("Admin_Auth_API.log_out"))
+        redirect(url_for("Admin_Auth_API.log_out", token = token))
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), admin.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        redirect(url_for("Admin_Auth_API.log_out"))
+        redirect(url_for("Admin_Auth_API.log_out", token = token))
         return exceptions.Unauthorized(description="Incorrect password")
     admin.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
     ).decode("utf-8")
     db.session.commit()
     print("password changed")
-    redirect(url_for("Admin_Auth_API.log_out"))
+    redirect(url_for("Admin_Auth_API.log_out(token)"))
     return {"message": "Password changed successfully"}

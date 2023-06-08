@@ -898,6 +898,240 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Agent",
+			"item": [
+				{
+					"name": "/agent/login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"john\",\r\n    \"Password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agent/logout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2ODU2MDQ5ODEsImV4cCI6MTY4ODE5Njk4MX0.bMF85qgxlSQ2GvFI190XbW39mJQcX0xhrIR5IuUAoq8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agent/change_password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2ODU2MDY0NzYsImV4cCI6MTY4ODE5ODQ3Nn0.tQsg8zsAdNAjmtoUnmFNvbtocOUTTyfZ47rIyC0_Kfs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"john\",\r\n    \"Old_Password\": \"password\",\r\n    \"New_Password\": \"1234\",\r\n    \"Retype_New_Password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/change_password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"change_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agent/signup",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "signupkey",
+								"value": "signupkey",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Agent_Id\": 12,\r\n  \"First_name\": \"John\",\r\n  \"Last_name\": \"Doe\",\r\n  \"Username\": \"johnd\",\r\n  \"Password\": \"12345\",\r\n  \"Email_Id\": \"swapna.karri@gmail.com\",\r\n  \"IsAdmin\": 0,\r\n  \"Gender\": \"female\",\r\n  \"Phone_No\": \"1234567890\",\r\n  \"Address\": \"123 Street, Hyd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/agent/upload_voterdetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE2ODU3OTI5NDQsImV4cCI6MTY4ODM4NDk0NH0.n8eZ6emr7tZKckyExW9x1RqxYX-6wJ9UM0OAfBaHcww",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Swapna/GreatLearning/Capstone/VoterCRM/VoterCRM_Backend/voterdetails.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/agent/upload_voterdetails",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"agent",
+								"upload_voterdetails"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytics",
+			"item": [
+				{
+					"name": "admin_analytics",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjg2MTQ0ODU4LCJleHAiOjE2ODg3MzY4NTh9.5nxnYCRb2Ow6G1ZFvT7dXNp18JPH-NUVwH7lOlPn6gc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"state_names\": [\"Andhra Pradesh\"],\r\n  \"district_names\": [\"Kurnool\",\"Bapatla\"],\r\n  \"constituency_names\": [\"Kurnool\",\"Bapatla\"],\r\n  \"polling_booth_names\": [\"44 ROJA PRAKASH NAGAR, KURNOOL\",\"GOPA PURAM\",\"POONDLA\"]\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000//admin/get_voter_details",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"",
+								"admin",
+								"get_voter_details"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

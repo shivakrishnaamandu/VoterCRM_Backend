@@ -5,7 +5,7 @@ from werkzeug import exceptions
 
 class Middleware:
     def __init__(self, jwtservice: JWTService):
-        self.unauthenticated_route_names = {"/admin/auth/login", "/admin/auth/signup"}
+        self.unauthenticated_route_names = {"/admin/auth/login", "/admin/auth/signup","/agent/login"}
         self.jwtservice = jwtservice
 
     def auth(self, request: Request):
@@ -23,5 +23,6 @@ class Middleware:
             if is_valid:
                 return None
             else:
+                print("middleware auth failed")
                 return exceptions.Unauthorized()
         return exceptions.Unauthorized()

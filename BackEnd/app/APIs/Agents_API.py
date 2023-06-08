@@ -6,7 +6,6 @@ from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
 from flask import request, Blueprint, redirect, url_for,jsonify
-from flask import request, Blueprint, redirect, url_for,jsonify
 from werkzeug import exceptions
 import csv, io
 from openpyxl import load_workbook
@@ -63,7 +62,7 @@ def sign_up():
         Username,
         password_hash,
         Email_Id,
-        IsAdmin,
+        0,
         Gender,
         Phone_No,
         Address,
@@ -133,6 +132,7 @@ def is_logged_in():
 
 @Agents_API_blueprint.route("/agent/change_password", methods=["POST"])
 def change_password():
+    token = request.headers["token"]
     username, old_password, new_password, retype_new_password = (
         request.json["Username"],
         request.json["Old_Password"],
@@ -144,32 +144,38 @@ def change_password():
         return exceptions.Unauthorized(description="Password mismatch")
     agent = Agents.query.filter_by(Username=username).first()
     if agent is None:
-        redirect(url_for("Agents_API.log_out"))
+        redirect(url_for("Agents_API.agent_log_out", token = token))
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), agent.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        redirect(url_for("Agents_API.log_out"))
+        redirect(url_for("Agents_API.agent_log_out", token = token))
         return exceptions.Unauthorized(description="Incorrect password")
     agent.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
     ).decode("utf-8")
     db.session.commit()
     print("password changed")
-    redirect(url_for("Agents_API.log_out"))
+    print(token)
+    redirect(url_for("Agents_API.agent_log_out", token = token,_method = "PUT"))
+    print("after logout method")
     return {"message": "Password changed successfully"}
 
 
-@Agents_API_blueprint.route("/agent/logout", methods=["PUT"])
-def log_out():
+@Agents_API_blueprint.route("/agent/logout/", methods=["PUT"])
+def agent_log_out():
     try:
-        token = request.headers["token"]
+        print("triggered log_out")
+        token = request.args.get('token')
+        # token = request.headers["token"]
         login = Logins.query.filter_by(Token = token).first()
         login.Status = "LoggedOut"
         db.session.commit()
+        print("logged out")
     except Exception as e:
+        print(str(e))
         db.session.rollback()
         return jsonify("Error: " + str(e))
     return {"message": "Logged out successfully"}
@@ -199,9 +205,10 @@ def upload_data():
             for record in records:
                 data = VoterDetails(**record)
                 db.session.add(data)
+                db.session.commit()
 
             #db.session.add(bulk_data)
-            db.session.commit()
+            # db.session.commit()
             return {"message": "File uploaded successfully"}
             
         except Exception as e:
