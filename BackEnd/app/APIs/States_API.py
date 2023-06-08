@@ -44,10 +44,9 @@ def add_state():
 
 @States_API_blueprint.route("/admin/delete_state", methods=["POST"])
 def delete_state():
-    State_Id = request.json["State_Id"]
-    print(State_Id)
+    state_name = request.json["State_Name"]
     try:
-        States.query.filter_by(State_Id=State_Id).delete()  # Fetching the instance
+        States.query.filter_by(State_Name=state_name).delete()  # Fetching the instance
         db.session.commit()
         return {"message": "State deleted successfully"}
     except:
@@ -55,19 +54,18 @@ def delete_state():
 
 
 @States_API_blueprint.route("/admin/update_state", methods=["POST"])
-# Can update 2 fields State_Name , State_No
+# Can update State_Name 
 def update_state():
     try:
-        State_Id, Updated_State_name, Updated_State_no = (
-            request.json["State_Id"],
-            request.json["To_Update_State_Name"],
-            request.json["To_Update_State_No"],
+        existing_state_name, Update_State_name = (
+            request.json["Existing_State_Name"],
+            request.json["Update_State_Name"],
+            #request.json["Update_State_No"]
         )
-        existing_state = States.query.filter_by(State_Id=State_Id).first()
+        existing_state = States.query.filter_by(State_Name=existing_state_name).first()
         if existing_state:
-            existing_state.State_Name = Updated_State_name
-            existing_state.State_No = Updated_State_no
-            print(existing_state.State_Name)
+            existing_state.State_Name = Update_State_name
+            #existing_state.State_No = Updated_State_no
             db.session.commit()
             db.session.close()
             return {"message": "State updated successfully"}
@@ -76,5 +74,4 @@ def update_state():
     except Exception as e:
         db.session.rollback()
         return {"Error: " + str(e)}
-    finally:
-        db.session.close()
+    
