@@ -3,7 +3,7 @@ from app.Models.States import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from flask import request, Blueprint
-import uuid
+#import uuid
 
 jwt_secret = "secret"
 
@@ -44,10 +44,10 @@ def add_state():
 
 @States_API_blueprint.route("/admin/delete_state", methods=["POST"])
 def delete_state():
-    State_Id = request.json["State_Id"]
-    # print(State_Id)
+    state_name = request.json["State_Name"]
+    # print(state_name)
     try:
-        States.query.filter_by(State_Id=State_Id).delete()  # Fetching the instance
+        States.query.filter_by(State_Name=state_name).delete()  # Fetching the instance
         db.session.commit()
         return {"message": "State deleted successfully"}
     except:
@@ -55,26 +55,25 @@ def delete_state():
 
 
 @States_API_blueprint.route("/admin/update_state", methods=["POST"])
-# Can update 2 fields State_Name , State_No
+# Can update State_Name , state no
 def update_state():
     try:
-        State_Id, Updated_State_name, Updated_State_no = (
-            request.json["State_Id"],
-            request.json["To_Update_State_Name"],
-            request.json["To_Update_State_No"],
+        existing_state_name, update_state_name, update_state_no = (
+            request.json["Existing_State_Name"],
+            request.json["Update_State_Name"],
+            request.json["Update_State_No"]
         )
-        existing_state = States.query.filter_by(State_Id=State_Id).first()
+        existing_state = States.query.filter_by(State_Name=existing_state_name).first()
         if existing_state:
-            existing_state.State_Name = Updated_State_name
-            existing_state.State_No = Updated_State_no
+            existing_state.State_Name = update_state_name
+            existing_state.State_No = update_state_no
             # print(existing_state.State_Name)
             db.session.commit()
             db.session.close()
-            return {"message": "State updated successfully"}
+            return {"message": "State details updated successfully"}
         else:
             return {"message": "State Not available"}
     except Exception as e:
         db.session.rollback()
         return {"Error: " + str(e)}
-    finally:
-        db.session.close()
+    
