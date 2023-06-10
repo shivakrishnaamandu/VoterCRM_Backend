@@ -7,7 +7,7 @@ from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
 from flask import request, Blueprint, redirect, url_for,jsonify
 from werkzeug import exceptions
-import csv, io
+import csv, io,requests
 from openpyxl import load_workbook
 from io import StringIO
 sign_up_key = "signupkey"
@@ -132,6 +132,7 @@ def is_logged_in():
 @Agents_API_blueprint.route("/agent/change_password", methods=["POST"])
 def change_password():
     token = request.headers["token"]
+    req_headers = {'token': token}
     username, old_password, new_password, retype_new_password = (
         request.json["Username"],
         request.json["Old_Password"],
@@ -143,14 +144,14 @@ def change_password():
         return exceptions.Unauthorized(description="Password mismatch")
     agent = Agents.query.filter_by(Username=username).first()
     if agent is None:
-        redirect(url_for("Agents_API.agent_log_out", token = token))
+        requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), agent.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        redirect(url_for("Agents_API.agent_log_out", token = token))
+        requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect password")
     agent.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
@@ -158,16 +159,14 @@ def change_password():
     db.session.commit()
     #print("password changed")
     #print(token)
-    redirect(url_for("Agents_API.agent_log_out", token = token,_method = "POST"))
+    requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
     return {"message": "Password changed successfully"}
 
 
 @Agents_API_blueprint.route("/agent/logout", methods=["POST"])
 def agent_log_out():
     try:
-        #print("triggered log_out")
-        token = request.args.get('token')
-        #token = request.headers["token"]
+        token = request.headers["token"]
         login = Logins.query.filter_by(Token = token).first()
         login.Status = "LoggedOut"
         db.session.commit()
