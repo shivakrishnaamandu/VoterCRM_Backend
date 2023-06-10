@@ -1,12 +1,12 @@
 from app import application, db
 from app.Models.Agents import *
 from app.Models.Logins import *
-from flask import request, Blueprint, redirect, url_for, jsonify
+from flask import request, Blueprint,jsonify
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
 from werkzeug import exceptions
-import uuid
+import uuid, requests
 
 sign_up_key = "signupkey"
 jwt_secret = "secret"
@@ -149,6 +149,7 @@ def log_out():
 @Admin_Auth_API_blueprint.route("/admin/auth/changepassword", methods=["POST"])
 def change_password():
     token = request.headers["token"]
+    req_headers = {'token': token}
     username, old_password, new_password, retype_new_password = (
         request.json["Username"],
         request.json["Old_Password"],
@@ -160,19 +161,19 @@ def change_password():
         return exceptions.Unauthorized(description="Inconsistent New Password")
     admin = Agents.query.filter_by(Username=username).first()
     if admin is None:
-        redirect(url_for("Admin_Auth_API.log_out", token = token))
+        requests.post(url= request.host_url.rstrip("/") + "/admin/auth/logout/", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), admin.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        redirect(url_for("Admin_Auth_API.log_out", token = token))
+        requests.post(url= request.host_url.rstrip("/") + "/admin/auth/logout/", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect password")
     admin.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
     ).decode("utf-8")
     db.session.commit()
     # print("password changed")
-    redirect(url_for("Admin_Auth_API.log_out(token)"))
+    requests.post(url= request.host_url.rstrip("/") + "/admin/auth/logout/", headers= req_headers)
     return {"message": "Password changed successfully"}
