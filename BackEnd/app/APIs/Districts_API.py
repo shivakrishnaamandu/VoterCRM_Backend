@@ -3,7 +3,6 @@ from app.Models.Districts import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from flask import request, Blueprint, jsonify
-import uuid
 
 jwt_secret = "secret"
 
@@ -51,32 +50,33 @@ def add_district():
 
 @Districts_API_blueprint.route("/admin/delete_district", methods=["POST"])
 def delete_district():
-    district_id = request.json["District_Id"]
+    district_name = request.json["District_Name"]
     # print(district_id)
     try:
         Districts.query.filter_by(District_Name=district_name).delete()  # Fetching the instance
         db.session.commit()
         return {"message": "District deleted successfully"}
     except:
-        return {"message": "Error deleting districts"}
+        return {"message": "Error deleting district"}
 
 
 @Districts_API_blueprint.route("/admin/update_district", methods=["POST"])
-# Can update 1 fields District_Name
+# Can update 2 fields District_Name, district_no
 def update_district():
     try:
-        existing_dist_name, Update_dist_name = (
+        existing_dist_name, update_dist_name,update_dist_no  = (
             request.json["Existing_District_Name"],
             request.json["Update_District_Name"],
+            request.json["Update_District_No"]
         )
         existing_district = Districts.query.filter_by(District_Name=existing_dist_name).first()
         if existing_district:
-            existing_district.District_Name = Updated_dist_name
-            existing_district.District_No = Updated_dist_no
+            existing_district.District_Name = update_dist_name
+            existing_district.District_No = update_dist_no
             # print(existing_district.District_Name)
             db.session.commit()
             db.session.close()
-            return {"message": "District updated successfully"}
+            return {"message": "District details updated successfully"}
         else:
             return {"message": "District Not available"}
     except Exception as e:
