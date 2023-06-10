@@ -21,7 +21,7 @@ application.before_request(lambda: middleware.auth(request))
 Admin_Auth_API_blueprint = Blueprint("Admin_Auth_API", __name__)
 
 
-@Admin_Auth_API_blueprint.route("/admin/auth/login", methods=["PUT"])
+@Admin_Auth_API_blueprint.route("/admin/auth/login", methods=["POST"])
 def log_in():
     username, password = request.json["Username"], request.json["Password"]
 
