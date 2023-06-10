@@ -54,7 +54,7 @@ def upload():
 
 @PollingStation_API_blueprint.route("/admin/list_pollingstations", methods=["POST"])
 def get_all_pollingstations():
-    print(f"url accessed")
+    # print(f"url accessed")
     body = request.json
     State_Name = body["State_Name"]
     District_Name = body["District_Name"]
@@ -79,7 +79,7 @@ def get_all_pollingstations():
     if pollingstations:
         pollingstations_list = []
         for pollingstation in pollingstations:
-            print(f"Polling Station Name: {pollingstation.Polling_Station_Name}")
+            # print(f"Polling Station Name: {pollingstation.Polling_Station_Name}")
             polling_station_dict = {}
             polling_station_dict["Polling_Station_Id"] = pollingstation.Polling_Station_Id
             polling_station_dict["Polling_Station_Name"] = pollingstation.Polling_Station_Name
@@ -96,7 +96,7 @@ def get_all_pollingstations():
 
 @PollingStation_API_blueprint.route("/admin/download_pollingstations", methods=["POST"])
 def download_all_pollingstations():
-    print(f"url accessed")
+    # print(f"url accessed")
     body = request.json
     State_Name = body["State_Name"]
     District_Name = body["District_Name"]

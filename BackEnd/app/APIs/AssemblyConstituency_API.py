@@ -39,8 +39,8 @@ def get_all_constituencies():
         if "State_Name" in body:
             constituency_list = []
             state_name = request.json["State_Name"]
-            print("0")
-            print(state_name)
+            # print("0")
+            # print(state_name)
             state = States.query.filter_by(State_Name=state_name).one()
             dis = Districts.query.filter_by(State_Code=state.State_Id).all()
             for district in dis:

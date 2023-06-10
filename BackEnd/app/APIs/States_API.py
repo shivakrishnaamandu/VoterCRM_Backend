@@ -17,12 +17,12 @@ States_API_blueprint = Blueprint("States_API", __name__)
 
 @States_API_blueprint.route("/admin/states")
 def get_all_states():
-    print(f"url accessed")
+    # print(f"url accessed")
     states = States.query.all()
     if states:
         state_list = []
         for state in states:
-            print(f"State Name: {state.State_Name}")
+            # print(f"State Name: {state.State_Name}")
             state_dict = {}
             state_dict["State_Id"] = state.State_Id
             state_dict["State_Name"] = state.State_Name
@@ -44,7 +44,8 @@ def add_state():
 
 @States_API_blueprint.route("/admin/delete_state", methods=["POST"])
 def delete_state():
-    state_name = request.json["State_Name"]
+    State_Id = request.json["State_Id"]
+    # print(State_Id)
     try:
         States.query.filter_by(State_Name=state_name).delete()  # Fetching the instance
         db.session.commit()
@@ -64,8 +65,9 @@ def update_state():
         )
         existing_state = States.query.filter_by(State_Name=existing_state_name).first()
         if existing_state:
-            existing_state.State_Name = Update_State_name
-            #existing_state.State_No = Updated_State_no
+            existing_state.State_Name = Updated_State_name
+            existing_state.State_No = Updated_State_no
+            # print(existing_state.State_Name)
             db.session.commit()
             db.session.close()
             return {"message": "State updated successfully"}

@@ -24,7 +24,7 @@ Agents_API_blueprint = Blueprint("Agents_API", __name__)
 
 
 #signup
-@Agents_API_blueprint.route("/agent/signup", methods=["PUT"])
+@Agents_API_blueprint.route("/agent/signup", methods=["POST"])
 def sign_up():
     (
         First_name,

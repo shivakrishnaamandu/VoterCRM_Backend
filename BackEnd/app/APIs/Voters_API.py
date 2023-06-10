@@ -84,7 +84,7 @@ def upload():
 
 @Voters_API_blueprint.route("/admin/list_voters", methods=["POST"])
 def get_all_voters():
-    print(f"url accessed")
+    # print(f"url accessed")
     body = request.json
     State_Name = body["State_Name"]
     District_Name = (body["District_Name"],)
@@ -117,7 +117,7 @@ def get_all_voters():
     if voters:
         voter_list = []
         for voter in voters:
-            print(f"Voter Name: {voter.Voter_Name}")
+            # print(f"Voter Name: {voter.Voter_Name}")
             voter_dict = {}
             voter_dict["Voter_Row_ID"] = voter.Voter_Row_ID
             voter_dict["Voter_UID"] = voter.Voter_UID
@@ -137,7 +137,7 @@ def get_all_voters():
 
 @Voters_API_blueprint.route("/admin/download_voters", methods=["POST"])
 def download_all_voters():
-    print(f"url accessed")
+    # print(f"url accessed")
     body = request.json
     State_Name = body["State_Name"]
     District_Name = (body["District_Name"],)

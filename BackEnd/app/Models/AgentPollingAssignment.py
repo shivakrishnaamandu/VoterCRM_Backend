@@ -3,6 +3,8 @@ from datetime import datetime
 
 class AgentPollingAssignment(db.Model):
     
+    __tablename__ = "AgentPollingAssignment"
+
     Assignment_Id = db.Column(db.Integer, primary_key = True, autoincrement = True)
     Agent_Id = db.Column(db.Integer, db.ForeignKey("Agents.Agent_Id"), nullable = False)
     Polling_Station_Code = db.Column(db.Integer, db.ForeignKey("PollingStations.Polling_Station_Id"), nullable = False)
@@ -12,8 +14,7 @@ class AgentPollingAssignment(db.Model):
     Assignment_Status =  db.Column(db.String(25), nullable = False)
     Updated_On = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     
-    def __init__(self, Assignment_Id, Agent_Id, Polling_Station_Code, Candidate_Id, Subscription_Id, Assignment_Status):
-        self.Assignment_Id = Assignment_Id
+    def __init__(self, Agent_Id, Polling_Station_Code, Candidate_Id, Subscription_Id, Assignment_Status):
         self.Agent_Id = Agent_Id
         self.Polling_Station_Code = Polling_Station_Code
         self.Candidate_Id =  Candidate_Id

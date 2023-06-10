@@ -21,7 +21,7 @@ application.before_request(lambda: middleware.auth(request))
 Admin_Auth_API_blueprint = Blueprint("Admin_Auth_API", __name__)
 
 
-@Admin_Auth_API_blueprint.route("/admin/auth/login", methods=["PUT"])
+@Admin_Auth_API_blueprint.route("/admin/auth/login", methods=["POST"])
 def log_in():
     username, password = request.json["Username"], request.json["Password"]
 
@@ -50,7 +50,7 @@ def log_in():
     login = Logins.query.filter_by(User_Id=admin.Agent_Id).first()
 
     if not login:
-        print("no record")
+        # print("no record")
         user_id = admin.Agent_Id
         ip_address = request.remote_addr
         device = request.user_agent.string
@@ -67,10 +67,10 @@ def log_in():
         db.session.add(login)
         db.session.commit()
     else:
-        print("There is record")
-        print(token)
+        # print("There is record")
+        # print(token)
         login.Token = token
-        print(login.Token)
+        # print(login.Token)
         login.Status = "LoggedIn"
         db.session.commit()
 
@@ -104,8 +104,8 @@ def sign_up():
         request.json["Phone_No"],
         request.json["Address"],
     )
-    print(f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
-    print(f"sign_up_key: {sign_up_key}")
+    # print(f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
+    # print(f"sign_up_key: {sign_up_key}")
     if request.headers.get("signupkey") != sign_up_key:
         return exceptions.Unauthorized(description="Incorrect Key")
     password_hash = hashing_service.hash_bcrypt(Password.encode("utf-8")).decode(
@@ -174,6 +174,6 @@ def change_password():
         new_password.encode("utf-8")
     ).decode("utf-8")
     db.session.commit()
-    print("password changed")
+    # print("password changed")
     redirect(url_for("Admin_Auth_API.log_out(token)"))
     return {"message": "Password changed successfully"}
