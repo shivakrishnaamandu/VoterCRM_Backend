@@ -52,7 +52,7 @@ def add_district():
 @Districts_API_blueprint.route("/admin/delete_district", methods=["POST"])
 def delete_district():
     district_id = request.json["District_Id"]
-    print(district_id)
+    # print(district_id)
     try:
         Districts.query.filter_by(
             District_Id=district_id
@@ -76,7 +76,7 @@ def update_district():
         if existing_district:
             existing_district.District_Name = Updated_dist_name
             existing_district.District_No = Updated_dist_no
-            print(existing_district.District_Name)
+            # print(existing_district.District_Name)
             db.session.commit()
             db.session.close()
             return {"message": "District updated successfully"}
