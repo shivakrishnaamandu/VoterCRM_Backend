@@ -136,8 +136,7 @@ def is_logged_in():
 @Admin_Auth_API_blueprint.route("/admin/auth/logout/", methods=["POST"])
 def log_out():
     try:
-        token = request.args.get('token')
-        # token = request.headers["token"]
+        token = request.headers["token"]
         login = Logins.query.filter_by(Token = token).first()
         login.Status = "LoggedOut"
         db.session.commit()
