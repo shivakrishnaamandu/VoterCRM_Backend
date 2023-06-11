@@ -112,7 +112,7 @@ def redirect_agent_signup(First_name, Last_name, Email_Id, Gender, Phone_No, Add
                   'Address': Address
                   }
 
-    response = requests.post(url= "http://127.0.0.1:8000/agent/signup", json= agent_data, headers= req_headers)
+    response = requests.post(url= request.host_url.rstrip("/") + "/agent/signup", json= agent_data, headers= req_headers)
     return Username, Password, response
 
 def add_data_to_AgentPollingAssignment(req_token, resp_username, polling_station_no):

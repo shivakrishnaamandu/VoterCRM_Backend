@@ -2,3 +2,6 @@
 *.vscode
 backend_env
 BackEnd/app/__init__.py
+BackEnd/app/APIs/__pycache__/Admin_Auth_API.cpython-311.pyc
+BackEnd/app/APIs/__pycache__/States_API.cpython-311.pyc
+BackEnd/app/APIs/__pycache__/Districts_API.cpython-311.pyc

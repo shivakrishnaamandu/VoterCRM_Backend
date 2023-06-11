@@ -7,10 +7,9 @@ from app.Authentication.middleware import Middleware
 from app.Authentication.hashingservice import HashingService
 from flask import request, Blueprint, redirect, url_for,jsonify
 from werkzeug import exceptions
-import csv, io
+import csv, io,requests
 from openpyxl import load_workbook
 from io import StringIO
-import pandas as pd
 sign_up_key = "signupkey"
 jwt_secret = "secret"
 
@@ -48,8 +47,8 @@ def sign_up():
         request.json["Address"],
     )
      
-    print(f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
-    print(f"sign_up_key: {sign_up_key}")
+    #print(f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
+    #print(f"sign_up_key: {sign_up_key}")
     if request.headers.get("signupkey") != sign_up_key:
         return exceptions.Unauthorized(description="Incorrect Key")
     password_hash = hashing_service.hash_bcrypt(Password.encode("utf-8")).decode(
@@ -72,7 +71,7 @@ def sign_up():
     return {"message": "Agent Id created Successfully"}
 
 # login start
-@Agents_API_blueprint.route("/agent/login", methods=["PUT"])
+@Agents_API_blueprint.route("/agent/login", methods=["POST"])
 def log_in():
     username, password = request.json["Username"], request.json["Password"]
     agent = Agents.query.filter_by(Username=username).filter_by(IsAdmin=0).first()
@@ -97,7 +96,7 @@ def log_in():
     login = Logins.query.filter_by(User_Id=agent.Agent_Id).first()
 
     if not login:
-        print("no record")
+        #print("no record")
         user_id = agent.Agent_Id
         ip_address = request.remote_addr
         device = request.user_agent.string
@@ -114,10 +113,10 @@ def log_in():
         db.session.add(login)
         db.session.commit()
     else:
-        print("There is record")
-        print(token)
+        #print("There is record")
+        #print(token)
         login.Token = token
-        print(login.Token)
+        #print(login.Token)
         login.Status = "LoggedIn"
         db.session.commit()
 
@@ -133,6 +132,7 @@ def is_logged_in():
 @Agents_API_blueprint.route("/agent/change_password", methods=["POST"])
 def change_password():
     token = request.headers["token"]
+    req_headers = {'token': token}
     username, old_password, new_password, retype_new_password = (
         request.json["Username"],
         request.json["Old_Password"],
@@ -144,38 +144,34 @@ def change_password():
         return exceptions.Unauthorized(description="Password mismatch")
     agent = Agents.query.filter_by(Username=username).first()
     if agent is None:
-        redirect(url_for("Agents_API.agent_log_out", token = token))
+        requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), agent.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        redirect(url_for("Agents_API.agent_log_out", token = token))
+        requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect password")
     agent.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
     ).decode("utf-8")
     db.session.commit()
-    print("password changed")
-    print(token)
-    redirect(url_for("Agents_API.agent_log_out", token = token,_method = "PUT"))
-    print("after logout method")
+    #print("password changed")
+    #print(token)
+    requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
     return {"message": "Password changed successfully"}
 
 
-@Agents_API_blueprint.route("/agent/logout/", methods=["PUT"])
+@Agents_API_blueprint.route("/agent/logout", methods=["POST"])
 def agent_log_out():
     try:
-        print("triggered log_out")
-        token = request.args.get('token')
-        # token = request.headers["token"]
+        token = request.headers["token"]
         login = Logins.query.filter_by(Token = token).first()
         login.Status = "LoggedOut"
         db.session.commit()
-        print("logged out")
+        #print("logged out")
     except Exception as e:
-        print(str(e))
         db.session.rollback()
         return jsonify("Error: " + str(e))
     return {"message": "Logged out successfully"}
@@ -199,18 +195,15 @@ def upload_data():
                 record = dict(zip(headers, row))
                 record.pop('Voter_Details_Id', None)
                 records.append(record)
-
             
-            print("No of records",len(records))
+            #print("No of records",len(records))
             for record in records:
                 data = VoterDetails(**record)
                 db.session.add(data)
                 db.session.commit()
-
-            #db.session.add(bulk_data)
-            # db.session.commit()
             return {"message": "File uploaded successfully"}
             
         except Exception as e:
             db.session.rollback()
             return jsonify("Error: " + str(e))            
+        

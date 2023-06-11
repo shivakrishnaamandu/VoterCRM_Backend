@@ -48,7 +48,7 @@ class JWTService:
         try:
             login = Logins.query.filter_by(Token=token).first()
             if not login or login.Status == "LoggedOut":
-                print("User not logged in")
+                # print("User not logged in")
                 return False
             payload = self.get_payload(token)
             if payload is None:

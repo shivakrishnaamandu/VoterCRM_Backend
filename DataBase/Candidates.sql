@@ -10,3 +10,6 @@ CREATE TABLE Candidates(
     Candidate_Constituency int NOT NULL,
     FOREIGN KEY (Candidate_Constituency) REFERENCES AssemblyConstituency(Constituency_Id)
 );
+
+
+
