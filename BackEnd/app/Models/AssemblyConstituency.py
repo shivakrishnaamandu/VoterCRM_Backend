@@ -1,5 +1,5 @@
 from app import db
-
+from app.Models.Districts import *
 
 class AssemblyConstituency(db.Model):
     __tablename__ = "AssemblyConstituency"

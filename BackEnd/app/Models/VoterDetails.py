@@ -1,5 +1,6 @@
 from app import db
 from app.Models.PoliticalParties import *
+from app.Models.AssemblyConstituency import *
 
 class VoterDetails(db.Model):
     __tablename__ = 'VoterDetails'

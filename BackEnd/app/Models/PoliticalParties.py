@@ -1,4 +1,5 @@
 from app import db
+from app.Models.States import *
 
 class PoliticalParties(db.Model):
     __tablename__ =  "PoliticalParties"

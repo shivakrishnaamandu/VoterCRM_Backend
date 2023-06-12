@@ -1,4 +1,6 @@
 from app import db
+from app.Models.SubscriptionPlans import *
+from app.Models.Candidates import *
 
 
 class Subscription(db.Model):

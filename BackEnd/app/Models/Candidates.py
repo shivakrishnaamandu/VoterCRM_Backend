@@ -1,4 +1,7 @@
 from app import db
+from app.Models.AssemblyConstituency import *
+from app.Models.PoliticalParties import *
+
 
 class Candidates(db.Model):
     __tablename__ = "Candidates"

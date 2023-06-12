@@ -1,4 +1,5 @@
 from app import db
+from app.Models.AssemblyConstituency import *
 
 
 class PollingStations(db.Model):

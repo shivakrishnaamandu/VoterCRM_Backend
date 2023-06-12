@@ -1,5 +1,9 @@
 from app import db
 from datetime import datetime
+from app.Models.Agents import *
+from app.Models.PollingStations import *
+from app.Models.Candidates import *
+from app.Models.Subscriptions import *
 
 class AgentPollingAssignment(db.Model):
     
