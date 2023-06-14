@@ -126,7 +126,13 @@ def log_in():
 
 @Agents_API_blueprint.route("/agent/is_logged_in")
 def is_logged_in():
-    return {"message": "token is valid"}
+    req_token = request.headers["token"]
+
+    login = Logins.query.filter_by(Token=req_token).first()
+    agent_id = login.User_Id
+
+    is_admin = Agents.query.filter_by(Agent_Id = agent_id).first().IsAdmin
+    return {"message":not is_admin}
 
 
 @Agents_API_blueprint.route("/agent/change_password", methods=["POST"])

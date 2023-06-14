@@ -5,3 +5,6 @@ BackEnd/app/__init__.py
 BackEnd/app/APIs/__pycache__/Admin_Auth_API.cpython-311.pyc
 BackEnd/app/APIs/__pycache__/States_API.cpython-311.pyc
 BackEnd/app/APIs/__pycache__/Districts_API.cpython-311.pyc
+BackEnd/app/Models/__pycache__/AssemblyConstituency.cpython-311.pyc
+.gitignore
+BackEnd/app/Models/__pycache__/PollingStations.cpython-311.pyc

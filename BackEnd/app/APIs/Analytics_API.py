@@ -103,11 +103,11 @@ def upload():
 def get_agent_voter_details():
 
     # authentication
-    print(
-        f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
-    print(f"sign_up_key: {sign_up_key}")
-    if request.headers.get("signupkey") != sign_up_key:
-        return exceptions.Unauthorized(description="Incorrect Key")
+    # print(
+    #     f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
+    # print(f"sign_up_key: {sign_up_key}")
+    # if request.headers.get("signupkey") != sign_up_key:
+    #     return exceptions.Unauthorized(description="Incorrect Key")
     
     # getting token header to find the agent
     req_token = request.headers["token"]
