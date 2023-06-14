@@ -4,9 +4,11 @@ from app.Models.PollingStations import *
 from app.Models.AssemblyConstituency import *
 from app.Models.Districts import *
 from app.Models.States import *
+from app.Models.Logins import *
+from app.Models.AgentPollingAssignment import *
 from sqlalchemy import inspect, and_
 from io import StringIO
-
+from werkzeug import exceptions
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from flask import request, Blueprint, Response, jsonify
@@ -14,6 +16,7 @@ import csv, io
 import uuid
 
 jwt_secret = "secret"
+sign_up_key = "signupkey"
 
 jwt_service = JWTService(jwt_secret)
 middleware = Middleware(jwt_service)
@@ -94,3 +97,47 @@ def upload():
         voterdetails_data.append(voterdetail_data)
 
     return {"votersdetails": voterdetails_data}
+
+
+@Analytics_API_blueprint.route("/agent/get_voter_details", methods=["GET"])
+def get_agent_voter_details():
+
+    # authentication
+    print(
+        f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
+    print(f"sign_up_key: {sign_up_key}")
+    if request.headers.get("signupkey") != sign_up_key:
+        return exceptions.Unauthorized(description="Incorrect Key")
+    
+    # getting token header to find the agent
+    req_token = request.headers["token"]
+
+    login = Logins.query.filter_by(Token=req_token).first()
+    agent_id = login.User_Id
+
+    # '1': ['7D5LUR63', 'NameL'], '2': ['EPBHZ1F1', 'NameL75']}
+
+    assignment = AgentPollingAssignment.query.filter_by(Agent_Id = agent_id).first()
+    polling_station_id = assignment.Polling_Station_Code
+
+    polling_station = PollingStations.query.filter_by(Polling_Station_Id = polling_station_id).first()
+
+    voterdetails = VoterDetails.query.filter_by(constituency_name = polling_station.Assembly_Constituency_Name,
+                                                polling_booth_no = polling_station.Polling_Station_No).all()
+    
+    # Convert voters to JSON response
+    voterdetails_data = []
+    for voterdetail in voterdetails:
+        voterdetail_data = voterdetail.__dict__.copy()
+    # Remove internal attributes
+        voterdetail_data.pop("_sa_instance_state", None)
+        voterdetails_data.append(voterdetail_data)
+
+    return {"votersdetails": voterdetails_data}
+
+
+"""
+get agent_id from logins table
+get polling station assignment of the agent
+get voterdetail from that particular station
+"""
