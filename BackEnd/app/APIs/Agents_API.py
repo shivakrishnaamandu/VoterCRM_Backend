@@ -150,14 +150,14 @@ def change_password():
         return exceptions.Unauthorized(description="Password mismatch")
     agent = Agents.query.filter_by(Username=username).first()
     if agent is None:
-        requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
+        # requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), agent.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
+        # requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
         return exceptions.Unauthorized(description="Incorrect password")
     agent.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
@@ -165,7 +165,7 @@ def change_password():
     db.session.commit()
     #print("password changed")
     #print(token)
-    requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
+    # requests.post(url= request.host_url.rstrip("/") + "/agent/logout", headers= req_headers)
     return {"message": "Password changed successfully"}
 
 

@@ -134,7 +134,7 @@ def is_logged_in():
     agent_id = login.User_Id
 
     is_admin = Agents.query.filter_by(Agent_Id=agent_id).first().IsAdmin
-    return {"message":is_admin}
+    return {"message": is_admin}
 
 
 @Admin_Auth_API_blueprint.route("/admin/auth/logout/", methods=["POST"])
@@ -165,27 +165,27 @@ def change_password():
         return exceptions.Unauthorized(description="Inconsistent New Password")
     admin = Agents.query.filter_by(Username=username).first()
     if admin is None:
-        requests.post(
-            url=request.host_url.rstrip("/") + "/admin/auth/logout/",
-            headers=req_headers,
-        )
+        # requests.post(
+        #     url=request.host_url.rstrip("/") + "/admin/auth/logout/",
+        #     headers=req_headers,
+        # )
         return exceptions.Unauthorized(description="Incorrect username")
     is_password_correct = hashing_service.check_bcrypt(
         old_password.encode("utf-8"), admin.Hash_Password.encode("utf-8")
     )
 
     if not is_password_correct:
-        requests.post(
-            url=request.host_url.rstrip("/") + "/admin/auth/logout/",
-            headers=req_headers,
-        )
+        # requests.post(
+        #     url=request.host_url.rstrip("/") + "/admin/auth/logout/",
+        #     headers=req_headers,
+        # )
         return exceptions.Unauthorized(description="Incorrect password")
     admin.Hash_Password = hashing_service.hash_bcrypt(
         new_password.encode("utf-8")
     ).decode("utf-8")
     db.session.commit()
     # print("password changed")
-    requests.post(
-        url=request.host_url.rstrip("/") + "/admin/auth/logout/", headers=req_headers
-    )
+    # requests.post(
+    #     url=request.host_url.rstrip("/") + "/admin/auth/logout/", headers=req_headers
+    # )
     return {"message": "Password changed successfully"}
