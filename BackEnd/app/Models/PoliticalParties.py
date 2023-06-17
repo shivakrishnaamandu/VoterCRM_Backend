@@ -14,5 +14,6 @@ class PoliticalParties(db.Model):
     def __init__(self, Party_Name, Party_Symbol, Party_Status, Party_State, Party_President):
         self.Party_Name = Party_Name
         self.Party_Symbol = Party_Symbol
+        self.Party_Status = Party_Status
         self.Party_State = Party_State
         self.Party_President = Party_President

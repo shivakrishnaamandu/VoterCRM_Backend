@@ -13,8 +13,7 @@ class Candidates(db.Model):
     Candidate_Party = db.Column(db.String(100), db.ForeignKey("PoliticalParties.Party_Name"), nullable = False)
     Candidate_Constituency = db.Column(db.Integer, db.ForeignKey("AssemblyConstituency.Constituency_Id"), nullable = False)
 
-    def __init__ (self, Candidate_Id, Candidate_Name, Candidate_Age, Candidate_Gender, Candidate_Party, Candidate_Constituency):
-        self.Candidate_Id = Candidate_Id
+    def __init__ (self, Candidate_Name, Candidate_Age, Candidate_Gender, Candidate_Party, Candidate_Constituency):
         self.Candidate_Name = Candidate_Name
         self.Candidate_Age = Candidate_Age
         self.Candidate_Gender = Candidate_Gender
