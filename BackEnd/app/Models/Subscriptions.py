@@ -3,7 +3,7 @@ from app.Models.SubscriptionPlans import *
 from app.Models.Candidates import *
 
 
-class Subscription(db.Model):
+class Subscriptions(db.Model):
     __tablename__ = "Subscriptions"
     Subscription_Id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     Candidate_Id = db.Column(

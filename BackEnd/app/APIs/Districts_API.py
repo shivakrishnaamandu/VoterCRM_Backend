@@ -51,14 +51,17 @@ def add_district():
 @Districts_API_blueprint.route("/admin/delete_district", methods=["POST"])
 def delete_district():
     district_name = request.json["District_Name"]
-    # print(district_id)
-    try:
-        Districts.query.filter_by(District_Name=district_name).delete()  # Fetching the instance
-        db.session.commit()
-        return {"message": "District deleted successfully"}
-    except:
-        return {"message": "Error deleting district"}
-
+    if(district_name==""):
+        return {"message": "district name is empty."}
+    del_district = Districts.query.filter_by(District_Name=district_name).first()
+    if del_district: 
+            db.session.delete(del_district)  
+            db.session.commit()
+            return {"message": "District deleted successfully"}
+           
+    else:
+            return {"message": "District not found"}
+    
 
 @Districts_API_blueprint.route("/admin/update_district", methods=["POST"])
 # Can update 2 fields District_Name, district_no
