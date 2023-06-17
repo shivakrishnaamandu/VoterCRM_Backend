@@ -136,8 +136,8 @@ def get_agent_voter_details():
     return {"votersdetails": voterdetails_data}
 
 
-"""
-get agent_id from logins table
-get polling station assignment of the agent
-get voterdetail from that particular station
-"""
+# """
+# get agent_id from logins table
+# get polling station assignment of the agent
+# get voterdetail from that particular station
+# """

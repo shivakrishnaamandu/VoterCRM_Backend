@@ -34,8 +34,8 @@ AgentPollingAssignemnt_API_blueprint = Blueprint("AgentPollingAssignment_API", _
 def upload():
 
     # authentication
-    print(f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
-    print(f"sign_up_key: {sign_up_key}")
+    # print(f'request.headers.get("sign_up_key"): {request.headers.get("signupkey")}')
+    # print(f"sign_up_key: {sign_up_key}")
     if request.headers.get("signupkey") != sign_up_key:
         return exceptions.Unauthorized(description="Incorrect Key")
 
@@ -155,71 +155,71 @@ def add_data_to_AgentPollingAssignment(req_token, resp_username, polling_station
     return f'Mapping added successfully for {resp_username}'
 
 
-"""
-Doubts_1: 
-1. would we create the username. if yes then how to assign the username. what about when we have the same username
-            yes, we will be creating the username. if already present then append number
-2. where would you store the data related to admin (candidate assigned to, political party etc).
-            db team creating table for that
-3. can a candidate have multiple subscriptions
-            consider 1-1
-4. is the candidate name unique
-            check with team
-5. shouldnt signup api be a post method since we are adding a new record
+# """
+# Doubts_1: 
+# 1. would we create the username. if yes then how to assign the username. what about when we have the same username
+#             yes, we will be creating the username. if already present then append number
+# 2. where would you store the data related to admin (candidate assigned to, political party etc).
+#             db team creating table for that
+# 3. can a candidate have multiple subscriptions
+#             consider 1-1
+# 4. is the candidate name unique
+#             check with team
+# 5. shouldnt signup api be a post method since we are adding a new record
 
-Doubts_2:
-1. How to map the get the polling station code
-2. What are the assignment statuses
+# Doubts_2:
+# 1. How to map the get the polling station code
+# 2. What are the assignment statuses
 
-CSV format:
-1. Agent_id: it is for admin reference (will not be entered in our DB)
-2. First_Name of agent
-3. Last_name of agent
-4. Email_id of agent
-5. Phone number of agent
-6. Address of agent
-7. Polling station number of Constituency in our DB (nummber to be given to the agent)
+# CSV format:
+# 1. Agent_id: it is for admin reference (will not be entered in our DB)
+# 2. First_Name of agent
+# 3. Last_name of agent
+# 4. Email_id of agent
+# 5. Phone number of agent
+# 6. Address of agent
+# 7. Polling station number of Constituency in our DB (nummber to be given to the agent)
 
-Steps:
-1. upload data using post method (csv format mentioned above)
-2. redirecting to agent/signup api for agent signup
-3. create an agent -> signup
-            generate username and password
-            Add to Agents table
-4. commit DB
-5. call assignment function with arguments: headers, username, polling_station_no
-6. get agent id, polling_station_id, candidate_id and subscription_id with queries
-7. add to AgentPollingAssignment table
-8. commit
-9. return/display Agent_id, username and password
+# Steps:
+# 1. upload data using post method (csv format mentioned above)
+# 2. redirecting to agent/signup api for agent signup
+# 3. create an agent -> signup
+#             generate username and password
+#             Add to Agents table
+# 4. commit DB
+# 5. call assignment function with arguments: headers, username, polling_station_no
+# 6. get agent id, polling_station_id, candidate_id and subscription_id with queries
+# 7. add to AgentPollingAssignment table
+# 8. commit
+# 9. return/display Agent_id, username and password
 
-columns needed in the csv:
-    Agents table:
-        first name
-        last name
-        email_id
-        gender 
-        phone number
-        address
-    Candidates table:
-        Candidate Name (to get candidate ID)
-    PollingStation table:
-        (to get polling station code)
-        Polling Station Name
-        Polling Station location
-    Subscriptions
-        Subscription ID (query with the candidate id)
+# columns needed in the csv:
+#     Agents table:
+#         first name
+#         last name
+#         email_id
+#         gender 
+#         phone number
+#         address
+#     Candidates table:
+#         Candidate Name (to get candidate ID)
+#     PollingStation table:
+#         (to get polling station code)
+#         Polling Station Name
+#         Polling Station location
+#     Subscriptions
+#         Subscription ID (query with the candidate id)
 
-"""
+# """
 
-"""
-Username Creation:
-    - first name start full(max length 10) 
-    - lastname first letter
-    - 2 random numbers suffix if username is not unique
+# """
+# Username Creation:
+#     - first name start full(max length 10) 
+#     - lastname first letter
+#     - 2 random numbers suffix if username is not unique
 
-Password Creation:
-    - Maxlength = 8
-    - Random combination of letters and digits
-"""
+# Password Creation:
+#     - Maxlength = 8
+#     - Random combination of letters and digits
+# """
 

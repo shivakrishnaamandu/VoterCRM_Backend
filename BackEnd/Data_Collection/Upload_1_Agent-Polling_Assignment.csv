@@ -1,0 +1,6 @@
+Agent_Id,First_name,Last_name,Email_Id,Gender,Phone_No,Address,polling_station_no
+1,John,Doe,johndoenewone@example.com,Male,1234567890,123 Main St,1
+2,Jane,Smith,janesmith@example.com,Female,9876543210,456 Elm St,2
+3,Michael,Johnson,michaeljohnson@example.com,Male,5555555555,789 Oak St,3
+4,Sarah,Williams,sarahwilliams@example.com,Female,1112223333,321 Pine St,4
+5,David,Brown,davidbrown@example.com,Male,9998887777,654 Maple St,5
