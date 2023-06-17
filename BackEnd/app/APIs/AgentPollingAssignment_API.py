@@ -126,7 +126,7 @@ def add_data_to_AgentPollingAssignment(req_token, resp_username, polling_station
     candidate_id = mapping.Candidate_Id
 
     # get subscription id based on candidate id
-    subscription = Subscription.query.filter_by(Candidate_Id = candidate_id).first()
+    subscription = Subscriptions.query.filter_by(Candidate_Id = candidate_id).first()
     subscription_id = subscription.Subscription_Id
 
     # get Agent_Id based on username
