@@ -79,7 +79,9 @@ def add_constituency():
 )
 def constituency_delete():
     body = request.json
-    constituency = AssemblyConstituency.query.get(body["Constituency_Id"])
+    Constituency_Id = request.json["Constituency_Id"]
+    constituency = AssemblyConstituency.query.filter_by(Constituency_Id=Constituency_Id).one()
+    # constituency = AssemblyConstituency.query.get(body["Constituency_Id"])
     db.session.delete(constituency)
     db.session.commit()
 

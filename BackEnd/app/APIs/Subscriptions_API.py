@@ -50,7 +50,7 @@ def add_subscription():
 def delete_subscription():
     candidate_id = request.json["Candidate_Id"]
     plan_id = request.json["Plan_Id"]
-    if(candidate_id or plan_id == ""):
+    if(candidate_id == "" or plan_id == ""):
         return {"message": "Subscription is not available."}
     del_candidate = Subscriptions.query.filter_by(Candidate_Id=candidate_id,Plan_Id=plan_id).first()
     if del_candidate: 

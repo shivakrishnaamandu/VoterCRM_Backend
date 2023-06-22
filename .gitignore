@@ -8,3 +8,4 @@ BackEnd/app/APIs/__pycache__/Districts_API.cpython-311.pyc
 BackEnd/app/Models/__pycache__/AssemblyConstituency.cpython-311.pyc
 .gitignore
 BackEnd/app/Models/__pycache__/PollingStations.cpython-311.pyc
+BackEnd/app/APIs/__pycache__/Districts_API.cpython-311.pyc
