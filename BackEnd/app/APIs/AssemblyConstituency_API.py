@@ -49,12 +49,13 @@ def get_all_constituencies():
             # print(state_name)
             state = States.query.filter_by(State_Name=state_name).one()
             dis = Districts.query.filter_by(State_Code=state.State_Id).all()
+            constituency_list = []
             for district in dis:
                 constituency_district = AssemblyConstituency.query.filter_by(
                     District_Code=district.District_Id
                 ).all()
                 if constituency_district:
-                    constituency_list = []
+                    
 
                     for constituency in constituency_district:
                         constituency_dict = {}
