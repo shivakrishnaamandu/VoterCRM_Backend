@@ -17,21 +17,27 @@ application.before_request(lambda: middleware.auth(request))
 AssemblyConstituency_API_blueprint = Blueprint("AssemblyConstituency_API", __name__)
 
 
-@AssemblyConstituency_API_blueprint.route("/admin/assemblyconstituency", methods=["POST"])
+@AssemblyConstituency_API_blueprint.route(
+    "/admin/assemblyconstituency", methods=["POST"]
+)
 def get_all_constituencies():
     try:
-        body= request.json
+        body = request.json
         if "District_Name" in body:
             district_name = request.json["District_Name"]
             dis = Districts.query.filter_by(District_Name=district_name).one()
-            constituency_district = AssemblyConstituency.query.filter_by(District_Code=dis.District_Id).all()
+            constituency_district = AssemblyConstituency.query.filter_by(
+                District_Code=dis.District_Id
+            ).all()
 
             if constituency_district:
                 constituency_list = []
                 for constituency in constituency_district:
                     constituency_dict = {}
                     constituency_dict["Constituency_Id"] = constituency.Constituency_Id
-                    constituency_dict["Constituency_Name"] = constituency.Constituency_Name
+                    constituency_dict[
+                        "Constituency_Name"
+                    ] = constituency.Constituency_Name
                     constituency_dict["Constituency_No"] = constituency.Constituency_No
                     constituency_dict["District_Code"] = constituency.District_Code
                     constituency_list.append(constituency_dict)
@@ -44,19 +50,27 @@ def get_all_constituencies():
             state = States.query.filter_by(State_Name=state_name).one()
             dis = Districts.query.filter_by(State_Code=state.State_Id).all()
             for district in dis:
-                constituency_district = AssemblyConstituency.query.filter_by(District_Code=district.District_Id).all()
+                constituency_district = AssemblyConstituency.query.filter_by(
+                    District_Code=district.District_Id
+                ).all()
                 if constituency_district:
                     constituency_list = []
 
                     for constituency in constituency_district:
                         constituency_dict = {}
-                        constituency_dict["Constituency_Id"] = constituency.Constituency_Id
-                        constituency_dict["Constituency_Name"] = constituency.Constituency_Name
-                        constituency_dict["Constituency_No"] = constituency.Constituency_No
+                        constituency_dict[
+                            "Constituency_Id"
+                        ] = constituency.Constituency_Id
+                        constituency_dict[
+                            "Constituency_Name"
+                        ] = constituency.Constituency_Name
+                        constituency_dict[
+                            "Constituency_No"
+                        ] = constituency.Constituency_No
                         constituency_dict["District_Code"] = constituency.District_Code
                         constituency_list.append(constituency_dict)
             return {"constituency": constituency_list}
-        
+
     except:
         return {"message": "No constituency Available"}
 
@@ -80,17 +94,19 @@ def add_constituency():
 def constituency_delete():
     body = request.json
     Constituency_Id = request.json["Constituency_Id"]
-    constituency = AssemblyConstituency.query.filter_by(Constituency_Id=Constituency_Id).one()
+    constituency = AssemblyConstituency.query.filter_by(
+        Constituency_Id=Constituency_Id
+    ).one()
     # constituency = AssemblyConstituency.query.get(body["Constituency_Id"])
     db.session.delete(constituency)
     db.session.commit()
 
-    return "Constituency was successfully deleted"
+    return {"message": "Constituency was successfully deleted"}
 
 
 # Endpoint for updating a guide
 @AssemblyConstituency_API_blueprint.route(
-    "/admin/update_constituency", methods=["PUT"]
+    "/admin/update_constituency", methods=["POST"]
 )
 def constituesncy_update():
     body = request.json
@@ -102,4 +118,4 @@ def constituesncy_update():
     if Constituency_No:
         constituency.Constituency_No = Constituency_No
     db.session.commit()
-    return "Constituency was successfully updated"
+    return {"message": "Constituency was successfully updated"}
