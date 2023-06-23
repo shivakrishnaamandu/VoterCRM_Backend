@@ -2,7 +2,7 @@ from app.__init__ import application, db
 from app.Models.Subscriptions import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
-from flask import request, Blueprint
+from flask import request, Blueprint,jsonify
 
 jwt_secret = "secret"
 
@@ -61,6 +61,29 @@ def delete_subscription():
     else:
             return {"message": "Subscription not found"}
 
-
+@Subscriptions_API_blueprint.route("/admin/update_subscription", methods=["POST"])
+def update_subscription():
+    try:
+        existing_candidate_id, existing_plan_id,update_candidate_id,update_plan_id,update_subscription_status = (
+            request.json["Existing_Candidate_Id"],
+            request.json["Existing_Plan_Id"],
+            request.json["Update_Candidate_Id"],
+            request.json["Update_Plan_Id"],
+            request.json["Update_Subscription_Status"]
+            )
+        existing_subscription = Subscriptions.query.filter_by(Candidate_Id=existing_candidate_id,
+                                                        Plan_Id=existing_plan_id).first()
+        if existing_subscription:
+            existing_subscription.Candidate_Id = update_candidate_id
+            existing_subscription.Plan_Id = update_plan_id         
+            existing_subscription.Subscription_Status = update_subscription_status
+            db.session.commit()
+            db.session.close()
+            return {"message": "Subscription details updated successfully."}
+        else:
+            return {"message": "Subscription not available"}
+    except Exception as e:
+        db.session.rollback()
+        return jsonify("Error: " + str(e))
 
     
