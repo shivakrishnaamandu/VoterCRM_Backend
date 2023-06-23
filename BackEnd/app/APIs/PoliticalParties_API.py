@@ -63,5 +63,31 @@ def delete_politicalparty():
             return {"message": "Political party not found"}
 
 
+@PoliticalParties_API_blueprint.route("/admin/update_politicalparty", methods=["POST"])
+def update_politicalparty():
+    try:
+        existing_party_name, update_party_name,update_party_symbol,update_party_status,update_party_state,update_party_president  = (
+            request.json["Existing_Party_Name"],
+            request.json["Update_Party_Name"],
+            request.json["Update_Party_Symbol"],
+            request.json["Update_Party_Status"],
+            request.json["Update_Party_State"],
+            request.json["Update_Party_President"]
+        )
+        existing_party = PoliticalParties.query.filter_by(Party_Name=existing_party_name).first()
+        if existing_party:
+            existing_party.Party_Name = update_party_name
+            existing_party.Party_Symbol = update_party_symbol            
+            existing_party.Party_Status = update_party_status
+            existing_party.Party_State = update_party_state
+            existing_party.Party_President = update_party_president            
+            db.session.commit()
+            db.session.close()
+            return {"message": "Political Party details updated successfully"}
+        else:
+            return {"message": "Political Party Not available"}
+    except Exception as e:
+        db.session.rollback()
+        return jsonify("Error: " + str(e))
 
     
