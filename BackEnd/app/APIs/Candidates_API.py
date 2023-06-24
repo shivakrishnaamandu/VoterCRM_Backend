@@ -80,5 +80,32 @@ def delete_candidate():
             return {"message": "Candidate not found"}
 
 
+@Candidates_API_blueprint.route("/admin/update_candidate", methods=["POST"])
+def update_candidate():
+    try:
+        existing_candidate_name, update_candidate_name,update_candidate_age,update_candidate_gender,update_candidate_party,update_candidate_constituency  = (
+            request.json["Existing_Candidate_Name"],
+            request.json["Update_Candidate_Name"],
+            request.json["Update_Candidate_Age"],
+            request.json["Update_Candidate_Gender"],
+            request.json["Update_Candidate_Party"],
+            request.json["Update_Candidate_Constituency"]
+
+        )
+        existing_candidate = Candidates.query.filter_by(Candidate_Name=existing_candidate_name).first()
+        if existing_candidate:
+            existing_candidate.Candidate_Name = update_candidate_name
+            existing_candidate.Candidate_Age = update_candidate_age         
+            existing_candidate.Candidate_Gender = update_candidate_gender
+            existing_candidate.Candidate_Party = update_candidate_party
+            existing_candidate.Candidate_Constituency = update_candidate_constituency            
+            db.session.commit()
+            db.session.close()
+            return {"message": "Candidate details updated successfully."}
+        else:
+            return {"message": "Candidate Not available"}
+    except Exception as e:
+        db.session.rollback()
+        return jsonify("Error: " + str(e))
 
     
