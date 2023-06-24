@@ -1,5 +1,7 @@
 from app.__init__ import application, db
 from app.Models.Candidates import *
+from app.Models.Logins import *
+from app.Models.AdminCandidateMapping import *
 from app.Authentication.jwtservice import JWTService
 from app.Authentication.middleware import Middleware
 from flask import request, Blueprint, jsonify
@@ -44,6 +46,21 @@ def add_candidate():
         body["Candidate_Constituency"]
     )
     db.session.add(candidate)
+    db.session.commit()
+
+    # getting admin_id from token
+    token = request.headers["token"]
+    login = Logins.query.filter_by(Token = token).first()
+    admin_id = login.User_Id
+
+    # getting candidate_id from Candidates table
+    candidate = Candidates.query.filter_by(Candidate_Name = body["Candidate_Name"]).first()
+    candidate_id = candidate.Candidate_Id
+
+    admincandidatemap = AdminCandidateMapping(admin_id,candidate_id,"Assigned")
+
+    # adding the mapping to the admin-candidate mapping table
+    db.session.add(admincandidatemap)
     db.session.commit()
     return {"message": "New candidate added successfully"}
 
